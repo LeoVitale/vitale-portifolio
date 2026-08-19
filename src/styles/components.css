@@ -89,6 +89,38 @@
   font-weight: 700;
 }
 
+.button {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-button);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.button--primary:hover {
+  background: var(--color-primary-active);
+}
+
+.button--secondary {
+  border-color: var(--color-hairline-strong);
+  background: var(--color-surface-card);
+  color: var(--color-ink);
+}
+
+.button--secondary:hover {
+  border-color: var(--color-body);
+}
+
 @media (max-width: 47.99rem) {
   .site-header__inner {
     grid-template-columns: 1fr auto;

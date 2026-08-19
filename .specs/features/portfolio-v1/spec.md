@@ -248,10 +248,10 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 
 | Requirement ID | Story | Phase | Status |
 | --- | --- | --- | --- |
-| PORT-01 | P1: Positioning | Tasks | In Tasks |
+| PORT-01 | P1: Positioning | Execute | Complete |
 | PORT-02 | P1: Positioning | Tasks | In Tasks |
-| PORT-03 | P1: Positioning | Tasks | In Tasks |
-| PORT-04 | P1: Positioning | Tasks | In Tasks |
+| PORT-03 | P1: Positioning | Execute | Complete |
+| PORT-04 | P1: Positioning | Execute | Complete |
 | PORT-05 | P1: Navigation | Execute | Complete |
 | PORT-06 | P1: Navigation | Execute | Complete |
 | PORT-07 | P1: Navigation | Execute | Complete |

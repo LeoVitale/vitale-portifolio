@@ -10,6 +10,7 @@
     "imageAlt": "Interface do player ao vivo do NET NOW criada durante a transição de Leonardo para engenharia React"
   },
   "signals": {
+    "label": "Sinais da trajetória",
     "experience": { "value": "20+ anos", "label": "Design, produto e engenharia front-end" },
     "react": { "value": "React desde 2015", "label": "Adoção inicial em plataformas VOD de produção" },
     "leadership": { "value": "6 engenheiros", "label": "Arquitetura, qualidade de entrega, mentoria e gestão de pessoas" },

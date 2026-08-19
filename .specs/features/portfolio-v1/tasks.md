@@ -222,6 +222,7 @@ T16 → T17 → T18
 
 ### T6: Create the Home Positioning Section
 
+**Status**: Complete
 **What**: Implement the Home hero and career-signal strip with the approved 7/5 editorial layout, NET NOW visual evidence, Front-End Tech Lead positioning, key messages, primary actions, email, and phone.
 **Where**: `src/components/home/Hero.tsx`
 **Depends on**: T5
@@ -235,14 +236,14 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] The 1440 px first viewport contains headline, positioning, Work, Resume, and Contact actions.
-- [ ] At 1440 px the hero uses seven columns for narrative and five for supplied NET NOW imagery.
-- [ ] Display typography uses the approved Inter scale and negative tracking.
-- [ ] Public title is exactly “Front-End Tech Lead”.
-- [ ] Email and phone render as `mailto:` and `tel:` links.
-- [ ] Career signals include only supported facts and metrics.
-- [ ] At least 4 tagged E2E tests cover both locales and primary actions.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] The 1440 px first viewport contains headline, positioning, Work, Resume, and Contact actions.
+- [x] At 1440 px the hero uses seven columns for narrative and five for supplied NET NOW imagery.
+- [x] Display typography uses the approved Inter scale and negative tracking.
+- [x] Public title is exactly “Front-End Tech Lead”.
+- [x] Email and phone render as `mailto:` and `tel:` links.
+- [x] Career signals include only supported facts and metrics.
+- [x] At least 4 tagged E2E tests cover both locales and primary actions.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick

@@ -10,6 +10,7 @@
     "imageAlt": "NET NOW live-player interface designed during Leonardo's transition into React engineering"
   },
   "signals": {
+    "label": "Career signals",
     "experience": { "value": "20+ years", "label": "Design, product and front-end engineering" },
     "react": { "value": "React since 2015", "label": "Early adoption through production VOD platforms" },
     "leadership": { "value": "6 engineers", "label": "Architecture, delivery quality, mentoring and people management" },
