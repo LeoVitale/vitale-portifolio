@@ -343,6 +343,7 @@ T16 → T17 → T18
 
 ### T10: Create the Work Index
 
+**Status**: Complete
 **What**: Implement the localized Work page with priority-case cards and explicit separation from deferred archive content.
 **Where**: `src/pages/WorkPage.tsx`
 **Depends on**: T9
@@ -356,11 +357,11 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] The Work page renders directly in both locale URLs.
-- [ ] Four priority cases are navigable and Xelix remains a non-detail leadership card.
-- [ ] Deferred archive cases are not presented as completed P1 routes.
-- [ ] At least 4 tagged E2E tests cover direct routes, bilingual content, and case links.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] The Work page renders directly in both locale URLs.
+- [x] Four priority cases are navigable and Xelix remains a non-detail leadership card.
+- [x] Deferred archive cases are not presented as completed P1 routes.
+- [x] At least 4 tagged E2E tests cover direct routes, bilingual content, and case links.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

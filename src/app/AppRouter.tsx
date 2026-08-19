@@ -22,6 +22,7 @@ import {
   writeStoredLocale,
 } from '../i18n/locale'
 import { HomePage } from '../pages/HomePage'
+import { WorkPage } from '../pages/WorkPage'
 
 const prioritySlugs = new Set(['net-now', 'xbox-one', 'sky-online', 'microsoft-gpa'])
 
@@ -44,11 +45,6 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
       <SiteLayout />
     </LocaleContext.Provider>
   )
-}
-
-function WorkPlaceholder() {
-  const { t } = useTranslation('work')
-  return <h1>{t('title')}</h1>
 }
 
 function AboutPlaceholder() {
@@ -113,7 +109,7 @@ function localizedRoutes(segment: string, locale: Locale): ReactElement {
   return (
     <Route element={<LocaleBoundary locale={locale} />} path={segment}>
       <Route element={<HomePage />} index />
-      <Route element={<WorkPlaceholder />} path="work" />
+      <Route element={<WorkPage />} path="work" />
       <Route element={<CasePlaceholder />} path="work/:projectSlug" />
       <Route element={<AboutPlaceholder />} path="about" />
       <Route element={<NotFoundPage />} path="*" />
