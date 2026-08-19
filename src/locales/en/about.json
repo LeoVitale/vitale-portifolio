@@ -61,5 +61,6 @@
   },
   "expertiseTitle": "Expertise",
   "contactTitle": "Contact",
+  "resumeDownload": "Open resume PDF",
   "resumeUnavailable": "The PDF is unavailable right now. The complete localized resume remains available on this page."
 }

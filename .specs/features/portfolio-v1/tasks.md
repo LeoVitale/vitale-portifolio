@@ -531,15 +531,15 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Profile, accomplishments, experience, education, and expertise use semantic headings and lists.
-- [ ] Experience renders as a vertical chronology rather than a wall of uniform cards.
-- [ ] Resume download is the only primary yellow CTA on the page.
-- [ ] Both locale routes render complete equivalent content.
-- [ ] Email and phone use the approved destinations.
-- [ ] The English PDF download works from both locales.
-- [ ] Simulated PDF failure keeps HTML resume usable and shows a localized message.
-- [ ] At least 6 tagged E2E tests cover content, contacts, PDF, fallback, and keyboard access.
-- [ ] Test count increases by at least 6 and does not decrease.
+- [x] Profile, accomplishments, experience, education, and expertise use semantic headings and lists.
+- [x] Experience renders as a vertical chronology rather than a wall of uniform cards.
+- [x] Resume download is the only primary yellow CTA on the page.
+- [x] Both locale routes render complete equivalent content.
+- [x] Email and phone use the approved destinations.
+- [x] The English PDF download works from both locales.
+- [x] Simulated PDF failure keeps HTML resume usable and shows a localized message.
+- [x] At least 6 tagged E2E tests cover content, contacts, PDF, fallback, and keyboard access.
+- [x] Test count increases by at least 6 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

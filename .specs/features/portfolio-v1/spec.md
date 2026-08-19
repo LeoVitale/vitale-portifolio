@@ -275,22 +275,22 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-25 | P1: Editorial Integrity | Execute | Complete |
 | PORT-26 | P1: Editorial Integrity | Execute | Complete |
 | PORT-27 | P1: Editorial Integrity | Execute | Complete |
-| PORT-28 | P1: About, Resume, Contact | Tasks | In Tasks |
-| PORT-29 | P1: About, Resume, Contact | Tasks | In Tasks |
-| PORT-30 | P1: About, Resume, Contact | Tasks | In Tasks |
-| PORT-31 | P1: About, Resume, Contact | Tasks | In Tasks |
-| PORT-32 | P1: About, Resume, Contact | Tasks | In Tasks |
+| PORT-28 | P1: About, Resume, Contact | Execute | Complete |
+| PORT-29 | P1: About, Resume, Contact | Execute | Complete |
+| PORT-30 | P1: About, Resume, Contact | Execute | Complete |
+| PORT-31 | P1: About, Resume, Contact | Execute | Complete |
+| PORT-32 | P1: About, Resume, Contact | Execute | Complete |
 | PORT-33 | P1: Bilingual Experience | Execute | Complete |
 | PORT-34 | P1: Bilingual Experience | Execute | Complete |
 | PORT-35 | P1: Bilingual Experience | Execute | Complete |
 | PORT-36 | P1: Bilingual Experience | Execute | Complete |
 | PORT-37 | P1: Bilingual Experience | Execute | Complete |
 | PORT-38 | P1: Bilingual Experience | Execute | Complete |
-| PORT-39 | P1: Bilingual Experience | Execute | In Progress (T15 complete) |
+| PORT-39 | P1: Bilingual Experience | Execute | In Progress (T16 complete) |
 | PORT-40 | P1: Bilingual Experience | Tasks | In Tasks |
 | PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-42 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-43 | P1: Responsive Accessibility | Execute | In Progress (T11 complete) |
+| PORT-43 | P1: Responsive Accessibility | Execute | In Progress (T16 complete) |
 | PORT-44 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-45 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-46 | P1: Responsive Accessibility | Tasks | In Tasks |

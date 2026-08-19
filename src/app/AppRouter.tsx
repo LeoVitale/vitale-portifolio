@@ -20,6 +20,7 @@ import {
   switchLocale,
   writeStoredLocale,
 } from '../i18n/locale'
+import { AboutPage } from '../pages/AboutPage'
 import { CaseStudyPage } from '../pages/CaseStudyPage'
 import { HomePage } from '../pages/HomePage'
 import { WorkPage } from '../pages/WorkPage'
@@ -45,11 +46,6 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
       <SiteLayout />
     </LocaleContext.Provider>
   )
-}
-
-function AboutPlaceholder() {
-  const { t } = useTranslation('about')
-  return <h1>{t('title')}</h1>
 }
 
 function NotFoundPage() {
@@ -104,7 +100,7 @@ function localizedRoutes(segment: string, locale: Locale): ReactElement {
       <Route element={<HomePage />} index />
       <Route element={<WorkPage />} path="work" />
       <Route element={<CaseStudyPage notFound={<NotFoundPage />} />} path="work/:projectSlug" />
-      <Route element={<AboutPlaceholder />} path="about" />
+      <Route element={<AboutPage />} path="about" />
       <Route element={<NotFoundPage />} path="*" />
     </Route>
   )
