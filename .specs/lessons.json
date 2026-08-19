@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 4,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "ac_gap::enumerate every supported locale when asserting universal responsive behavior",
+      "text": "Enumerate every supported locale when asserting universal responsive behavior",
+      "signal": "ac_gap",
+      "scope": "e2e-responsive",
+      "status": "candidate",
+      "features": [
+        "portfolio-v1"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "PORT-41 (e2e-responsive)"
+      ],
+      "created": "2026-08-19T03:21:24Z",
+      "last_seen": "2026-08-19T03:21:24Z"
+    },
+    {
+      "id": "L-002",
+      "key": "ac_gap::enumerate every visible token pair when asserting universal contrast requirements",
+      "text": "Enumerate every visible token pair when asserting universal contrast requirements",
+      "signal": "ac_gap",
+      "scope": "e2e-accessibility",
+      "status": "candidate",
+      "features": [
+        "portfolio-v1"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "PORT-46 (e2e-accessibility)"
+      ],
+      "created": "2026-08-19T03:21:24Z",
+      "last_seen": "2026-08-19T03:21:24Z"
+    },
+    {
+      "id": "L-003",
+      "key": "spec_precision_gap::define an observable comprehension oracle for time bounded portfolio messaging requirements",
+      "text": "Define an observable comprehension oracle for time-bounded portfolio messaging requirements",
+      "signal": "spec_precision_gap",
+      "scope": "spec-content",
+      "status": "candidate",
+      "features": [
+        "portfolio-v1"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "PORT-02 (spec-content)"
+      ],
+      "created": "2026-08-19T03:21:24Z",
+      "last_seen": "2026-08-19T03:21:24Z"
+    }
+  ]
+}
