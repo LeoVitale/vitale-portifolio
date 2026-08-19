@@ -18,8 +18,12 @@
       "title": "NET NOW",
       "imageAlt": "Interface do player ao vivo do NET NOW com controles de vídeo e informações da programação.",
       "previewAlt": "Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.",
+      "kidsAlt": "Interface infantil do NET NOW para Hora de Aventura com temporadas, episódios e filmes.",
+      "programmesAlt": "Catálogo de programas do NET NOW com coleções ao vivo, adicionadas recentemente e por canal.",
+      "scheduleAlt": "Grade de televisão ao vivo do NET NOW organizada por data, horário e canal.",
+      "seriesAlt": "Interface de detalhes de série do NET NOW com temporadas, episódios e recomendações.",
       "thesis": "O projeto em que liderança em UX, design do player e engenharia React convergiram.",
-      "context": "NET NOW marcou a transição decisiva da liderança de interfaces para a engenharia front-end em tempo integral.",
+      "context": "NET NOW era a experiência de vídeo sob demanda e online da NET. Para mim, marcou a transição decisiva da liderança de interfaces para a engenharia front-end em tempo integral. Foi meu primeiro grande projeto em React e o ponto em que design, visão de produto e implementação convergiram.",
       "role": "Liderei o trabalho de front-end e UX, desenhei a experiência do player e participei da descoberta e das aprovações com o cliente.",
       "impact": "A equipe entregou a plataforma com um grupo recém-capacitado em React em aproximadamente seis a sete meses.",
       "next": "React se tornou o centro do capítulo seguinte de engenharia."

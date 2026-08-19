@@ -18,8 +18,12 @@
       "title": "NET NOW",
       "imageAlt": "NET NOW live-player interface with video controls and programming information.",
       "previewAlt": "NET NOW home interface showing expanded programme details over the catalogue.",
+      "kidsAlt": "NET NOW kids interface for Adventure Time with seasons, episodes and films.",
+      "programmesAlt": "NET NOW programme catalogue with live, recently added and channel collections.",
+      "scheduleAlt": "NET NOW live television schedule organized by date, time and channel.",
+      "seriesAlt": "NET NOW series-detail interface with seasons, episodes and recommendations.",
       "thesis": "The project where UX leadership, player design and React engineering converged.",
-      "context": "NET NOW became the defining transition from interface leadership into full-time front-end engineering.",
+      "context": "NET NOW was the on-demand and online video experience of NET. For me, it became the defining transition from interface leadership into full-time front-end engineering. It was my first major React project and the point where design, product thinking and implementation converged.",
       "role": "I led front-end and UX work, designed the player experience and participated in discovery and client approvals.",
       "impact": "The team delivered the platform with a newly trained React group in approximately six to seven months.",
       "next": "React became the center of the next engineering chapter."

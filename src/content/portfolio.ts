@@ -106,5 +106,29 @@ export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[
       height: 2953,
       altKey: 'projects.net-now.previewAlt',
     },
+    {
+      src: '/assets/projects/net-now/home-web-kids-personagem.webp',
+      width: 1920,
+      height: 3070,
+      altKey: 'projects.net-now.kidsAlt',
+    },
+    {
+      src: '/assets/projects/net-now/home-web-programas-tv.webp',
+      width: 1920,
+      height: 4335,
+      altKey: 'projects.net-now.programmesAlt',
+    },
+    {
+      src: '/assets/projects/net-now/grade-programacao.webp',
+      width: 1920,
+      height: 1200,
+      altKey: 'projects.net-now.scheduleAlt',
+    },
+    {
+      src: '/assets/projects/net-now/detalhe-serie-web-03.webp',
+      width: 1920,
+      height: 3589,
+      altKey: 'projects.net-now.seriesAlt',
+    },
   ],
 }

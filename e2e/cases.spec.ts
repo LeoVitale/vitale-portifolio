@@ -67,7 +67,7 @@ test('@T11 preserves source aspect ratio without fake device framing', async ({ 
   await page.goto('/en/work/net-now')
 
   const galleryItems = page.locator('.case-gallery__item')
-  await expect(galleryItems).toHaveCount(2)
+  expect(await galleryItems.count()).toBeGreaterThanOrEqual(2)
   await expect(galleryItems.nth(0)).toHaveClass(/case-gallery__item--wide/)
   await expect(galleryItems.nth(1)).toHaveClass(/case-gallery__item--detail/)
 
@@ -96,4 +96,58 @@ test('@T11 keeps the shared case readable without horizontal overflow at 390px',
   expect(hasHorizontalOverflow).toBe(false)
   await expect(page.getByRole('heading', { name: 'História visual' })).toBeVisible()
   await expect(page.locator('.case-gallery img').first()).toHaveAttribute('alt', /NET NOW/)
+})
+
+test('@T12 publishes equivalent NET NOW case content in both locales', async ({ page }) => {
+  await page.goto('/en/work/net-now')
+  await expect(page.getByText(/first major React project/)).toBeVisible()
+  await expect(page.getByText(/I led front-end and UX work/)).toBeVisible()
+
+  await page.goto('/pt-br/work/net-now')
+  await expect(page.getByText(/primeiro grande projeto em React/)).toBeVisible()
+  await expect(page.getByText(/Liderei o trabalho de front-end e UX/)).toBeVisible()
+})
+
+test('@T12 renders all six NET NOW images in the approved order', async ({ page }) => {
+  await page.goto('/en/work/net-now')
+
+  const images = page.locator('.case-gallery img')
+  await expect(images).toHaveCount(6)
+  const sources = await images.evaluateAll((elements) =>
+    elements.map((element) => element.getAttribute('src')),
+  )
+  expect(sources).toEqual([
+    '/assets/projects/net-now/player-aovivo-web.webp',
+    '/assets/projects/net-now/home-web-mouse-over.webp',
+    '/assets/projects/net-now/home-web-kids-personagem.webp',
+    '/assets/projects/net-now/home-web-programas-tv.webp',
+    '/assets/projects/net-now/grade-programacao.webp',
+    '/assets/projects/net-now/detalhe-serie-web-03.webp',
+  ])
+})
+
+test('@T12 gives the supplied player image primary visual emphasis', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 })
+  await page.goto('/en/work/net-now')
+
+  const items = page.locator('.case-gallery__item')
+  const firstWidth = await items.nth(0).evaluate((element) => element.getBoundingClientRect().width)
+  const secondWidth = await items.nth(1).evaluate((element) => element.getBoundingClientRect().width)
+  expect(firstWidth).toBeGreaterThan(secondWidth)
+  await expect(items.nth(0).locator('img')).toHaveAttribute('alt', /live-player interface/)
+})
+
+test('@T12 keeps NET NOW claims attributed and every image alt localized', async ({ page }) => {
+  await page.goto('/pt-br/work/net-now')
+
+  await expect(page.locator('.case-study__impact')).toContainText('A equipe entregou a plataforma')
+  await expect(page.locator('.case-study__impact')).not.toContainText('Eu entreguei a plataforma')
+  const alternativeTexts = await page.locator('.case-gallery img').evaluateAll((images) =>
+    images.map((image) => image.getAttribute('alt')),
+  )
+  expect(alternativeTexts).toHaveLength(6)
+  expect(alternativeTexts.every((alternativeText) => Boolean(alternativeText?.trim()))).toBe(true)
+  expect(alternativeTexts).toContain(
+    'Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.',
+  )
 })

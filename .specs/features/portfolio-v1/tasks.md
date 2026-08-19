@@ -404,6 +404,7 @@ T16 → T17 → T18
 
 ### T12: Populate the NET NOW Case
 
+**Status**: Complete
 **What**: Add the complete bilingual NET NOW case, ordered six-image gallery, supported role, React transition narrative, and next-career connection.
 **Where**: `src/locales/en/cases.json`
 **Depends on**: T11
@@ -417,12 +418,12 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Both locales contain equivalent NET NOW context, role, outcome, and transition copy.
-- [ ] Player imagery receives primary visual emphasis.
-- [ ] Claims match the current resume and briefing source precedence.
-- [ ] Six supplied images render in the approved order with localized alt text.
-- [ ] At least 4 tagged E2E tests cover both locale routes, gallery, and claims.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] Both locales contain equivalent NET NOW context, role, outcome, and transition copy.
+- [x] Player imagery receives primary visual emphasis.
+- [x] Claims match the current resume and briefing source precedence.
+- [x] Six supplied images render in the approved order with localized alt text.
+- [x] At least 4 tagged E2E tests cover both locale routes, gallery, and claims.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick
