@@ -24,26 +24,31 @@
   "projects": {
     "net-now": {
       "name": "NET NOW",
+      "role": "Front-End Tech Lead + UX Lead",
       "significance": "The turning point from UX leadership to React engineering.",
       "alt": "NET NOW live-player interface"
     },
     "xbox-one": {
       "name": "Xbox One Entertainment Apps",
+      "role": "UX / UI Designer at Agile Content",
       "significance": "Four VOD experiences designed for one living-room platform generation.",
       "alt": "GloboSat Play home screen for Xbox One"
     },
     "sky-online": {
       "name": "SKY Online",
+      "role": "UX / UI Designer, prototype owner",
       "significance": "A complete web prototype that progressed into a product initiative.",
       "alt": "SKY Online web home interface"
     },
     "microsoft-gpa": {
       "name": "Microsoft / GPA",
+      "role": "Web Designer / Interactive Developer",
       "significance": "Silverlight expertise translated into an enterprise product opportunity.",
       "alt": "Microsoft-supported GPA interactive dashboard"
     },
     "xelix": {
       "name": "Xelix",
+      "role": "Front-End Tech Lead",
       "significance": "Front-end architecture, platform modernization and team leadership.",
       "alt": "Abstract architecture composition representing the Xelix leadership chapter"
     }

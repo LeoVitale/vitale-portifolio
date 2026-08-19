@@ -253,6 +253,7 @@ T16 → T17 → T18
 
 ### T7: Create the Selected Work Mosaic
 
+**Status**: Complete
 **What**: Implement the five-item asymmetric 12-column editorial mosaic with NET NOW as the desktop hero item, localized metadata, responsive stacked cards, and links to the four priority cases.
 **Where**: `src/components/home/SelectedWork.tsx`
 **Depends on**: T6
@@ -266,15 +267,15 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] NET NOW, Xbox One, SKY Online, Microsoft/GPA, and Xelix render in the required order and hierarchy.
-- [ ] Every card shows project, period, role, and editorial significance.
-- [ ] Four priority cards reach the equivalent localized case routes.
-- [ ] NET NOW is the largest item at 1440 px.
-- [ ] Cards use flat dark surfaces and hairlines without shadows; yellow remains reserved for active/primary emphasis.
-- [ ] Required metadata remains visible without hover.
-- [ ] Cards stack without page overflow at 390 px.
-- [ ] At least 6 tagged E2E tests cover content, links, and both viewports.
-- [ ] Test count increases by at least 6 and does not decrease.
+- [x] NET NOW, Xbox One, SKY Online, Microsoft/GPA, and Xelix render in the required order and hierarchy.
+- [x] Every card shows project, period, role, and editorial significance.
+- [x] Four priority cards reach the equivalent localized case routes.
+- [x] NET NOW is the largest item at 1440 px.
+- [x] Cards use flat dark surfaces and hairlines without shadows; yellow remains reserved for active/primary emphasis.
+- [x] Required metadata remains visible without hover.
+- [x] Cards stack without page overflow at 390 px.
+- [x] At least 6 tagged E2E tests cover content, links, and both viewports.
+- [x] Test count increases by at least 6 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick

@@ -256,11 +256,11 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-06 | P1: Navigation | Execute | Complete |
 | PORT-07 | P1: Navigation | Execute | Complete |
 | PORT-08 | P1: Navigation | Execute | Complete |
-| PORT-09 | P1: Selected Work | Tasks | In Tasks |
-| PORT-10 | P1: Selected Work | Tasks | In Tasks |
-| PORT-11 | P1: Selected Work | Tasks | In Tasks |
-| PORT-12 | P1: Selected Work | Tasks | In Tasks |
-| PORT-13 | P1: Selected Work | Tasks | In Tasks |
+| PORT-09 | P1: Selected Work | Execute | Complete |
+| PORT-10 | P1: Selected Work | Execute | Complete |
+| PORT-11 | P1: Selected Work | Execute | Complete |
+| PORT-12 | P1: Selected Work | Execute | Complete |
+| PORT-13 | P1: Selected Work | Execute | Complete |
 | PORT-14 | P1: Timeline | Tasks | In Tasks |
 | PORT-15 | P1: Timeline | Tasks | In Tasks |
 | PORT-16 | P1: Timeline | Tasks | In Tasks |
