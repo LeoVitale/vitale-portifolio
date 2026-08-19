@@ -1,0 +1,11 @@
+.agents
+.claude
+.cursor
+.specs
+briefing
+design-system
+e2e
+playwright-report
+prototype
+test-results
+playwright.config.ts
