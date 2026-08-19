@@ -117,8 +117,8 @@ test('@T12 renders all six NET NOW images in the approved order', async ({ page 
     elements.map((element) => element.getAttribute('src')),
   )
   expect(sources).toEqual([
-    '/assets/projects/net-now/player-aovivo-web.webp',
     '/assets/projects/net-now/home-web-mouse-over.webp',
+    '/assets/projects/net-now/player-aovivo-web.webp',
     '/assets/projects/net-now/home-web-kids-personagem.webp',
     '/assets/projects/net-now/home-web-programas-tv.webp',
     '/assets/projects/net-now/grade-programacao.webp',
@@ -126,7 +126,7 @@ test('@T12 renders all six NET NOW images in the approved order', async ({ page 
   ])
 })
 
-test('@T12 gives the supplied player image primary visual emphasis', async ({ page }) => {
+test('@T12 gives the supplied home image primary visual emphasis', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 })
   await page.goto('/en/work/net-now')
 
@@ -134,7 +134,7 @@ test('@T12 gives the supplied player image primary visual emphasis', async ({ pa
   const firstWidth = await items.nth(0).evaluate((element) => element.getBoundingClientRect().width)
   const secondWidth = await items.nth(1).evaluate((element) => element.getBoundingClientRect().width)
   expect(firstWidth).toBeGreaterThan(secondWidth)
-  await expect(items.nth(0).locator('img')).toHaveAttribute('alt', /live-player interface/)
+  await expect(items.nth(0).locator('img')).toHaveAttribute('alt', /home interface/)
 })
 
 test('@T12 keeps NET NOW claims attributed and every image alt localized', async ({ page }) => {

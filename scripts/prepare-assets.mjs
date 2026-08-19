@@ -14,6 +14,8 @@ const resumeSource = path.join(
 )
 const resumeDestination = path.join(root, 'public', 'resume', 'leonardo-vitale-resume-en.pdf')
 
+const approvedImageCount = 82
+
 const projectFolders = new Map([
   ['Microsoft-WeFit', 'microsoft-gpa'],
   ['Net_Now', 'net-now'],
@@ -23,6 +25,7 @@ const projectFolders = new Map([
   ['Windows 8', 'sky-online-windows8'],
   ['Xbox 360', 'xbox-360'],
   ['Xbox One', 'xbox-one'],
+  ['xelix', 'xelix'],
 ])
 
 const imageExtensions = new Set(['.jpeg', '.jpg', '.png'])
@@ -86,8 +89,8 @@ function destinationFor(sourcePath, usedPaths) {
 
 async function prepareAssets() {
   const sourceImages = await collectImages(sourceRoot)
-  if (sourceImages.length !== 80) {
-    throw new Error(`Expected 80 approved images, found ${sourceImages.length}`)
+  if (sourceImages.length !== approvedImageCount) {
+    throw new Error(`Expected ${approvedImageCount} approved images, found ${sourceImages.length}`)
   }
 
   await rm(destinationRoot, { force: true, recursive: true })

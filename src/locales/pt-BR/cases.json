@@ -16,8 +16,8 @@
   "projects": {
     "net-now": {
       "title": "NET NOW",
-      "imageAlt": "Interface do player ao vivo do NET NOW com controles de vídeo e informações da programação.",
-      "previewAlt": "Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.",
+      "imageAlt": "Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.",
+      "playerAlt": "Interface do player ao vivo do NET NOW com controles de vídeo e informações da programação.",
       "kidsAlt": "Interface infantil do NET NOW para Hora de Aventura com temporadas, episódios e filmes.",
       "programmesAlt": "Catálogo de programas do NET NOW com coleções ao vivo, adicionadas recentemente e por canal.",
       "scheduleAlt": "Grade de televisão ao vivo do NET NOW organizada por data, horário e canal.",

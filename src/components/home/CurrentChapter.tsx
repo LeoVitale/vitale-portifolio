@@ -1,11 +1,22 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import { casePreviewAssets, projects } from '../../content/portfolio'
 import { localizedPath } from '../../content/routes'
 import { useLocaleContext } from '../../i18n/LocaleContext'
+
+function getXelixChapterAssets() {
+  const project = projects.find((item) => item.id === 'xelix')
+  if (!project?.featuredAsset) {
+    throw new Error('Xelix featured asset is required for the current chapter')
+  }
+
+  return [project.featuredAsset, ...(casePreviewAssets.xelix ?? [])]
+}
 
 export function CurrentChapter() {
   const { locale } = useLocaleContext()
   const { t } = useTranslation(['home', 'common'])
+  const visuals = getXelixChapterAssets()
 
   return (
     <>
@@ -20,11 +31,17 @@ export function CurrentChapter() {
             <span>{t('current.metricNote')}</span>
           </div>
         </div>
-        <div aria-hidden="true" className="current-chapter__abstract">
-          <span>React + TypeScript</span>
-          <span>Clean Architecture</span>
-          <span>Team standards</span>
-          <span>AI-assisted workflows</span>
+        <div className="current-chapter__visual">
+          {visuals.map((asset) => (
+            <img
+              alt={t(asset.altKey)}
+              height={asset.height}
+              key={asset.src}
+              loading="lazy"
+              src={asset.src}
+              width={asset.width}
+            />
+          ))}
         </div>
       </section>
       <section aria-labelledby="about-preview-title" className="about-preview">

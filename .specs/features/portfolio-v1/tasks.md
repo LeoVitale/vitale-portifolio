@@ -100,7 +100,7 @@ T16 → T17 → T18
 ### T2: Prepare and Version Historical Assets
 
 **Status**: Complete
-**What**: Add a repeatable asset preparation script that copies the 80 approved images into normalized public case folders, records dimensions, generates WebP derivatives, and copies the current English resume PDF.
+**What**: Add a repeatable asset preparation script that copies the 82 approved images into normalized public case folders, records dimensions, generates WebP derivatives, and copies the current English resume PDF.
 **Where**: `scripts/prepare-assets.mjs`
 **Depends on**: T1
 **Reuses**: `briefing/portifolio/`, `briefing/ASSETS.md`, and the current resume PDF.
@@ -113,7 +113,7 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [x] `pnpm assets:prepare` produces exactly 80 original image entries in the manifest.
+- [x] `pnpm assets:prepare` produces exactly 82 original image entries in the manifest.
 - [x] Destination names are normalized and stable across repeated runs.
 - [x] Each manifest item includes original path, optimized path, width, and height.
 - [x] Representative original and WebP files from each P1 case return HTTP 200 in at least 5 tagged E2E checks.
@@ -314,10 +314,10 @@ T16 → T17 → T18
 ### T9: Create the Current Chapter and About Preview
 
 **Status**: Complete
-**What**: Implement the Xelix leadership chapter and About preview using authorized abstract visuals, supported metrics, and links to the localized About route.
+**What**: Implement the Xelix leadership chapter and About preview using authorized Helpdesk and Reconciliation screenshots, supported metrics, and links to the localized About route.
 **Where**: `src/components/home/CurrentChapter.tsx`
 **Depends on**: T8
-**Reuses**: Current resume facts, Xelix translations, and abstract visual tokens.
+**Reuses**: Current resume facts, Xelix translations, and authorized product screens.
 **Requirement**: PORT-02, PORT-24, PORT-25, PORT-26, PORT-27
 
 **Tools**:
@@ -328,7 +328,7 @@ T16 → T17 → T18
 **Done when**:
 
 - [x] Xelix content communicates architecture, leadership, and current technical direction.
-- [x] No internal or fabricated product screenshot appears.
+- [x] Only the authorized Helpdesk and Reconciliation screenshots appear.
 - [x] Only resume-supported metrics appear.
 - [x] Personal ownership and team outcomes use the correct attribution.
 - [x] About preview reaches the equivalent localized About route.

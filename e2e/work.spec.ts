@@ -28,6 +28,10 @@ test('@T10 exposes four case links while Xelix remains non-detail content', asyn
     )
   }
   await expect(page.locator('[data-project="xelix"]').getByRole('link')).toHaveCount(0)
+  await expect(page.locator('[data-project="xelix"] img')).toHaveAttribute(
+    'src',
+    /\/assets\/projects\/xelix\/helpdesk\.webp$/,
+  )
 })
 
 test('@T10 does not present deferred archive work as completed P1 routes', async ({ page }) => {

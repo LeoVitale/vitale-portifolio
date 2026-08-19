@@ -13,10 +13,10 @@ const manifest = JSON.parse(
   await readFile(new URL('../public/assets/projects/manifest.json', import.meta.url), 'utf8'),
 ) as { assets: AssetManifestItem[] }
 
-test('@T2 publishes an 80-image manifest with stable geometry', async () => {
-  expect(manifest.assets).toHaveLength(80)
-  expect(new Set(manifest.assets.map(({ originalPath }) => originalPath)).size).toBe(80)
-  expect(new Set(manifest.assets.map(({ optimizedPath }) => optimizedPath)).size).toBe(80)
+test('@T2 publishes an 82-image manifest with stable geometry', async () => {
+  expect(manifest.assets).toHaveLength(82)
+  expect(new Set(manifest.assets.map(({ originalPath }) => originalPath)).size).toBe(82)
+  expect(new Set(manifest.assets.map(({ optimizedPath }) => optimizedPath)).size).toBe(82)
 
   for (const asset of manifest.assets) {
     expect(asset.width).toBeGreaterThan(0)
@@ -24,7 +24,7 @@ test('@T2 publishes an 80-image manifest with stable geometry', async () => {
   }
 })
 
-for (const project of ['microsoft-gpa', 'net-now', 'sky-online', 'xbox-one']) {
+for (const project of ['microsoft-gpa', 'net-now', 'sky-online', 'xbox-one', 'xelix']) {
   test(`@T2 serves an original and WebP asset for ${project}`, async ({ request }) => {
     const asset = manifest.assets.find((item) => item.project === project)
     if (!asset) {

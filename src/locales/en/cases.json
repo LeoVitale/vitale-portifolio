@@ -16,8 +16,8 @@
   "projects": {
     "net-now": {
       "title": "NET NOW",
-      "imageAlt": "NET NOW live-player interface with video controls and programming information.",
-      "previewAlt": "NET NOW home interface showing expanded programme details over the catalogue.",
+      "imageAlt": "NET NOW home interface showing expanded programme details over the catalogue.",
+      "playerAlt": "NET NOW live-player interface with video controls and programming information.",
       "kidsAlt": "NET NOW kids interface for Adventure Time with seasons, episodes and films.",
       "programmesAlt": "NET NOW programme catalogue with live, recently added and channel collections.",
       "scheduleAlt": "NET NOW live television schedule organized by date, time and channel.",

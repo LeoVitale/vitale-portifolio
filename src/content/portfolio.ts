@@ -15,9 +15,9 @@ export const projects: readonly Project[] = [
     tags: ['React', 'JavaScript', 'UX', 'VOD'],
     status: 'shipped',
     featuredAsset: {
-      src: '/assets/projects/net-now/player-aovivo-web.webp',
+      src: '/assets/projects/net-now/home-web-mouse-over.webp',
       width: 1920,
-      height: 1080,
+      height: 2953,
       altKey: 'projects.net-now.alt',
     },
     translationKey: 'projects.net-now',
@@ -75,6 +75,12 @@ export const projects: readonly Project[] = [
     role: 'Front-End Tech Lead',
     tags: ['React', 'TypeScript', 'Architecture', 'Leadership'],
     status: 'leadership',
+    featuredAsset: {
+      src: '/assets/projects/xelix/helpdesk.webp',
+      width: 1440,
+      height: 800,
+      altKey: 'projects.xelix.alt',
+    },
     translationKey: 'projects.xelix',
   },
 ]
@@ -102,10 +108,10 @@ export const projectBySlug = new Map(
 export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[]>> = {
   'net-now': [
     {
-      src: '/assets/projects/net-now/home-web-mouse-over.webp',
+      src: '/assets/projects/net-now/player-aovivo-web.webp',
       width: 1920,
-      height: 2953,
-      altKey: 'projects.net-now.previewAlt',
+      height: 1080,
+      altKey: 'projects.net-now.playerAlt',
     },
     {
       src: '/assets/projects/net-now/home-web-kids-personagem.webp',
@@ -340,6 +346,14 @@ export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[
       width: 1440,
       height: 900,
       altKey: 'projects.microsoft-gpa.weatherAlt',
+    },
+  ],
+  xelix: [
+    {
+      src: '/assets/projects/xelix/reconciliation.webp',
+      width: 2880,
+      height: 1560,
+      altKey: 'projects.xelix.reconciliationAlt',
     },
   ],
 }

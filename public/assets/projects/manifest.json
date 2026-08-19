@@ -719,6 +719,24 @@
       "optimizedPath": "/assets/projects/xbox-one/vivo-play/9.webp",
       "width": 1920,
       "height": 1080
+    },
+    {
+      "id": "xelix-helpdesk",
+      "project": "xelix",
+      "sourcePath": "xelix/helpdesk.png",
+      "originalPath": "/assets/projects/xelix/helpdesk.png",
+      "optimizedPath": "/assets/projects/xelix/helpdesk.webp",
+      "width": 1440,
+      "height": 800
+    },
+    {
+      "id": "xelix-reconciliation",
+      "project": "xelix",
+      "sourcePath": "xelix/reconciliation.png",
+      "originalPath": "/assets/projects/xelix/reconciliation.png",
+      "optimizedPath": "/assets/projects/xelix/reconciliation.webp",
+      "width": 2880,
+      "height": 1560
     }
   ]
 }

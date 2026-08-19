@@ -233,6 +233,10 @@
   color: var(--color-primary);
 }
 
+.project-card--xelix .project-card__visual img {
+  object-position: top left;
+}
+
 .career-timeline {
   scroll-margin-top: var(--space-8);
 }
@@ -334,24 +338,23 @@
   font-size: 0.875rem;
 }
 
-.current-chapter__abstract {
+.current-chapter__visual {
   grid-column: 9 / -1;
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: var(--space-3);
+  margin: 0;
 }
 
-.current-chapter__abstract span {
-  padding: var(--space-4);
-  border: 1px solid var(--color-hairline-strong);
-  border-radius: var(--radius-button);
+.current-chapter__visual img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-card);
   background: var(--color-surface-card);
-  color: var(--color-body-strong);
-  font-weight: 600;
-}
-
-.current-chapter__abstract span:nth-child(2) {
-  border-color: var(--color-primary);
 }
 
 .about-preview {
@@ -581,6 +584,36 @@
 
 .case-gallery [role='status'] {
   margin-block-end: 0;
+  color: var(--color-body);
+  font-size: 0.875rem;
+}
+
+.case-carousel {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.case-carousel__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.case-carousel__controls button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding-inline: var(--space-4);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-button);
+  background: var(--color-surface-card);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.case-carousel__controls p {
+  margin: 0;
   color: var(--color-body);
   font-size: 0.875rem;
 }
@@ -895,7 +928,7 @@
   }
 
   .current-chapter__copy,
-  .current-chapter__abstract {
+  .current-chapter__visual {
     grid-column: 1;
   }
 
@@ -942,6 +975,17 @@
     gap: var(--space-8);
   }
 
+  .case-carousel__controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .case-carousel__controls p {
+    grid-column: 1 / -1;
+    order: -1;
+    text-align: center;
+  }
+
   .case-study__next {
     padding: var(--space-8) var(--space-6);
   }
@@ -978,5 +1022,12 @@
 @media (prefers-reduced-motion: reduce) {
   .project-card:hover .project-card__visual img {
     transform: none;
+  }
+
+  .case-carousel,
+  .case-carousel * {
+    transform: none;
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
   }
 }

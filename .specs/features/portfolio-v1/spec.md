@@ -24,7 +24,7 @@ Explicitly excluded. Documented to prevent scope creep.
 | Contact form or personal-data collection | This requires privacy, spam prevention, and operations decisions outside this release. |
 | Analytics and production monitoring | These are publication concerns after the prototype is validated. |
 | Telenor case | Leonardo's role and the source material are not confirmed. |
-| Internal Xelix screenshots or unapproved metrics | They may expose confidential information. |
+| Unapproved Xelix screenshots or unpublished metrics | Confidential product material remains excluded. Helpdesk and Reconciliation screenshots were explicitly supplied for publication. |
 | Xbox 360, Windows 8, CNA, and Video Commerce detail pages | These archive cases are P2 after the priority cases. |
 | Theme selector or automatic light theme | The MVP uses one fixed editorial dark theme. |
 | ClickHouse product-specific UI, SQL mockups, or database motifs | The reference supplies visual grammar, not product content to copy. |
@@ -42,7 +42,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | --- | --- | --- | --- |
 | Public title | Front-End Tech Lead | Leonardo selected this title for the MVP. | y |
 | Public contact | Publish the current resume email and phone number | Leonardo selected both current contact channels. | y |
-| Historical assets | Copy the 80 source images from `briefing/portifolio/` into a tracked public asset structure and generate optimized derivatives | Leonardo approved versioning and publishing the supplied historical screenshots. | y |
+| Historical assets | Copy the 82 source images from `briefing/portifolio/` (80 historical + 2 authorized Xelix screens) into a tracked public asset structure and generate optimized derivatives | Leonardo approved versioning and publishing the supplied screenshots, including Helpdesk and Reconciliation. | y |
 | First locale visit | Use the browser language when supported, then fall back to `pt-BR` | Leonardo selected browser-based first-visit localization. | y |
 | Locale persistence | Store the visitor's explicit language choice and use locale-prefixed URLs | Leonardo selected remembered language behavior and the PRD requires shareable locale URLs. | y |
 | Resume download | Offer the supplied English PDF in both locales; render localized resume content in HTML | Only the English PDF exists and Leonardo approved using it in both locales. | y |
@@ -163,7 +163,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 
 1. **PORT-23** — IF an exact date is not supported by the source hierarchy THEN the system SHALL use a year range or “circa” equivalent in the active locale.
 2. **PORT-24** — IF a numeric metric lacks resume support or explicit approval THEN the system SHALL omit that metric.
-3. **PORT-25** — WHERE Xelix content is rendered the system SHALL use authorized abstract material and SHALL omit unapproved internal screenshots.
+3. **PORT-25** — WHERE Xelix content is rendered the system SHALL use only the authorized Helpdesk and Reconciliation product screenshots and SHALL omit any other internal screenshots.
 4. **PORT-26** — WHILE content describes personal ownership the system SHALL use first-person ownership language only for responsibilities supported by the source hierarchy.
 5. **PORT-27** — WHILE content describes a collective outcome the system SHALL attribute the outcome to the team.
 
@@ -308,5 +308,5 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 - [ ] Every P1 route remains directly addressable and locale switching preserves the equivalent page.
 - [ ] No unsupported metric, fabricated screenshot, or incorrect shipped-product claim appears.
 - [ ] Every P1 page passes the 390 px, 1440 px, keyboard, reduced-motion, and WCAG 2.2 AA checks defined above.
-- [ ] The 80 supplied historical images are copied into the tracked public asset structure, with optimized derivatives used where practical.
+- [ ] The 82 supplied images are copied into the tracked public asset structure, with optimized derivatives used where practical.
 - [ ] Build, lint, specification-derived tests, and manual visual validation pass before completion.

@@ -26,7 +26,7 @@
       "name": "NET NOW",
       "role": "Front-End Tech Lead + Líder de UX",
       "significance": "O ponto de virada da liderança em UX para a engenharia React.",
-      "alt": "Interface do player ao vivo do NET NOW"
+      "alt": "Interface inicial do NET NOW com detalhes expandidos de um programa"
     },
     "xbox-one": {
       "name": "Aplicativos de entretenimento para Xbox One",
@@ -50,7 +50,8 @@
       "name": "Xelix",
       "role": "Front-End Tech Lead",
       "significance": "Arquitetura front-end, modernização de plataforma e liderança de equipe.",
-      "alt": "Composição abstrata de arquitetura representando o capítulo de liderança na Xelix"
+      "alt": "Caixa de entrada do Helpdesk da Xelix para tickets de contas a pagar",
+      "reconciliationAlt": "Painel de reconciliação de fornecedores da Xelix"
     }
   },
   "timeline": {

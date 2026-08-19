@@ -18,5 +18,13 @@
 - **Date**: 2026-08-18
 - **Status**: active
 
+### AD-003
+- **Decision**: Publish the two Xelix product screens Leonardo placed in `briefing/portifolio/xelix/` — Helpdesk and Reconciliation — on the selected-work mosaic and current-chapter visual. Keep Xelix as a non-detail leadership card with no case route.
+- **Reason**: Leonardo supplied the screenshots as authorized portfolio material, replacing the earlier abstract-only constraint for this chapter.
+- **Trade-off**: The leadership chapter now shows product UI instead of typographic tokens; any further Xelix screens remain unpublished until similarly supplied.
+- **Scope**: Home mosaic, Work leadership card, current-chapter visual, asset pipeline, and PORT-25.
+- **Date**: 2026-08-19
+- **Status**: active
+
 ## Handoff
 

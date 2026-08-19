@@ -78,6 +78,14 @@ test('@T7 renders the five selected projects in editorial order', async ({ page 
     'Xelix',
   ])
   await expect(cards).toHaveCount(5)
+  await expect(page.locator('[data-project="xelix"] img')).toHaveAttribute(
+    'src',
+    /\/assets\/projects\/xelix\/helpdesk\.webp$/,
+  )
+  await expect(page.locator('[data-project="xelix"] img')).toHaveAttribute(
+    'alt',
+    'Xelix Helpdesk inbox for accounts payable tickets',
+  )
 })
 
 test('@T7 keeps period, role and significance visible on every card', async ({ page }) => {
@@ -209,12 +217,23 @@ test('@T9 communicates the current architecture and leadership direction', async
   await expect(current).toContainText('mentoring and technical strategy')
 })
 
-test('@T9 uses an authorized abstract visual without product screenshots', async ({ page }) => {
+test('@T9 uses the authorized Helpdesk and Reconciliation screenshots', async ({ page }) => {
   await page.goto('/en')
   const current = page.locator('.current-chapter')
+  const images = current.locator('img')
 
-  await expect(current.locator('img')).toHaveCount(0)
-  await expect(current.locator('.current-chapter__abstract')).toHaveAttribute('aria-hidden', 'true')
+  await expect(images).toHaveCount(2)
+  await expect(images.nth(0)).toHaveAttribute('src', /\/assets\/projects\/xelix\/helpdesk\.webp$/)
+  await expect(images.nth(0)).toHaveAttribute('alt', 'Xelix Helpdesk inbox for accounts payable tickets')
+  await expect(images.nth(1)).toHaveAttribute('src', /\/assets\/projects\/xelix\/reconciliation\.webp$/)
+  await expect(images.nth(1)).toHaveAttribute('alt', 'Xelix vendor reconciliation dashboard')
+  await expect(current.locator('.current-chapter__abstract')).toHaveCount(0)
+
+  await page.goto('/pt-br')
+  await expect(page.locator('.current-chapter img').nth(0)).toHaveAttribute(
+    'alt',
+    'Caixa de entrada do Helpdesk da Xelix para tickets de contas a pagar',
+  )
 })
 
 test('@T9 publishes only the supported metric with team attribution', async ({ page }) => {

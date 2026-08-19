@@ -8,7 +8,7 @@
 
 ## Feature Boundary
 
-The feature delivers the bilingual portfolio MVP in React, TypeScript, and Vite. It includes Home, Work, a career timeline, four priority case pages, About/Resume, global navigation, locale handling, responsive behavior, and accessibility. It excludes backend capabilities, archive case pages, analytics, Telenor, and unapproved Xelix material.
+The feature delivers the bilingual portfolio MVP in React, TypeScript, and Vite. It includes Home, Work, a career timeline, four priority case pages, About/Resume, global navigation, locale handling, responsive behavior, and accessibility. It excludes backend capabilities, archive case pages, analytics, Telenor, and unapproved Xelix material beyond the authorized Helpdesk and Reconciliation screens.
 
 ---
 
@@ -23,7 +23,7 @@ The feature delivers the bilingual portfolio MVP in React, TypeScript, and Vite.
 
 ### Historical assets
 
-- The 80 historical images are available under `briefing/portifolio/`.
+- The 82 images are available under `briefing/portifolio/`, including two authorized Xelix product screens.
 - Copy the images into a tracked public asset structure for the portfolio.
 - Generate optimized derivatives where practical while preserving the supplied originals as source material.
 - Leonardo approved versioning and publishing these supplied assets in the portfolio.
