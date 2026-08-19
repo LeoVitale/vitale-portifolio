@@ -1,0 +1,131 @@
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  inset-block-start: var(--space-3);
+  inset-inline-start: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-button);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--color-hairline);
+  background: var(--color-canvas);
+}
+
+.site-header__inner {
+  min-height: 4rem;
+  align-items: center;
+}
+
+.wordmark {
+  grid-column: 1 / span 3;
+  color: var(--color-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-navigation {
+  grid-column: 4 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-6);
+}
+
+.primary-navigation > a {
+  position: relative;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-body-strong);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary-navigation > a:hover {
+  color: var(--color-ink);
+}
+
+.menu-toggle {
+  display: none;
+  min-width: 4.5rem;
+  min-height: 2.75rem;
+  border: 1px solid var(--color-hairline-strong);
+  border-radius: var(--radius-button);
+  background: var(--color-surface-card);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.language-selector {
+  display: flex;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.language-selector button {
+  min-height: 2.75rem;
+  padding-inline: var(--space-3);
+  border-radius: var(--radius-button);
+  background: transparent;
+  color: var(--color-body);
+  cursor: pointer;
+}
+
+.language-selector button[aria-pressed='true'] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 47.99rem) {
+  .site-header__inner {
+    grid-template-columns: 1fr auto;
+    padding-block: var(--space-2);
+  }
+
+  .wordmark {
+    grid-column: 1;
+  }
+
+  .menu-toggle {
+    grid-column: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primary-navigation {
+    grid-column: 1 / -1;
+    display: none;
+    align-items: stretch;
+    padding-block: var(--space-4);
+    border-top: 1px solid var(--color-hairline);
+  }
+
+  .primary-navigation[data-open='true'] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .primary-navigation > a {
+    min-height: 2.75rem;
+  }
+
+  .language-selector {
+    flex-wrap: wrap;
+    padding-block-start: var(--space-2);
+  }
+}

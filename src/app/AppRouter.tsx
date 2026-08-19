@@ -1,19 +1,20 @@
-import { createContext, useContext, useEffect, type ReactElement } from 'react'
+import { useEffect, type ReactElement } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   BrowserRouter,
   Link,
   Navigate,
-  Outlet,
   Route,
   Routes,
   useLocation,
   useNavigate,
   useParams,
 } from 'react-router-dom'
+import { SiteLayout } from '../components/layout/SiteLayout'
 import { localizedPath } from '../content/routes'
 import type { Locale } from '../content/types'
 import i18n from '../i18n/config'
+import { LocaleContext, useLocaleContext } from '../i18n/LocaleContext'
 import {
   readStoredLocale,
   resolveInitialLocale,
@@ -21,17 +22,11 @@ import {
   writeStoredLocale,
 } from '../i18n/locale'
 
-const LocaleContext = createContext<Locale>('pt-BR')
 const prioritySlugs = new Set(['net-now', 'xbox-one', 'sky-online', 'microsoft-gpa'])
-
-function useActiveLocale() {
-  return useContext(LocaleContext)
-}
 
 function LocaleBoundary({ locale }: { locale: Locale }) {
   const location = useLocation()
   const navigate = useNavigate()
-  const { t } = useTranslation('common')
 
   useEffect(() => {
     document.documentElement.lang = locale
@@ -44,26 +39,8 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
   }
 
   return (
-    <LocaleContext.Provider value={locale}>
-      <fieldset aria-label={t('language.label')}>
-        <button
-          aria-pressed={locale === 'pt-BR'}
-          onClick={() => selectLocale('pt-BR')}
-          type="button"
-        >
-          {t('language.pt-BR')}
-        </button>
-        <button
-          aria-pressed={locale === 'en'}
-          onClick={() => selectLocale('en')}
-          type="button"
-        >
-          {t('language.en')}
-        </button>
-      </fieldset>
-      <main id="main-content">
-        <Outlet />
-      </main>
+    <LocaleContext.Provider value={{ locale, selectLocale }}>
+      <SiteLayout />
     </LocaleContext.Provider>
   )
 }
@@ -91,7 +68,7 @@ function CasePlaceholder() {
 }
 
 function NotFoundPage() {
-  const locale = useActiveLocale()
+  const { locale } = useLocaleContext()
   const { t } = useTranslation('common')
   return (
     <>

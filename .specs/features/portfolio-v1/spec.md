@@ -252,10 +252,10 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-02 | P1: Positioning | Tasks | In Tasks |
 | PORT-03 | P1: Positioning | Tasks | In Tasks |
 | PORT-04 | P1: Positioning | Tasks | In Tasks |
-| PORT-05 | P1: Navigation | Tasks | In Tasks |
-| PORT-06 | P1: Navigation | Tasks | In Tasks |
+| PORT-05 | P1: Navigation | Execute | Complete |
+| PORT-06 | P1: Navigation | Execute | Complete |
 | PORT-07 | P1: Navigation | Execute | Complete |
-| PORT-08 | P1: Navigation | Tasks | In Tasks |
+| PORT-08 | P1: Navigation | Execute | Complete |
 | PORT-09 | P1: Selected Work | Tasks | In Tasks |
 | PORT-10 | P1: Selected Work | Tasks | In Tasks |
 | PORT-11 | P1: Selected Work | Tasks | In Tasks |
@@ -291,11 +291,11 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-42 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-43 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-44 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-45 | P1: Responsive Accessibility | Tasks | In Tasks |
+| PORT-44 | P1: Responsive Accessibility | Execute | Complete |
+| PORT-45 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-46 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-47 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-48 | P1: Responsive Accessibility | Tasks | In Tasks |
+| PORT-48 | P1: Responsive Accessibility | Execute | Complete |
 
 **Coverage:** 48 total, 48 mapped to tasks, 0 unmapped.
 

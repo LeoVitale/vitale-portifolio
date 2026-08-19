@@ -189,6 +189,7 @@ T16 → T17 → T18
 
 ### T5: Build the Semantic Editorial Shell
 
+**Status**: Complete
 **What**: Implement the adapted ClickHouse-inspired black/yellow tokens, Inter scale, semantic site layout, global navigation, language selector, skip link, footer, focus treatment, and responsive mobile navigation.
 **Where**: `src/components/layout/SiteLayout.tsx`
 **Depends on**: T4
@@ -202,16 +203,16 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Header, navigation, main, and footer landmarks render on every route.
-- [ ] Tokens implement the approved near-black canvas, electric-yellow single accent, flat surfaces, Inter typography, spacing, and radius scales.
-- [ ] Desktop content uses a centered 1280 px maximum and 12-column grid.
-- [ ] No gradients, shadows, glass effects, or ClickHouse-specific database motifs appear.
-- [ ] Work, Timeline, About, Resume, Contact, and both languages are keyboard reachable in DOM order.
-- [ ] Focus indicators meet the specified 3:1 contrast requirement.
-- [ ] The layout uses the fixed dark theme regardless of operating-system theme.
-- [ ] Mobile navigation is usable at 390 px without horizontal page scrolling.
-- [ ] At least 6 tagged E2E tests cover landmarks, navigation, language control, keyboard focus, and mobile behavior.
-- [ ] Test count increases by at least 6 and does not decrease.
+- [x] Header, navigation, main, and footer landmarks render on every route.
+- [x] Tokens implement the approved near-black canvas, electric-yellow single accent, flat surfaces, Inter typography, spacing, and radius scales.
+- [x] Desktop content uses a centered 1280 px maximum and 12-column grid.
+- [x] No gradients, shadows, glass effects, or ClickHouse-specific database motifs appear.
+- [x] Work, Timeline, About, Resume, Contact, and both languages are keyboard reachable in DOM order.
+- [x] Focus indicators meet the specified 3:1 contrast requirement.
+- [x] The layout uses the fixed dark theme regardless of operating-system theme.
+- [x] Mobile navigation is usable at 390 px without horizontal page scrolling.
+- [x] At least 6 tagged E2E tests cover landmarks, navigation, language control, keyboard focus, and mobile behavior.
+- [x] Test count increases by at least 6 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

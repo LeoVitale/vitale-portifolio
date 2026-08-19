@@ -1,6 +1,7 @@
 {
   "brand": "Leonardo Vitale",
   "nav": {
+    "label": "Primary",
     "work": "Work",
     "timeline": "Timeline",
     "about": "About",
