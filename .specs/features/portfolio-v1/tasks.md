@@ -433,6 +433,7 @@ T16 → T17 → T18
 
 ### T13: Populate the Xbox One Case
 
+**Status**: Complete
 **What**: Add the complete bilingual Xbox One case with the 24-image gallery grouped by GloboSat Play, SKY Online, Telecine Play, and Vivo Play.
 **Where**: `src/locales/en/cases.json`
 **Depends on**: T12
@@ -446,12 +447,12 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Both locales explain the entertainment-platform context and Leonardo's supported contribution.
-- [ ] Four brand groups render with all 24 supplied images.
-- [ ] Group labels and alternative text are localized.
-- [ ] No unsupported launch or ownership claim appears.
-- [ ] At least 5 tagged E2E tests cover locales, brand groups, asset count, and attribution.
-- [ ] Test count increases by at least 5 and does not decrease.
+- [x] Both locales explain the entertainment-platform context and Leonardo's supported contribution.
+- [x] Four brand groups render with all 24 supplied images.
+- [x] Group labels and alternative text are localized.
+- [x] No unsupported launch or ownership claim appears.
+- [x] At least 5 tagged E2E tests cover locales, brand groups, asset count, and attribution.
+- [x] Test count increases by at least 5 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick

@@ -31,8 +31,27 @@
     "xbox-one": {
       "title": "Aplicativos de entretenimento para Xbox One",
       "imageAlt": "Interface inicial do GloboSat Play desenhada para Xbox One.",
+      "imageAltTemplate": "{{screen}} do {{brand}} para Xbox One.",
+      "groups": {
+        "globosat-play": "GloboSat Play",
+        "sky-online": "SKY Online",
+        "telecine-play": "Telecine Play",
+        "vivo-play": "Vivo Play"
+      },
+      "screenLabels": {
+        "home": "Tela inicial",
+        "movieDetails": "Tela de detalhes de filme",
+        "specials": "Tela de coleções especiais",
+        "alphabeticalList": "Catálogo alfabético",
+        "list": "Lista de conteúdos",
+        "seriesDetails": "Tela de detalhes de série",
+        "themes": "Tela de coleções temáticas",
+        "movieList": "Catálogo de filmes",
+        "genreList": "Catálogo por gênero",
+        "numberedFlow": "Tela da sequência numerada"
+      },
       "thesis": "Quatro marcas brasileiras de VOD desenhadas para um sistema de interação em console.",
-      "context": "Na Agile Content, o trabalho cobriu GloboSat Play, SKY Online, Telecine Play e Vivo Play na geração do Xbox One.",
+      "context": "O Xbox One chegou ao Brasil durante a estratégia da Microsoft de posicionar o console como uma central de entretenimento. Na Agile Content, trabalhei em quatro aplicativos de VOD em paralelo: GloboSat Play, SKY Online, Telecine Play e Vivo Play, equilibrando marcas distintas em um único sistema de interação.",
       "role": "Desenhei experiências de catálogo, navegação e detalhes de conteúdo para console nas quatro marcas.",
       "impact": "A suíte demonstra amplitude de sistema sem atribuir a uma pessoa a entrega coletiva.",
       "next": "O trabalho em TV conectada levou a sistemas VOD mais amplos para web."

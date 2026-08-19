@@ -31,8 +31,27 @@
     "xbox-one": {
       "title": "Xbox One Entertainment Apps",
       "imageAlt": "GloboSat Play home interface designed for Xbox One.",
+      "imageAltTemplate": "{{brand}} Xbox One interface: {{screen}}.",
+      "groups": {
+        "globosat-play": "GloboSat Play",
+        "sky-online": "SKY Online",
+        "telecine-play": "Telecine Play",
+        "vivo-play": "Vivo Play"
+      },
+      "screenLabels": {
+        "home": "home screen",
+        "movieDetails": "movie details",
+        "specials": "special collections",
+        "alphabeticalList": "alphabetical catalogue",
+        "list": "content list",
+        "seriesDetails": "series details",
+        "themes": "themed collections",
+        "movieList": "movie catalogue",
+        "genreList": "genre catalogue",
+        "numberedFlow": "numbered interface sequence"
+      },
       "thesis": "Four Brazilian VOD brands designed for one console interaction system.",
-      "context": "At Agile Content, the work covered GloboSat Play, SKY Online, Telecine Play and Vivo Play around the Xbox One generation.",
+      "context": "Xbox One arrived in Brazil during Microsoft's push to position the console as a broader entertainment hub. At Agile Content, I worked on four VOD applications in parallel: GloboSat Play, SKY Online, Telecine Play and Vivo Play, balancing distinct brands within one console interaction system.",
       "role": "I designed console-first catalog, navigation and content-detail experiences across the four brands.",
       "impact": "The suite demonstrates product-system breadth without claiming sole ownership of collective delivery.",
       "next": "The connected-TV work led into broader web VOD systems."

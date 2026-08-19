@@ -18,12 +18,26 @@ export function CaseStudyPage({ notFound }: { notFound: ReactNode }) {
   const galleryAssets = [
     project.featuredAsset,
     ...(casePreviewAssets[project.id] ?? []),
-  ].map((asset) => ({
-    src: asset.src,
-    width: asset.width,
-    height: asset.height,
-    alt: t(asset === project.featuredAsset ? `${projectKey}.imageAlt` : asset.altKey),
-  }))
+  ].map((asset) => {
+    const group = asset.groupKey
+      ? {
+          id: asset.groupKey.split('.').at(-1) ?? asset.groupKey,
+          label: t(asset.groupKey),
+        }
+      : undefined
+    return {
+      src: asset.src,
+      width: asset.width,
+      height: asset.height,
+      alt: group
+        ? t(`${projectKey}.imageAltTemplate`, {
+            brand: group.label,
+            screen: t(asset.altKey),
+          })
+        : t(asset === project.featuredAsset ? `${projectKey}.imageAlt` : asset.altKey),
+      group,
+    }
+  })
 
   return (
     <article className="case-study" data-project={project.id}>

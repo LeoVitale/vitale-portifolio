@@ -151,3 +151,71 @@ test('@T12 keeps NET NOW claims attributed and every image alt localized', async
     'Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.',
   )
 })
+
+test('@T13 publishes supported Xbox One context and contribution in both locales', async ({
+  page,
+}) => {
+  await page.goto('/en/work/xbox-one')
+  await expect(page.getByText(/four VOD applications in parallel/)).toBeVisible()
+  await expect(page.getByText(/I designed console-first catalog/)).toBeVisible()
+
+  await page.goto('/pt-br/work/xbox-one')
+  await expect(page.getByText(/quatro aplicativos de VOD em paralelo/)).toBeVisible()
+  await expect(page.getByText(/Desenhei experiências de catálogo/)).toBeVisible()
+})
+
+test('@T13 renders four localized Xbox One brand groups', async ({ page }) => {
+  await page.goto('/en/work/xbox-one')
+  await expect(page.locator('.case-gallery__group > h3')).toHaveText([
+    'GloboSat Play',
+    'SKY Online',
+    'Telecine Play',
+    'Vivo Play',
+  ])
+
+  await page.goto('/pt-br/work/xbox-one')
+  await expect(page.locator('.case-gallery__group > h3')).toHaveText([
+    'GloboSat Play',
+    'SKY Online',
+    'Telecine Play',
+    'Vivo Play',
+  ])
+})
+
+test('@T13 renders all 24 supplied Xbox One images by documented brand count', async ({
+  page,
+}) => {
+  await page.goto('/en/work/xbox-one')
+
+  await expect(page.locator('.case-gallery img')).toHaveCount(24)
+  for (const [group, count] of [
+    ['globosat-play', 7],
+    ['sky-online', 5],
+    ['telecine-play', 3],
+    ['vivo-play', 9],
+  ] as const) {
+    await expect(page.locator(`[data-gallery-group="${group}"] img`)).toHaveCount(count)
+  }
+})
+
+test('@T13 localizes group labels and meaningful Xbox One alternative text', async ({ page }) => {
+  await page.goto('/pt-br/work/xbox-one')
+
+  const alternativeTexts = await page.locator('.case-gallery img').evaluateAll((images) =>
+    images.map((image) => image.getAttribute('alt')),
+  )
+  expect(alternativeTexts).toHaveLength(24)
+  expect(alternativeTexts.every((alternativeText) => Boolean(alternativeText?.trim()))).toBe(true)
+  expect(alternativeTexts).toContain('Tela inicial do Vivo Play para Xbox One.')
+})
+
+test('@T13 avoids unsupported Xbox One launch and sole-ownership claims', async ({ page }) => {
+  await page.goto('/en/work/xbox-one')
+
+  const article = page.locator('.case-study')
+  await expect(article).toContainText(
+    'The suite demonstrates product-system breadth without claiming sole ownership',
+  )
+  await expect(article).not.toContainText('I launched')
+  await expect(article).not.toContainText('I delivered all four applications')
+})

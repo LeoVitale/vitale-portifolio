@@ -9,6 +9,7 @@ export interface ProjectAsset {
   width: number
   height: number
   altKey: string
+  groupKey?: string
 }
 
 export interface Project {

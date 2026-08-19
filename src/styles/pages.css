@@ -542,6 +542,22 @@
   gap: var(--space-12);
 }
 
+.case-gallery__group {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.case-gallery__group > h3 {
+  padding-block-end: var(--space-3);
+  border-bottom: 1px solid var(--color-hairline);
+  font-size: 1.5rem;
+}
+
+.case-gallery__sequence {
+  display: grid;
+  gap: var(--space-12);
+}
+
 .case-gallery__item {
   margin: 0;
 }
@@ -724,6 +740,10 @@
   }
 
   .case-gallery {
+    gap: var(--space-8);
+  }
+
+  .case-gallery__sequence {
     gap: var(--space-8);
   }
 
