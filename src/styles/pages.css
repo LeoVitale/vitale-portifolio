@@ -797,6 +797,23 @@
   font-size: clamp(1.125rem, 3vw, 1.5rem);
 }
 
+.not-found {
+  display: grid;
+  justify-items: start;
+  max-width: 48rem;
+}
+
+.not-found h1 {
+  margin-block-end: var(--space-4);
+}
+
+.not-found > p:not(.eyebrow) {
+  max-width: 38rem;
+  margin-block-end: var(--space-8);
+  color: var(--color-body-strong);
+  font-size: 1.125rem;
+}
+
 @media (max-width: 47.99rem) {
   .home-page {
     gap: var(--space-12);

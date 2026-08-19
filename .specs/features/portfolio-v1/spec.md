@@ -254,7 +254,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-04 | P1: Positioning | Execute | Complete |
 | PORT-05 | P1: Navigation | Execute | Complete |
 | PORT-06 | P1: Navigation | Execute | Complete |
-| PORT-07 | P1: Navigation | Execute | Complete |
+| PORT-07 | P1: Navigation | Execute | Complete (T17 verified) |
 | PORT-08 | P1: Navigation | Execute | Complete |
 | PORT-09 | P1: Selected Work | Execute | Complete |
 | PORT-10 | P1: Selected Work | Execute | Complete |
@@ -268,7 +268,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-18 | P1: Priority Cases | Execute | Complete |
 | PORT-19 | P1: Priority Cases | Execute | Complete |
 | PORT-20 | P1: Priority Cases | Execute | Complete |
-| PORT-21 | P1: Priority Cases | Execute | Complete |
+| PORT-21 | P1: Priority Cases | Execute | Complete (T17 verified) |
 | PORT-22 | P1: Priority Cases | Execute | Complete |
 | PORT-23 | P1: Editorial Integrity | Execute | Complete |
 | PORT-24 | P1: Editorial Integrity | Execute | Complete |
@@ -277,12 +277,12 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-27 | P1: Editorial Integrity | Execute | Complete |
 | PORT-28 | P1: About, Resume, Contact | Execute | Complete |
 | PORT-29 | P1: About, Resume, Contact | Execute | Complete |
-| PORT-30 | P1: About, Resume, Contact | Execute | Complete |
+| PORT-30 | P1: About, Resume, Contact | Execute | Complete (T17 verified) |
 | PORT-31 | P1: About, Resume, Contact | Execute | Complete |
 | PORT-32 | P1: About, Resume, Contact | Execute | Complete |
 | PORT-33 | P1: Bilingual Experience | Execute | Complete |
-| PORT-34 | P1: Bilingual Experience | Execute | Complete |
-| PORT-35 | P1: Bilingual Experience | Execute | Complete |
+| PORT-34 | P1: Bilingual Experience | Execute | Complete (T17 verified) |
+| PORT-35 | P1: Bilingual Experience | Execute | Complete (T17 verified) |
 | PORT-36 | P1: Bilingual Experience | Execute | Complete |
 | PORT-37 | P1: Bilingual Experience | Execute | Complete |
 | PORT-38 | P1: Bilingual Experience | Execute | Complete |

@@ -1,8 +1,6 @@
 import { useEffect, type ReactElement } from 'react'
-import { useTranslation } from 'react-i18next'
 import {
   BrowserRouter,
-  Link,
   Navigate,
   Route,
   Routes,
@@ -10,10 +8,9 @@ import {
   useNavigate,
 } from 'react-router-dom'
 import { SiteLayout } from '../components/layout/SiteLayout'
-import { localizedPath } from '../content/routes'
 import type { Locale } from '../content/types'
 import i18n from '../i18n/config'
-import { LocaleContext, useLocaleContext } from '../i18n/LocaleContext'
+import { LocaleContext } from '../i18n/LocaleContext'
 import {
   readStoredLocale,
   resolveInitialLocale,
@@ -23,6 +20,7 @@ import {
 import { AboutPage } from '../pages/AboutPage'
 import { CaseStudyPage } from '../pages/CaseStudyPage'
 import { HomePage } from '../pages/HomePage'
+import { NotFoundPage } from '../pages/NotFoundPage'
 import { WorkPage } from '../pages/WorkPage'
 
 const prioritySlugs = new Set(['net-now', 'xbox-one', 'sky-online', 'microsoft-gpa'])
@@ -45,18 +43,6 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
     <LocaleContext.Provider value={{ locale, selectLocale }}>
       <SiteLayout />
     </LocaleContext.Provider>
-  )
-}
-
-function NotFoundPage() {
-  const { locale } = useLocaleContext()
-  const { t } = useTranslation('common')
-  return (
-    <>
-      <h1>{t('notFound.title')}</h1>
-      <p>{t('notFound.description')}</p>
-      <Link to={localizedPath(locale, 'home')}>{t('actions.home')}</Link>
-    </>
   )
 }
 

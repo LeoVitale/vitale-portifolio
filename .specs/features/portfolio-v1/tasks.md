@@ -562,12 +562,12 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Unknown routes show a localized message and localized Home action.
-- [ ] Unsupported locale prefixes resolve to `pt-br`.
-- [ ] Invalid stored locale and denied storage do not break navigation.
-- [ ] Integrated image and PDF failures preserve readable content.
-- [ ] At least 7 tagged E2E tests cover every listed failure branch.
-- [ ] Test count increases by at least 7 and does not decrease.
+- [x] Unknown routes show a localized message and localized Home action.
+- [x] Unsupported locale prefixes resolve to `pt-br`.
+- [x] Invalid stored locale and denied storage do not break navigation.
+- [x] Integrated image and PDF failures preserve readable content.
+- [x] At least 7 tagged E2E tests cover every listed failure branch.
+- [x] Test count increases by at least 7 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full
