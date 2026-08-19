@@ -1,6 +1,6 @@
 .home-page {
   display: grid;
-  gap: var(--space-16);
+  gap: var(--section-gap);
 }
 
 .home-hero {

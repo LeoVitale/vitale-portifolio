@@ -286,15 +286,15 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-36 | P1: Bilingual Experience | Execute | Complete |
 | PORT-37 | P1: Bilingual Experience | Execute | Complete |
 | PORT-38 | P1: Bilingual Experience | Execute | Complete |
-| PORT-39 | P1: Bilingual Experience | Execute | In Progress (T16 complete) |
-| PORT-40 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-42 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-43 | P1: Responsive Accessibility | Execute | In Progress (T16 complete) |
+| PORT-39 | P1: Bilingual Experience | Execute | Complete |
+| PORT-40 | P1: Bilingual Experience | Execute | Complete |
+| PORT-41 | P1: Responsive Accessibility | Execute | Complete |
+| PORT-42 | P1: Responsive Accessibility | Execute | Complete |
+| PORT-43 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-44 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-45 | P1: Responsive Accessibility | Execute | Complete |
-| PORT-46 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-47 | P1: Responsive Accessibility | Execute | In Progress (T15 complete) |
+| PORT-46 | P1: Responsive Accessibility | Execute | Complete |
+| PORT-47 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-48 | P1: Responsive Accessibility | Execute | Complete |
 
 **Coverage:** 48 total, 48 mapped to tasks, 0 unmapped.

@@ -22,6 +22,7 @@ import { CaseStudyPage } from '../pages/CaseStudyPage'
 import { HomePage } from '../pages/HomePage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { WorkPage } from '../pages/WorkPage'
+import { applyPageMetadata, metadataForRoute } from './metadata'
 
 const prioritySlugs = new Set(['net-now', 'xbox-one', 'sky-online', 'microsoft-gpa'])
 
@@ -30,9 +31,9 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    document.documentElement.lang = locale
     void i18n.changeLanguage(locale)
-  }, [locale])
+    return applyPageMetadata(metadataForRoute(locale, location.pathname))
+  }, [locale, location.pathname])
 
   function selectLocale(target: Locale) {
     writeStoredLocale(window.localStorage, target)

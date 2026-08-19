@@ -590,16 +590,16 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Every P1 route passes at 390 px without horizontal page scrolling.
-- [ ] Home and cases use a centered 1280 px maximum, 12-column grid, and 96 px major-section rhythm at 1440 px.
-- [ ] Keyboard navigation reaches all required controls in DOM order.
-- [ ] Focus is 2–4 px and at least 3:1; normal text is at least 4.5:1; large text and controls are at least 3:1.
-- [ ] `lang`, localized alt text, titles, descriptions, and canonical URLs meet the specification.
-- [ ] Reduced motion removes nonessential transforms and reveal animations.
-- [ ] Longer Portuguese labels do not clip navigation or controls.
-- [ ] No shadows, gradients, glass effects, terminal motifs, SQL windows, or generic developer clichés appear.
-- [ ] At least 12 tagged E2E checks cover all P1 route categories at both viewports and accessibility states.
-- [ ] Full build, lint, translation parity, and E2E gates pass with no test-count reduction.
+- [x] Every P1 route passes at 390 px without horizontal page scrolling.
+- [x] Home and cases use a centered 1280 px maximum, 12-column grid, and 96 px major-section rhythm at 1440 px.
+- [x] Keyboard navigation reaches all required controls in DOM order.
+- [x] Focus is 2–4 px and at least 3:1; normal text is at least 4.5:1; large text and controls are at least 3:1.
+- [x] `lang`, localized alt text, titles, descriptions, and canonical URLs meet the specification.
+- [x] Reduced motion removes nonessential transforms and reveal animations.
+- [x] Longer Portuguese labels do not clip navigation or controls.
+- [x] No shadows, gradients, glass effects, terminal motifs, SQL windows, or generic developer clichés appear.
+- [x] At least 12 tagged E2E checks cover all P1 route categories at both viewports and accessibility states.
+- [x] Full build, lint, translation parity, and E2E gates pass with no test-count reduction.
 
 **Tests**: e2e
 **Gate**: build
