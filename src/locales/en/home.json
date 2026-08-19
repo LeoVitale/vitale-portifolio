@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Leonardo Vitale — Front-End Tech Lead",
+    "description": "Two decades of interface design, product engineering, React architecture and technical leadership."
+  },
+  "hero": {
+    "eyebrow": "Front-End Tech Lead",
+    "headline": "Designing interfaces. Building products. Leading front-end evolution.",
+    "description": "20+ years across UX, web design and front-end engineering — from rich-media interfaces and connected TV to React architecture, technical leadership and AI-assisted development.",
+    "imageAlt": "NET NOW live-player interface designed during Leonardo's transition into React engineering"
+  },
+  "signals": {
+    "experience": { "value": "20+ years", "label": "Design, product and front-end engineering" },
+    "react": { "value": "React since 2015", "label": "Early adoption through production VOD platforms" },
+    "leadership": { "value": "6 engineers", "label": "Architecture, delivery quality, mentoring and people management" },
+    "onboarding": { "value": "~30% faster", "label": "Resume-supported onboarding result from architecture standardization" }
+  },
+  "selectedWork": {
+    "eyebrow": "Selected work",
+    "title": "Products across technological transitions",
+    "description": "Five chapters connect historical interface work to current engineering leadership."
+  },
+  "projects": {
+    "net-now": {
+      "name": "NET NOW",
+      "significance": "The turning point from UX leadership to React engineering.",
+      "alt": "NET NOW live-player interface"
+    },
+    "xbox-one": {
+      "name": "Xbox One Entertainment Apps",
+      "significance": "Four VOD experiences designed for one living-room platform generation.",
+      "alt": "GloboSat Play home screen for Xbox One"
+    },
+    "sky-online": {
+      "name": "SKY Online",
+      "significance": "A complete web prototype that progressed into a product initiative.",
+      "alt": "SKY Online web home interface"
+    },
+    "microsoft-gpa": {
+      "name": "Microsoft / GPA",
+      "significance": "Silverlight expertise translated into an enterprise product opportunity.",
+      "alt": "Microsoft-supported GPA interactive dashboard"
+    },
+    "xelix": {
+      "name": "Xelix",
+      "significance": "Front-end architecture, platform modernization and team leadership.",
+      "alt": "Abstract architecture composition representing the Xelix leadership chapter"
+    }
+  },
+  "timeline": {
+    "eyebrow": "Career evolution",
+    "title": "Moving with the interface medium",
+    "web-design": { "label": "Web Design", "description": "Visual and interaction foundations became the entry point into product work." },
+    "silverlight": { "label": "Silverlight", "description": "Emerging rich-web expertise created visibility and enterprise opportunity." },
+    "streaming": { "label": "Streaming", "description": "Video and commerce prototypes explored interaction models before they were commonplace." },
+    "xbox": { "label": "Xbox", "description": "Console-first VOD systems connected multiple Brazilian entertainment brands." },
+    "react": { "label": "React", "description": "NET NOW united UX leadership, player design and a newly trained React team." },
+    "global-engineering": { "label": "Global Engineering", "description": "Banking, automotive and fitness products expanded the engineering chapter internationally." },
+    "architecture": { "label": "Architecture", "description": "Platform standards, Clean Architecture and team growth became the current focus." },
+    "ai": { "label": "AI", "description": "Controlled AI-assisted workflows now support code quality and engineering practice." }
+  },
+  "current": {
+    "eyebrow": "Current chapter",
+    "title": "Architecture, leadership and modernization",
+    "description": "At Xelix, I combine hands-on React and TypeScript engineering with front-end architecture, delivery quality, mentoring and technical strategy across multiple squads.",
+    "teamOutcome": "The team adopted shared architectural boundaries and stronger delivery standards.",
+    "metric": "~30% faster onboarding",
+    "metricNote": "Resume-supported result associated with architecture standardization."
+  },
+  "aboutPreview": {
+    "eyebrow": "About",
+    "title": "Design background. Engineering depth. Leadership perspective.",
+    "description": "My career connects the craft of interfaces to the systems and teams that sustain them."
+  }
+}

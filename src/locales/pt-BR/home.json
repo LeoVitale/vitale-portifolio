@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Leonardo Vitale — Front-End Tech Lead",
+    "description": "Duas décadas de design de interfaces, engenharia de produto, arquitetura React e liderança técnica."
+  },
+  "hero": {
+    "eyebrow": "Front-End Tech Lead",
+    "headline": "Desenhando interfaces. Construindo produtos. Liderando a evolução do front-end.",
+    "description": "Mais de 20 anos entre UX, web design e engenharia front-end — de interfaces rich media e TV conectada à arquitetura React, liderança técnica e desenvolvimento assistido por IA.",
+    "imageAlt": "Interface do player ao vivo do NET NOW criada durante a transição de Leonardo para engenharia React"
+  },
+  "signals": {
+    "experience": { "value": "20+ anos", "label": "Design, produto e engenharia front-end" },
+    "react": { "value": "React desde 2015", "label": "Adoção inicial em plataformas VOD de produção" },
+    "leadership": { "value": "6 engenheiros", "label": "Arquitetura, qualidade de entrega, mentoria e gestão de pessoas" },
+    "onboarding": { "value": "~30% mais rápido", "label": "Resultado documentado no currículo após padronização arquitetural" }
+  },
+  "selectedWork": {
+    "eyebrow": "Trabalhos selecionados",
+    "title": "Produtos em transições tecnológicas",
+    "description": "Cinco capítulos conectam interfaces históricas à liderança de engenharia atual."
+  },
+  "projects": {
+    "net-now": {
+      "name": "NET NOW",
+      "significance": "O ponto de virada da liderança em UX para a engenharia React.",
+      "alt": "Interface do player ao vivo do NET NOW"
+    },
+    "xbox-one": {
+      "name": "Aplicativos de entretenimento para Xbox One",
+      "significance": "Quatro experiências VOD desenhadas para uma geração de plataforma de sala.",
+      "alt": "Tela inicial do GloboSat Play para Xbox One"
+    },
+    "sky-online": {
+      "name": "SKY Online",
+      "significance": "Um protótipo web completo que avançou para uma iniciativa de produto.",
+      "alt": "Interface inicial web do SKY Online"
+    },
+    "microsoft-gpa": {
+      "name": "Microsoft / GPA",
+      "significance": "Especialização em Silverlight convertida em oportunidade de produto corporativo.",
+      "alt": "Painel interativo do GPA apoiado pela Microsoft"
+    },
+    "xelix": {
+      "name": "Xelix",
+      "significance": "Arquitetura front-end, modernização de plataforma e liderança de equipe.",
+      "alt": "Composição abstrata de arquitetura representando o capítulo de liderança na Xelix"
+    }
+  },
+  "timeline": {
+    "eyebrow": "Evolução profissional",
+    "title": "Acompanhando a evolução das interfaces",
+    "web-design": { "label": "Web Design", "description": "Fundamentos visuais e de interação abriram o caminho para o trabalho com produtos." },
+    "silverlight": { "label": "Silverlight", "description": "O domínio de uma tecnologia rich web emergente gerou visibilidade e oportunidades corporativas." },
+    "streaming": { "label": "Streaming", "description": "Protótipos de vídeo e comércio exploraram interações antes de se tornarem comuns." },
+    "xbox": { "label": "Xbox", "description": "Sistemas VOD para console conectaram várias marcas brasileiras de entretenimento." },
+    "react": { "label": "React", "description": "NET NOW reuniu liderança em UX, design do player e uma equipe recém-capacitada em React." },
+    "global-engineering": { "label": "Engenharia global", "description": "Produtos de finanças, automóveis e fitness ampliaram internacionalmente o capítulo de engenharia." },
+    "architecture": { "label": "Arquitetura", "description": "Padrões de plataforma, Clean Architecture e crescimento da equipe se tornaram o foco atual." },
+    "ai": { "label": "IA", "description": "Fluxos controlados de IA assistem hoje a qualidade de código e as práticas de engenharia." }
+  },
+  "current": {
+    "eyebrow": "Capítulo atual",
+    "title": "Arquitetura, liderança e modernização",
+    "description": "Na Xelix, combino engenharia prática em React e TypeScript com arquitetura front-end, qualidade de entrega, mentoria e estratégia técnica em várias squads.",
+    "teamOutcome": "A equipe adotou limites arquiteturais compartilhados e padrões de entrega mais fortes.",
+    "metric": "~30% de onboarding mais rápido",
+    "metricNote": "Resultado documentado no currículo e associado à padronização arquitetural."
+  },
+  "aboutPreview": {
+    "eyebrow": "Sobre",
+    "title": "Base em design. Profundidade em engenharia. Perspectiva de liderança.",
+    "description": "Minha carreira conecta o trabalho de interfaces aos sistemas e equipes que as sustentam."
+  }
+}

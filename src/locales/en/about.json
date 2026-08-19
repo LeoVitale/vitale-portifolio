@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "About and Resume — Leonardo Vitale",
+    "description": "Profile, accomplishments, experience, education and front-end expertise."
+  },
+  "eyebrow": "About / Resume",
+  "title": "Front-end leadership grounded in interface craft",
+  "profile": "I am a front-end engineer and technical leader with more than 20 years across interface design, UX, product development and enterprise front-end architecture. I moved from rich web and connected-TV platforms into React in 2015, then specialized in scaling front-end systems and teams.",
+  "accomplishmentsTitle": "Selected accomplishments",
+  "accomplishments": {
+    "architecture": "Led adoption of Clean Architecture across multiple front-end squads.",
+    "onboarding": "Reduced onboarding time by approximately 30% through architecture standardization.",
+    "standards": "Defined controller-hook, DTO-boundary, folder-structure and testing standards.",
+    "quality": "Strengthened front-end quality gates and release stability."
+  },
+  "experienceTitle": "Experience",
+  "experience": {
+    "xelix": {
+      "title": "Front-End Tech Lead",
+      "location": "London, United Kingdom",
+      "achievements": {
+        "architecture": "Leads front-end architecture, delivery quality and technical strategy across squads.",
+        "team": "Leads a team of six front-end engineers while remaining hands-on in critical React and TypeScript paths.",
+        "standards": "Drove Clean Architecture, SOLID and shared engineering standards."
+      }
+    },
+    "tacx": {
+      "title": "Senior Front-End Engineer",
+      "location": "Leiden, Netherlands",
+      "achievements": {
+        "platform": "Enhanced an indoor-cycling platform using Angular, REST APIs and custom UI solutions."
+      }
+    },
+    "carnext": {
+      "title": "Senior Front-End Engineer",
+      "location": "Amsterdam, Netherlands",
+      "achievements": {
+        "products": "Built international automotive products with React, TypeScript and Styled Components."
+      }
+    },
+    "publicis": {
+      "title": "Front-End Tech Lead",
+      "location": "London, United Kingdom",
+      "achievements": {
+        "modernization": "Led front-end modernization for Nationwide Building Society with React and Redux."
+      }
+    },
+    "agile": {
+      "title": "Front-End Lead & UX Specialist",
+      "location": "São Paulo, Brazil",
+      "achievements": {
+        "xbox": "Designed VOD experiences for the Xbox One generation.",
+        "react": "Adopted React in 2015 and helped teach it across the team.",
+        "netNow": "Led UX and front-end work for NET NOW, including the player experience."
+      }
+    }
+  },
+  "educationTitle": "Education",
+  "education": {
+    "course": "Web Development"
+  },
+  "expertiseTitle": "Expertise",
+  "contactTitle": "Contact",
+  "resumeUnavailable": "The PDF is unavailable right now. The complete localized resume remains available on this page."
+}

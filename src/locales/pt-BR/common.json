@@ -1,0 +1,39 @@
+{
+  "brand": "Leonardo Vitale",
+  "nav": {
+    "work": "Trabalhos",
+    "timeline": "Trajetória",
+    "about": "Sobre",
+    "resume": "Currículo",
+    "contact": "Contato",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Idioma",
+    "pt-BR": "Português (Brasil)",
+    "en": "English"
+  },
+  "actions": {
+    "home": "Voltar ao início",
+    "exploreWork": "Explorar trabalhos selecionados",
+    "aboutResume": "Sobre / Currículo",
+    "downloadResume": "Baixar currículo",
+    "contact": "Contato",
+    "viewCase": "Ver estudo de caso",
+    "viewAbout": "Conhecer Leonardo"
+  },
+  "skipLink": "Ir para o conteúdo principal",
+  "footer": {
+    "summary": "Arquitetura front-end, visão de produto e liderança técnica.",
+    "copyright": "Leonardo Vitale"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "Este endereço não corresponde a uma página publicada do portfólio."
+  },
+  "status": {
+    "shipped": "Produto lançado",
+    "prototype": "Protótipo que avançou para uma iniciativa de produto",
+    "leadership": "Capítulo atual de liderança"
+  }
+}

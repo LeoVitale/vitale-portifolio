@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "titleSuffix": "Case Study — Leonardo Vitale",
+    "description": "A supported account of Leonardo Vitale's role, process and product evidence."
+  },
+  "sections": {
+    "context": "Context",
+    "role": "My Role",
+    "visualStory": "Visual Story",
+    "impact": "Impact / Outcome",
+    "next": "What Changed Next"
+  },
+  "projects": {
+    "net-now": {
+      "title": "NET NOW",
+      "thesis": "The project where UX leadership, player design and React engineering converged.",
+      "context": "NET NOW became the defining transition from interface leadership into full-time front-end engineering.",
+      "role": "I led front-end and UX work, designed the player experience and participated in discovery and client approvals.",
+      "impact": "The team delivered the platform with a newly trained React group in approximately six to seven months.",
+      "next": "React became the center of the next engineering chapter."
+    },
+    "xbox-one": {
+      "title": "Xbox One Entertainment Apps",
+      "thesis": "Four Brazilian VOD brands designed for one console interaction system.",
+      "context": "At Agile Content, the work covered GloboSat Play, SKY Online, Telecine Play and Vivo Play around the Xbox One generation.",
+      "role": "I designed console-first catalog, navigation and content-detail experiences across the four brands.",
+      "impact": "The suite demonstrates product-system breadth without claiming sole ownership of collective delivery.",
+      "next": "The connected-TV work led into broader web VOD systems."
+    },
+    "sky-online": {
+      "title": "SKY Online",
+      "thesis": "A complete web prototype that progressed into a real product initiative.",
+      "context": "The prototype defined home, lists, genres, classification and content-detail states for a complete VOD experience.",
+      "role": "I designed the complete prototype screen set and owned its visual and interaction direction.",
+      "impact": "The concept moved forward beyond the proposal stage; exact production dates remain qualified.",
+      "next": "The full-screen-system work strengthened the path toward product and UX leadership."
+    },
+    "microsoft-gpa": {
+      "title": "Microsoft / Grupo Pão de Açúcar",
+      "thesis": "Early Silverlight expertise converted into an enterprise interface opportunity.",
+      "context": "Visibility from Microsoft technology events led to collaboration on a Microsoft-supported experience for GPA.",
+      "role": "I combined interface design with implementation thinking across business and information screens.",
+      "impact": "The project established a recurring pattern: learning an emerging medium and applying it to product work.",
+      "next": "That pattern continued through streaming, connected TV and React."
+    }
+  },
+  "imageUnavailable": "Historical image unavailable. The case narrative remains available."
+}

@@ -129,6 +129,7 @@ T16 → T17 → T18
 
 ### T3: Define Factual Content and Translation Resources
 
+**Status**: Complete
 **What**: Create the typed project, timeline, route, and resume records plus complete `en` and `pt-BR` i18next namespaces with a recursive parity validator.
 **Where**: `src/content/`
 **Depends on**: T2
@@ -142,12 +143,12 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Typed records contain only supported facts, project IDs, periods, roles, statuses, and asset references.
-- [ ] English resources preserve the approved editorial meaning.
-- [ ] Portuguese resources provide complete adapted copy for every P1 namespace.
-- [ ] `pnpm i18n:check` fails for missing, unexpected required, or empty translation leaves.
-- [ ] The production build invokes the parity check.
-- [ ] Build and lint pass.
+- [x] Typed records contain only supported facts, project IDs, periods, roles, statuses, and asset references.
+- [x] English resources preserve the approved editorial meaning.
+- [x] Portuguese resources provide complete adapted copy for every P1 namespace.
+- [x] `pnpm i18n:check` fails for missing, unexpected required, or empty translation leaves.
+- [x] The production build invokes the parity check.
+- [x] Build and lint pass.
 
 **Tests**: none
 **Gate**: build

@@ -1,0 +1,39 @@
+{
+  "brand": "Leonardo Vitale",
+  "nav": {
+    "work": "Work",
+    "timeline": "Timeline",
+    "about": "About",
+    "resume": "Resume",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Language",
+    "pt-BR": "Português (Brasil)",
+    "en": "English"
+  },
+  "actions": {
+    "home": "Back to Home",
+    "exploreWork": "Explore selected work",
+    "aboutResume": "About / Resume",
+    "downloadResume": "Download resume",
+    "contact": "Contact",
+    "viewCase": "View case study",
+    "viewAbout": "Read about Leonardo"
+  },
+  "skipLink": "Skip to main content",
+  "footer": {
+    "summary": "Front-end architecture, product thinking and technical leadership.",
+    "copyright": "Leonardo Vitale"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "This address does not match a published portfolio page."
+  },
+  "status": {
+    "shipped": "Shipped product",
+    "prototype": "Prototype that progressed into a product initiative",
+    "leadership": "Current leadership chapter"
+  }
+}
