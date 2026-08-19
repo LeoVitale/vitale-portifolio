@@ -72,6 +72,7 @@ T16 → T17 → T18
 
 ### T1: Establish the Playwright E2E Gate
 
+**Status**: Complete
 **What**: Add the Playwright configuration, browser dependency, pnpm script, and one tagged smoke test that proves the Vite app can be exercised in Chromium.
 **Where**: `playwright.config.ts`
 **Depends on**: None
@@ -85,10 +86,10 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] `pnpm test:e2e -- --grep @T1` runs one smoke test in Chromium.
-- [ ] Playwright starts and stops the Vite web server automatically.
-- [ ] Existing build and lint commands still pass.
-- [ ] Test count is at least 1 and does not decrease.
+- [x] `pnpm test:e2e -- --grep @T1` runs one smoke test in Chromium.
+- [x] Playwright starts and stops the Vite web server automatically.
+- [x] Existing build and lint commands still pass.
+- [x] Test count is at least 1 and does not decrease.
 
 **Tests**: e2e
 **Gate**: build
