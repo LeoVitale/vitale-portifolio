@@ -249,7 +249,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | Requirement ID | Story | Phase | Status |
 | --- | --- | --- | --- |
 | PORT-01 | P1: Positioning | Execute | Complete |
-| PORT-02 | P1: Positioning | Tasks | In Tasks |
+| PORT-02 | P1: Positioning | Execute | Complete |
 | PORT-03 | P1: Positioning | Execute | Complete |
 | PORT-04 | P1: Positioning | Execute | Complete |
 | PORT-05 | P1: Navigation | Execute | Complete |
@@ -271,10 +271,10 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-21 | P1: Priority Cases | Tasks | In Tasks |
 | PORT-22 | P1: Priority Cases | Tasks | In Tasks |
 | PORT-23 | P1: Editorial Integrity | Tasks | In Tasks |
-| PORT-24 | P1: Editorial Integrity | Tasks | In Tasks |
-| PORT-25 | P1: Editorial Integrity | Tasks | In Tasks |
-| PORT-26 | P1: Editorial Integrity | Tasks | In Tasks |
-| PORT-27 | P1: Editorial Integrity | Tasks | In Tasks |
+| PORT-24 | P1: Editorial Integrity | Execute | Complete |
+| PORT-25 | P1: Editorial Integrity | Execute | Complete |
+| PORT-26 | P1: Editorial Integrity | Execute | Complete |
+| PORT-27 | P1: Editorial Integrity | Execute | Complete |
 | PORT-28 | P1: About, Resume, Contact | Tasks | In Tasks |
 | PORT-29 | P1: About, Resume, Contact | Tasks | In Tasks |
 | PORT-30 | P1: About, Resume, Contact | Tasks | In Tasks |

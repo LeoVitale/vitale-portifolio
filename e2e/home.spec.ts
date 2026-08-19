@@ -197,3 +197,48 @@ for (const origin of ['/en', '/en/work', '/en/about', '/en/work/net-now']) {
     await expect(page.locator('#timeline')).toBeVisible()
   })
 }
+
+test('@T9 communicates the current architecture and leadership direction', async ({ page }) => {
+  await page.goto('/en')
+  const current = page.locator('.current-chapter')
+
+  await expect(current.getByRole('heading', { level: 2 })).toHaveText(
+    'Architecture, leadership and modernization',
+  )
+  await expect(current).toContainText('hands-on React and TypeScript engineering')
+  await expect(current).toContainText('mentoring and technical strategy')
+})
+
+test('@T9 uses an authorized abstract visual without product screenshots', async ({ page }) => {
+  await page.goto('/en')
+  const current = page.locator('.current-chapter')
+
+  await expect(current.locator('img')).toHaveCount(0)
+  await expect(current.locator('.current-chapter__abstract')).toHaveAttribute('aria-hidden', 'true')
+})
+
+test('@T9 publishes only the supported metric with team attribution', async ({ page }) => {
+  await page.goto('/en')
+  const current = page.locator('.current-chapter')
+
+  await expect(current.locator('.current-chapter__metric strong')).toHaveText(
+    '~30% faster onboarding',
+  )
+  await expect(current.locator('.current-chapter__team-outcome')).toHaveText(
+    'The team adopted shared architectural boundaries and stronger delivery standards.',
+  )
+  await expect(current).not.toContainText('30% platform performance')
+})
+
+test('@T9 links the localized About preview in both locales', async ({ page }) => {
+  await page.goto('/en')
+  await expect(page.locator('.about-preview').getByRole('link')).toHaveAttribute(
+    'href',
+    '/en/about',
+  )
+
+  await page.goto('/pt-br')
+  await expect(
+    page.locator('.about-preview').getByRole('link', { name: 'Conhecer Leonardo' }),
+  ).toHaveAttribute('href', '/pt-br/about')
+})

@@ -313,6 +313,7 @@ T16 → T17 → T18
 
 ### T9: Create the Current Chapter and About Preview
 
+**Status**: Complete
 **What**: Implement the Xelix leadership chapter and About preview using authorized abstract visuals, supported metrics, and links to the localized About route.
 **Where**: `src/components/home/CurrentChapter.tsx`
 **Depends on**: T8
@@ -326,13 +327,13 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Xelix content communicates architecture, leadership, and current technical direction.
-- [ ] No internal or fabricated product screenshot appears.
-- [ ] Only resume-supported metrics appear.
-- [ ] Personal ownership and team outcomes use the correct attribution.
-- [ ] About preview reaches the equivalent localized About route.
-- [ ] At least 4 tagged E2E tests cover content integrity and navigation.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] Xelix content communicates architecture, leadership, and current technical direction.
+- [x] No internal or fabricated product screenshot appears.
+- [x] Only resume-supported metrics appear.
+- [x] Personal ownership and team outcomes use the correct attribution.
+- [x] About preview reaches the equivalent localized About route.
+- [x] At least 4 tagged E2E tests cover content integrity and navigation.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick

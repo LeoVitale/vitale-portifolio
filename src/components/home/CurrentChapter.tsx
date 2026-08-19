@@ -1,0 +1,42 @@
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import { localizedPath } from '../../content/routes'
+import { useLocaleContext } from '../../i18n/LocaleContext'
+
+export function CurrentChapter() {
+  const { locale } = useLocaleContext()
+  const { t } = useTranslation(['home', 'common'])
+
+  return (
+    <>
+      <section aria-labelledby="current-chapter-title" className="current-chapter site-grid">
+        <div className="current-chapter__copy">
+          <p className="eyebrow">{t('current.eyebrow')}</p>
+          <h2 id="current-chapter-title">{t('current.title')}</h2>
+          <p>{t('current.description')}</p>
+          <p className="current-chapter__team-outcome">{t('current.teamOutcome')}</p>
+          <div className="current-chapter__metric">
+            <strong>{t('current.metric')}</strong>
+            <span>{t('current.metricNote')}</span>
+          </div>
+        </div>
+        <div aria-hidden="true" className="current-chapter__abstract">
+          <span>React + TypeScript</span>
+          <span>Clean Architecture</span>
+          <span>Team standards</span>
+          <span>AI-assisted workflows</span>
+        </div>
+      </section>
+      <section aria-labelledby="about-preview-title" className="about-preview">
+        <div>
+          <p className="eyebrow">{t('aboutPreview.eyebrow')}</p>
+          <h2 id="about-preview-title">{t('aboutPreview.title')}</h2>
+          <p>{t('aboutPreview.description')}</p>
+        </div>
+        <Link className="button about-preview__link" to={localizedPath(locale, 'about')}>
+          {t('common:actions.viewAbout')}
+        </Link>
+      </section>
+    </>
+  )
+}
