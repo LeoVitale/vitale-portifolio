@@ -104,16 +104,16 @@ Each requirement gets a unique ID for tracking across design, tasks, and validat
 
 | Requirement ID | Story | Phase | Status |
 | --- | --- | --- | --- |
-| CAR-01 | P1: Inspect gallery | Tasks | Pending |
-| CAR-02 | P1: Inspect gallery | Tasks | Pending |
-| CAR-03 | P1: Inspect gallery | Execute | Implementing |
-| CAR-04 | P1: Inspect gallery | Tasks | Pending |
-| CAR-05 | P1: Inspect gallery | Tasks | Pending |
-| CAR-06 | P1: Inspect gallery | Tasks | Pending |
-| CAR-07 | P1: Inspect gallery | Tasks | Pending |
-| CAR-08 | P1: Inspect gallery | Tasks | Pending |
-| CAR-09 | P1: Control without pointer | Tasks | Pending |
-| CAR-10 | P1: Control without pointer | Tasks | Pending |
+| CAR-01 | P1: Inspect gallery | Execute | Verified |
+| CAR-02 | P1: Inspect gallery | Execute | Implementing |
+| CAR-03 | P1: Inspect gallery | Execute | Verified |
+| CAR-04 | P1: Inspect gallery | Execute | Verified |
+| CAR-05 | P1: Inspect gallery | Execute | Verified |
+| CAR-06 | P1: Inspect gallery | Execute | Verified |
+| CAR-07 | P1: Inspect gallery | Execute | Verified |
+| CAR-08 | P1: Inspect gallery | Execute | Verified |
+| CAR-09 | P1: Control without pointer | Execute | Verified |
+| CAR-10 | P1: Control without pointer | Execute | Verified |
 | CAR-11 | P1: Control without pointer | Tasks | Pending |
 | CAR-12 | P1: Control without pointer | Execute | Implementing |
 | CAR-13 | P1: Control without pointer | Tasks | Pending |

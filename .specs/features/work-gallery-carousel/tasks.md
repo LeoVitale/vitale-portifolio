@@ -87,14 +87,14 @@ T1 → T2 → T3 → T4
 
 **Done when**:
 
-- [ ] A gallery or group with two or more images shows exactly one image at a time.
-- [ ] A one-image set has no previous, next, or position controls.
-- [ ] Next and previous wrap the approved order.
-- [ ] Xbox One keeps four headed groups, each with its own carousel index.
-- [ ] Images keep width, height, lazy loading, WebP sources, and localized alt.
-- [ ] A failed image still shows the localized status and readable narrative.
-- [ ] ArrowLeft/ArrowRight and horizontal swipe change slides with the same wrap rules.
-- [ ] Tagged `@CAR` E2E tests cover the criteria above.
+- [x] A gallery or group with two or more images shows exactly one image at a time.
+- [x] A one-image set has no previous, next, or position controls.
+- [x] Next and previous wrap the approved order.
+- [x] Xbox One keeps four headed groups, each with its own carousel index.
+- [x] Images keep width, height, lazy loading, WebP sources, and localized alt.
+- [x] A failed image still shows the localized status and readable narrative.
+- [x] ArrowLeft/ArrowRight and horizontal swipe change slides with the same wrap rules.
+- [x] Tagged `@CAR` E2E tests cover the criteria above.
 
 **Tests**: e2e
 **Gate**: quick
