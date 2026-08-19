@@ -44,7 +44,7 @@ test('@T11 presents optimized gallery images with intrinsic dimensions and lazy 
   const image = page.locator('.case-gallery img').first()
   await expect(image).toHaveAttribute('src', /\.webp$/)
   await expect(image).toHaveAttribute('width', '1920')
-  await expect(image).toHaveAttribute('height', '1080')
+  await expect(image).toHaveAttribute('height', '2953')
   await expect(image).toHaveAttribute('loading', 'lazy')
   await expect(image).toHaveAttribute('alt', /NET NOW/)
 })

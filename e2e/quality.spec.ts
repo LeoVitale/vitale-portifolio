@@ -1,16 +1,23 @@
 import { expect, test, type Page } from '@playwright/test'
 
 const p1Routes = [
-  '/en',
-  '/en/work',
-  '/en/work/net-now',
-  '/en/work/xbox-one',
-  '/en/work/sky-online',
-  '/en/work/microsoft-gpa',
-  '/en/about',
+  { locale: 'en', route: '/en' },
+  { locale: 'en', route: '/en/work' },
+  { locale: 'en', route: '/en/work/net-now' },
+  { locale: 'en', route: '/en/work/xbox-one' },
+  { locale: 'en', route: '/en/work/sky-online' },
+  { locale: 'en', route: '/en/work/microsoft-gpa' },
+  { locale: 'en', route: '/en/about' },
+  { locale: 'pt-BR', route: '/pt-br' },
+  { locale: 'pt-BR', route: '/pt-br/work' },
+  { locale: 'pt-BR', route: '/pt-br/work/net-now' },
+  { locale: 'pt-BR', route: '/pt-br/work/xbox-one' },
+  { locale: 'pt-BR', route: '/pt-br/work/sky-online' },
+  { locale: 'pt-BR', route: '/pt-br/work/microsoft-gpa' },
+  { locale: 'pt-BR', route: '/pt-br/about' },
 ] as const
 
-for (const route of p1Routes) {
+for (const { locale, route } of p1Routes) {
   test(`@T18 keeps ${route} readable without horizontal overflow at 390px`, async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 })
     await page.goto(route)
@@ -22,6 +29,22 @@ for (const route of p1Routes) {
         viewportWidth: document.documentElement.clientWidth,
       })),
     ).toEqual({ documentWidth: 390, viewportWidth: 390 })
+
+    if (locale === 'pt-BR') {
+      const pageControls = page.locator('#main-content a:visible, #main-content button:visible')
+      expect(await pageControls.count()).toBeGreaterThan(0)
+      expect(
+        await pageControls.evaluateAll((elements) =>
+          elements.every(
+            (element) =>
+              element.textContent?.trim() &&
+              element.scrollWidth <= element.clientWidth &&
+              element.getBoundingClientRect().left >= 0 &&
+              element.getBoundingClientRect().right <= document.documentElement.clientWidth,
+          ),
+        ),
+      ).toBe(true)
+    }
   })
 }
 
@@ -80,32 +103,84 @@ test('@T18 keeps global, case, resume, contact and locale controls keyboard reac
   await expect(page.locator('.case-study__next-link')).toHaveJSProperty('tabIndex', 0)
 })
 
-test('@T18 maintains focus and text contrast above the specified thresholds', async ({ page }) => {
-  await page.goto('/en')
-  const workLink = page.getByRole('link', { name: 'Work', exact: true })
-  await workLink.focus()
+test('@T18 maintains visible semantic contrast pairs above the specified thresholds', async ({
+  page,
+}) => {
+  const scenarios = [
+    {
+      route: '/en',
+      pairs: [
+        normalTextPair('ink wordmark on canvas', '.wordmark', '.site-header'),
+        normalTextPair('body text on canvas', 'body', 'body'),
+        normalTextPair('strong body text on canvas', '.home-hero__description', 'body'),
+        normalTextPair('muted footer text on canvas', '.site-footer', 'body'),
+        normalTextPair('muted metadata on card', '.project-card__metadata', '.project-card'),
+        normalTextPair('body copy on card', '.project-card__significance', '.project-card'),
+        normalTextPair('primary navigation on header', '.primary-navigation > a', '.site-header'),
+        normalTextPair(
+          'inactive locale control on canvas',
+          '.language-selector button:not([aria-pressed="true"])',
+          'body',
+        ),
+        normalTextPair(
+          'active locale control on accent',
+          '.language-selector button[aria-pressed="true"]',
+          '.language-selector button[aria-pressed="true"]',
+        ),
+        normalTextPair('primary button text', '.button--primary', '.button--primary'),
+        normalTextPair('secondary button text', '.button--secondary', '.button--secondary'),
+        largeTextPair('large heading on canvas', 'h1', 'body'),
+        controlPair(
+          'secondary button border on its surface',
+          '.button--secondary',
+          '.button--secondary',
+          'borderTopColor',
+        ),
+        controlPair('card hairline on canvas', '.project-card', 'body', 'borderTopColor'),
+        controlPair('header hairline on canvas', '.site-header', '.site-header', 'borderBottomColor'),
+      ],
+    },
+    {
+      route: '/en/work/net-now',
+      pairs: [
+        normalTextPair('strong tag text on card', '.case-study__tags li', '.case-study__tags li'),
+        normalTextPair('next action text on accent', '.case-study__next-link', '.case-study__next-link'),
+        largeTextPair('large impact text on canvas', '.case-study__impact p', 'body'),
+      ],
+    },
+  ] as const
 
-  const colors = await workLink.evaluate((element) => {
-    const focus = getComputedStyle(element)
-    const body = getComputedStyle(document.body)
-    const primaryElement = document.querySelector('.button--primary')
-    if (!primaryElement) throw new Error('Primary action is missing')
-    const primary = getComputedStyle(primaryElement)
+  for (const scenario of scenarios) {
+    await page.goto(scenario.route)
+    for (const pair of scenario.pairs) {
+      const colors = await renderedPairColors(page, pair)
+      expect(
+        contrastRatio(colors.foreground, colors.background),
+        `${pair.name}: ${colors.foreground} on ${colors.background}`,
+      ).toBeGreaterThanOrEqual(pair.minimum)
+    }
+  }
+
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/pt-br')
+  const menu = page.getByRole('button', { name: 'Menu' })
+  await menu.focus()
+  const focus = await menu.evaluate((element) => {
+    const style = getComputedStyle(element)
     return {
-      outlineColor: focus.outlineColor,
-      outlineWidth: focus.outlineWidth,
-      canvas: body.backgroundColor,
-      body: body.color,
-      primaryBackground: primary.backgroundColor,
-      primaryText: primary.color,
+      background: style.backgroundColor,
+      border: style.borderTopColor,
+      color: style.color,
+      outline: style.outlineColor,
+      outlineWidth: style.outlineWidth,
     }
   })
 
-  expect(Number.parseFloat(colors.outlineWidth)).toBeGreaterThanOrEqual(2)
-  expect(Number.parseFloat(colors.outlineWidth)).toBeLessThanOrEqual(4)
-  expect(contrastRatio(colors.outlineColor, colors.canvas)).toBeGreaterThanOrEqual(3)
-  expect(contrastRatio(colors.body, colors.canvas)).toBeGreaterThanOrEqual(4.5)
-  expect(contrastRatio(colors.primaryText, colors.primaryBackground)).toBeGreaterThanOrEqual(3)
+  expect(Number.parseFloat(focus.outlineWidth)).toBeGreaterThanOrEqual(2)
+  expect(Number.parseFloat(focus.outlineWidth)).toBeLessThanOrEqual(4)
+  expect(contrastRatio(focus.color, focus.background)).toBeGreaterThanOrEqual(4.5)
+  expect(contrastRatio(focus.outline, focus.background)).toBeGreaterThanOrEqual(3)
+  expect(contrastRatio(focus.border, focus.background)).toBeGreaterThanOrEqual(3)
 })
 
 test('@T18 applies localized titles descriptions canonicals language and image alternatives', async ({
@@ -188,6 +263,74 @@ async function gridColumnCount(page: Page, selector: string) {
     const columns = getComputedStyle(element).gridTemplateColumns
     return columns.split(' ').filter(Boolean).length
   })
+}
+
+type ContrastPair = {
+  backgroundProperty: 'backgroundColor'
+  backgroundSelector: string
+  foregroundProperty: 'borderBottomColor' | 'borderTopColor' | 'color'
+  foregroundSelector: string
+  minimum: 3 | 4.5
+  name: string
+}
+
+function normalTextPair(
+  name: string,
+  foregroundSelector: string,
+  backgroundSelector: string,
+): ContrastPair {
+  return {
+    backgroundProperty: 'backgroundColor',
+    backgroundSelector,
+    foregroundProperty: 'color',
+    foregroundSelector,
+    minimum: 4.5,
+    name,
+  }
+}
+
+function largeTextPair(
+  name: string,
+  foregroundSelector: string,
+  backgroundSelector: string,
+): ContrastPair {
+  return {
+    ...normalTextPair(name, foregroundSelector, backgroundSelector),
+    minimum: 3,
+  }
+}
+
+function controlPair(
+  name: string,
+  foregroundSelector: string,
+  backgroundSelector: string,
+  foregroundProperty: 'borderBottomColor' | 'borderTopColor',
+): ContrastPair {
+  return {
+    backgroundProperty: 'backgroundColor',
+    backgroundSelector,
+    foregroundProperty,
+    foregroundSelector,
+    minimum: 3,
+    name,
+  }
+}
+
+async function renderedPairColors(page: Page, pair: ContrastPair) {
+  const foreground = page.locator(pair.foregroundSelector).first()
+  const background = page.locator(pair.backgroundSelector).first()
+  await expect(foreground, pair.name).toBeVisible()
+  await expect(background, `${pair.name} background`).toBeVisible()
+  return {
+    foreground: await foreground.evaluate(
+      (element, property) => getComputedStyle(element)[property],
+      pair.foregroundProperty,
+    ),
+    background: await background.evaluate(
+      (element, property) => getComputedStyle(element)[property],
+      pair.backgroundProperty,
+    ),
+  }
 }
 
 function contrastRatio(foreground: string, background: string) {
