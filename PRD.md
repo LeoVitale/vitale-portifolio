@@ -106,9 +106,10 @@ As rotas podem ser ajustadas ao roteamento existente, desde que os destinos e a 
 
 ### Idiomas
 
-- Português (Brasil) é o idioma padrão: `pt-BR`.
+- Na primeira visita sem locale, o idioma do navegador define `pt-BR` ou `en`; idiomas não suportados usam `pt-BR`.
 - Inglês é oferecido como alternativa completa: `en`.
 - O seletor de idioma deve estar disponível em todas as páginas globais e preservar a página atual ao trocar de idioma.
+- A escolha explícita deve ser lembrada para futuras visitas sem locale.
 - Cada rota deve ter um URL canônico por idioma para permitir compartilhamento e indexação. A convenção proposta é `/pt-br/...` e `/en/...`.
 
 ## 9. Direção de conteúdo e visual
@@ -246,7 +247,7 @@ Como visitante brasileiro ou internacional, quero consultar o portfólio integra
 
 **Critérios de aceitação**
 
-1. **PORT-31** — WHEN um visitante abrir uma rota sem locale, THEN o sistema SHALL redirecioná-lo ou renderizá-lo em `pt-BR`.
+1. **PORT-31** — WHEN um visitante abrir pela primeira vez uma rota sem locale, THEN o sistema SHALL usar `en` para navegador em inglês e `pt-BR` para navegador em português ou idioma não suportado.
 2. **PORT-32** — WHEN o visitante selecionar Português (Brasil) ou Inglês, THEN o sistema SHALL apresentar toda a interface e o conteúdo da página atual no locale escolhido.
 3. **PORT-33** — WHEN o visitante trocar de idioma, THEN o sistema SHALL manter o equivalente da página atual e atualizar o URL canônico do locale.
 4. **PORT-34** — WHILE uma página estiver renderizada em `pt-BR` ou `en`, o sistema SHALL declarar o atributo HTML `lang` correspondente.
@@ -301,10 +302,10 @@ Como visitante interessado, quero explorar trabalhos de arquivo e o capítulo at
 | Tema | Premissa adotada para o PRD | Status |
 | --- | --- | --- |
 | Stack | React, TypeScript e Vite são a base confirmada para a implementação. Não incluir backend, CMS, autenticação ou dependências pesadas. | Confirmada |
-| Idioma | `pt-BR` é o idioma padrão e `en` é obrigatório no MVP. Cada rota P1 terá versões completas e URL canônico por locale. | Confirmada |
-| Cargo público | Usar formulação “Principal / Lead Front-End Engineer” até Leonardo definir o título único preferido. | Pendente de confirmação |
-| Dados de contato | Publicar somente dados atuais confirmados, sem reutilizar localização ou telefone do currículo antigo. | Pendente de confirmação |
-| Assets | Os 80 assets descritos no briefing são o acervo esperado, mas sua presença, licença e organização devem ser verificadas antes da implementação. | Pendente de verificação |
+| Idioma | `pt-BR` e `en` são obrigatórios. A primeira visita usa o idioma suportado do navegador com fallback para `pt-BR`; a escolha explícita fica persistida. | Confirmada |
+| Cargo público | Usar “Front-End Tech Lead”. | Confirmada |
+| Dados de contato | Publicar o e-mail e o telefone do currículo mais recente. | Confirmada |
+| Assets | Copiar as 80 imagens de `briefing/portifolio/` para uma estrutura pública versionada e gerar derivados otimizados quando prático. | Confirmada |
 | Métricas | O ganho de onboarding pode ser usado se refletir o currículo atual; performance superior a 30% fica bloqueada sem validação. | Confirmada para o MVP |
 | Xelix | Não exibir screenshots de produto; usar narrativa, diagramas ou elementos explicitamente autorizados. | Confirmada para o MVP |
 | Telenor | Excluir da primeira versão. | Confirmada para o MVP |
