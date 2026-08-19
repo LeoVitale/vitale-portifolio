@@ -91,5 +91,11 @@
       "next": "Esse padrão continuou em streaming, TV conectada e React."
     }
   },
-  "imageUnavailable": "Imagem histórica indisponível. A narrativa do caso continua acessível."
+  "imageUnavailable": "Imagem histórica indisponível. A narrativa do caso continua acessível.",
+  "carousel": {
+    "label": "Imagens do case",
+    "previous": "Imagem anterior",
+    "next": "Próxima imagem",
+    "position": "{{current}} de {{total}}"
+  }
 }

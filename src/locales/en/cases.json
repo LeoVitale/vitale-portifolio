@@ -91,5 +91,11 @@
       "next": "That pattern continued through streaming, connected TV and React."
     }
   },
-  "imageUnavailable": "Historical image unavailable. The case narrative remains available."
+  "imageUnavailable": "Historical image unavailable. The case narrative remains available.",
+  "carousel": {
+    "label": "Case images",
+    "previous": "Previous image",
+    "next": "Next image",
+    "position": "{{current}} of {{total}}"
+  }
 }
