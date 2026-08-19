@@ -158,6 +158,7 @@ T16 → T17 → T18
 
 ### T4: Implement Locale-Prefixed Routing
 
+**Status**: Complete
 **What**: Replace the template app with React Router and i18next initialization, locale resolution, persistence, equivalent-path switching, metadata language updates, and localized fallback routes.
 **Where**: `src/app/AppRouter.tsx`
 **Depends on**: T3
@@ -171,14 +172,14 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] First locale-less visits select English for English browsers and `pt-BR` otherwise.
-- [ ] Explicit locale selection persists for future locale-less visits.
-- [ ] Switching locale preserves Home, Work, About, and each priority case identity.
-- [ ] Unsupported and corrupt locale inputs resolve to localized fallback behavior.
-- [ ] Storage denial does not break locale-prefixed navigation.
-- [ ] Document `lang` follows the active locale.
-- [ ] At least 9 tagged E2E tests cover all locale branches and edge cases.
-- [ ] Test count increases by at least 9 and does not decrease.
+- [x] First locale-less visits select English for English browsers and `pt-BR` otherwise.
+- [x] Explicit locale selection persists for future locale-less visits.
+- [x] Switching locale preserves Home, Work, About, and each priority case identity.
+- [x] Unsupported and corrupt locale inputs resolve to localized fallback behavior.
+- [x] Storage denial does not break locale-prefixed navigation.
+- [x] Document `lang` follows the active locale.
+- [x] At least 9 tagged E2E tests cover all locale branches and edge cases.
+- [x] Test count increases by at least 9 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

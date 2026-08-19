@@ -254,7 +254,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-04 | P1: Positioning | Tasks | In Tasks |
 | PORT-05 | P1: Navigation | Tasks | In Tasks |
 | PORT-06 | P1: Navigation | Tasks | In Tasks |
-| PORT-07 | P1: Navigation | Tasks | In Tasks |
+| PORT-07 | P1: Navigation | Execute | Complete |
 | PORT-08 | P1: Navigation | Tasks | In Tasks |
 | PORT-09 | P1: Selected Work | Tasks | In Tasks |
 | PORT-10 | P1: Selected Work | Tasks | In Tasks |
@@ -280,12 +280,12 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-30 | P1: About, Resume, Contact | Tasks | In Tasks |
 | PORT-31 | P1: About, Resume, Contact | Tasks | In Tasks |
 | PORT-32 | P1: About, Resume, Contact | Tasks | In Tasks |
-| PORT-33 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-34 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-35 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-36 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-37 | P1: Bilingual Experience | Tasks | In Tasks |
-| PORT-38 | P1: Bilingual Experience | Tasks | In Tasks |
+| PORT-33 | P1: Bilingual Experience | Execute | Complete |
+| PORT-34 | P1: Bilingual Experience | Execute | Complete |
+| PORT-35 | P1: Bilingual Experience | Execute | Complete |
+| PORT-36 | P1: Bilingual Experience | Execute | Complete |
+| PORT-37 | P1: Bilingual Experience | Execute | Complete |
+| PORT-38 | P1: Bilingual Experience | Execute | Complete |
 | PORT-39 | P1: Bilingual Experience | Tasks | In Tasks |
 | PORT-40 | P1: Bilingual Experience | Tasks | In Tasks |
 | PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
