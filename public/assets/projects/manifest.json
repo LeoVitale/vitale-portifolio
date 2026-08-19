@@ -1,0 +1,724 @@
+{
+  "assets": [
+    {
+      "id": "microsoft-gpa-01-inicio",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/01_Inicio.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/01-inicio.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/01-inicio.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-01-inicio-clima",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/01_Inicio+Clima.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/01-inicio-clima.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/01-inicio-clima.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-02-vendasonline",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/02_VendasOnLine.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/02-vendasonline.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/02-vendasonline.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-03-ri-evolucao",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/03_Ri_Evolucao.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/03-ri-evolucao.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/03-ri-evolucao.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-03-ri",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/03_Ri.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/03-ri.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/03-ri.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-04-configuracoes",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/04_Configuracoes.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/04-configuracoes.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/04-configuracoes.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-05-planodeexpansao",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/05_PlanoDeExpansao.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/05-planodeexpansao.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/05-planodeexpansao.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-06-orcamentobasezero",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/06_OrcamentoBaseZero.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/06-orcamentobasezero.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/06-orcamentobasezero.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-07-email",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/07_Email.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/07-email.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/07-email.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "microsoft-gpa-08-clima",
+      "project": "microsoft-gpa",
+      "sourcePath": "Microsoft-WeFit/08_Clima.jpg",
+      "originalPath": "/assets/projects/microsoft-gpa/08-clima.jpg",
+      "optimizedPath": "/assets/projects/microsoft-gpa/08-clima.webp",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "net-now-detalhe-serie-web-03",
+      "project": "net-now",
+      "sourcePath": "Net_Now/detalhe_serie_web_03.jpg",
+      "originalPath": "/assets/projects/net-now/detalhe-serie-web-03.jpg",
+      "optimizedPath": "/assets/projects/net-now/detalhe-serie-web-03.webp",
+      "width": 1920,
+      "height": 3589
+    },
+    {
+      "id": "net-now-grade-programacao",
+      "project": "net-now",
+      "sourcePath": "Net_Now/grade_programacao.png",
+      "originalPath": "/assets/projects/net-now/grade-programacao.png",
+      "optimizedPath": "/assets/projects/net-now/grade-programacao.webp",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "id": "net-now-home-web-kids-personagem",
+      "project": "net-now",
+      "sourcePath": "Net_Now/home_web_kids_personagem.jpg",
+      "originalPath": "/assets/projects/net-now/home-web-kids-personagem.jpg",
+      "optimizedPath": "/assets/projects/net-now/home-web-kids-personagem.webp",
+      "width": 1920,
+      "height": 3070
+    },
+    {
+      "id": "net-now-home-web-mouse-over",
+      "project": "net-now",
+      "sourcePath": "Net_Now/home_web_mouse_over.png",
+      "originalPath": "/assets/projects/net-now/home-web-mouse-over.png",
+      "optimizedPath": "/assets/projects/net-now/home-web-mouse-over.webp",
+      "width": 1920,
+      "height": 2953
+    },
+    {
+      "id": "net-now-home-web-programas-tv",
+      "project": "net-now",
+      "sourcePath": "Net_Now/home_web_programas_tv.jpg",
+      "originalPath": "/assets/projects/net-now/home-web-programas-tv.jpg",
+      "optimizedPath": "/assets/projects/net-now/home-web-programas-tv.webp",
+      "width": 1920,
+      "height": 4335
+    },
+    {
+      "id": "net-now-player-aovivo-web",
+      "project": "net-now",
+      "sourcePath": "Net_Now/player_aovivo_web.png",
+      "originalPath": "/assets/projects/net-now/player-aovivo-web.png",
+      "optimizedPath": "/assets/projects/net-now/player-aovivo-web.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "cna-cnaprototype-002-0000-tela-inicial",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0000_Tela Inicial.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0000-tela-inicial.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0000-tela-inicial.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0001-tela-login",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0001_Tela Login.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0001-tela-login.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0001-tela-login.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0002-tela-cadastre-se",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0002_Tela Cadastre-se.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0002-tela-cadastre-se.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0002-tela-cadastre-se.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0003-tela-esqueceu-a-senha",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0003_Tela Esqueceu a senha.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0003-tela-esqueceu-a-senha.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0003-tela-esqueceu-a-senha.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0004-tela-filmes",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0004_Tela Filmes.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0004-tela-filmes.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0004-tela-filmes.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0005-tela-filmes-2",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0005_Tela filmes 2.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0005-tela-filmes-2.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0005-tela-filmes-2.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0006-tela-sinopse-funcode",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0006_Tela Sinopse  funcode.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0006-tela-sinopse-funcode.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0006-tela-sinopse-funcode.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "cna-cnaprototype-002-0007-tela-sinopse-codigo-aceito",
+      "project": "cna",
+      "sourcePath": "Prototipo CNA/CnaPrototype_002_0007_Tela Sinopse codigo aceito.jpg",
+      "originalPath": "/assets/projects/cna/cnaprototype-002-0007-tela-sinopse-codigo-aceito.jpg",
+      "optimizedPath": "/assets/projects/cna/cnaprototype-002-0007-tela-sinopse-codigo-aceito.webp",
+      "width": 1024,
+      "height": 617
+    },
+    {
+      "id": "sky-online-details-aprovada",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Details-Aprovada.png",
+      "originalPath": "/assets/projects/sky-online/details-aprovada.png",
+      "optimizedPath": "/assets/projects/sky-online/details-aprovada.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-details-series-aprovada",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Details-Series_Aprovada.png",
+      "originalPath": "/assets/projects/sky-online/details-series-aprovada.png",
+      "optimizedPath": "/assets/projects/sky-online/details-series-aprovada.webp",
+      "width": 1500,
+      "height": 2130
+    },
+    {
+      "id": "sky-online-filmes-lista-aprovada",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Filmes-Lista-Aprovada.png",
+      "originalPath": "/assets/projects/sky-online/filmes-lista-aprovada.png",
+      "optimizedPath": "/assets/projects/sky-online/filmes-lista-aprovada.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-generos-aprovada",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Generos-Aprovada.png",
+      "originalPath": "/assets/projects/sky-online/generos-aprovada.png",
+      "optimizedPath": "/assets/projects/sky-online/generos-aprovada.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-home-classificacao",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Home-Classificacao.png",
+      "originalPath": "/assets/projects/sky-online/home-classificacao.png",
+      "optimizedPath": "/assets/projects/sky-online/home-classificacao.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-home-classificacao-faca9f44",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Home-Classificação.png",
+      "originalPath": "/assets/projects/sky-online/home-classificacao-faca9f44.png",
+      "optimizedPath": "/assets/projects/sky-online/home-classificacao-faca9f44.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-home",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/Home.png",
+      "originalPath": "/assets/projects/sky-online/home.png",
+      "optimizedPath": "/assets/projects/sky-online/home.webp",
+      "width": 1500,
+      "height": 2000
+    },
+    {
+      "id": "sky-online-labels-color",
+      "project": "sky-online",
+      "sourcePath": "SkyOnline/labels-color.png",
+      "originalPath": "/assets/projects/sky-online/labels-color.png",
+      "optimizedPath": "/assets/projects/sky-online/labels-color.webp",
+      "width": 1500,
+      "height": 800
+    },
+    {
+      "id": "video-commerce-player-submarino",
+      "project": "video-commerce",
+      "sourcePath": "Video Commerce/player_submarino.png",
+      "originalPath": "/assets/projects/video-commerce/player-submarino.png",
+      "optimizedPath": "/assets/projects/video-commerce/player-submarino.webp",
+      "width": 1245,
+      "height": 700
+    },
+    {
+      "id": "video-commerce-player-1",
+      "project": "video-commerce",
+      "sourcePath": "Video Commerce/player-1.png",
+      "originalPath": "/assets/projects/video-commerce/player-1.png",
+      "optimizedPath": "/assets/projects/video-commerce/player-1.webp",
+      "width": 1245,
+      "height": 700
+    },
+    {
+      "id": "video-commerce-player-4",
+      "project": "video-commerce",
+      "sourcePath": "Video Commerce/player-4.png",
+      "originalPath": "/assets/projects/video-commerce/player-4.png",
+      "optimizedPath": "/assets/projects/video-commerce/player-4.webp",
+      "width": 1245,
+      "height": 700
+    },
+    {
+      "id": "sky-online-windows8-home",
+      "project": "sky-online-windows8",
+      "sourcePath": "Windows 8/SkyOnline/home.png",
+      "originalPath": "/assets/projects/sky-online-windows8/skyonline/home.png",
+      "optimizedPath": "/assets/projects/sky-online-windows8/skyonline/home.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "sky-online-windows8-list",
+      "project": "sky-online-windows8",
+      "sourcePath": "Windows 8/SkyOnline/list.png",
+      "originalPath": "/assets/projects/sky-online-windows8/skyonline/list.png",
+      "optimizedPath": "/assets/projects/sky-online-windows8/skyonline/list.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "sky-online-windows8-movie-details",
+      "project": "sky-online-windows8",
+      "sourcePath": "Windows 8/SkyOnline/movie-details.png",
+      "originalPath": "/assets/projects/sky-online-windows8/skyonline/movie-details.png",
+      "optimizedPath": "/assets/projects/sky-online-windows8/skyonline/movie-details.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "sky-online-windows8-series-details",
+      "project": "sky-online-windows8",
+      "sourcePath": "Windows 8/SkyOnline/series-details.png",
+      "originalPath": "/assets/projects/sky-online-windows8/skyonline/series-details.png",
+      "optimizedPath": "/assets/projects/sky-online-windows8/skyonline/series-details.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-details",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/details.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/details.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/details.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-especiais",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/especiais.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/especiais.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/especiais.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-home",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/home.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/home.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/home.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-mais-vistos",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/mais-vistos.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/mais-vistos.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/mais-vistos.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-programas",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/programas.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/programas.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/programas.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-series-details1",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/series-details1.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/series-details1.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/series-details1.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-series-details2",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/globosat-play/series-details2.png",
+      "originalPath": "/assets/projects/xbox-360/globosat-play/series-details2.png",
+      "optimizedPath": "/assets/projects/xbox-360/globosat-play/series-details2.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-360-sportv-gallery-red-transparent",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-gallery-red-transparent.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-gallery-red-transparent.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-gallery-red-transparent.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-sportv-gallery-red",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-gallery-red.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-gallery-red.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-gallery-red.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-sportv-home",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-home.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-home.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-home.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-sportv-meu-time",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-meu-time.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-meu-time.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-meu-time.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-sportv-programas",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-programas.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-programas.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-programas.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-sportv-times",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/sportv/sportv-times.png",
+      "originalPath": "/assets/projects/xbox-360/sportv/sportv-times.png",
+      "optimizedPath": "/assets/projects/xbox-360/sportv/sportv-times.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-destaques",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/telecine/destaques.png",
+      "originalPath": "/assets/projects/xbox-360/telecine/destaques.png",
+      "optimizedPath": "/assets/projects/xbox-360/telecine/destaques.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-details",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/telecine/details.png",
+      "originalPath": "/assets/projects/xbox-360/telecine/details.png",
+      "optimizedPath": "/assets/projects/xbox-360/telecine/details.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-especiais",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/telecine/especiais.png",
+      "originalPath": "/assets/projects/xbox-360/telecine/especiais.png",
+      "optimizedPath": "/assets/projects/xbox-360/telecine/especiais.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-360-gallery",
+      "project": "xbox-360",
+      "sourcePath": "Xbox 360/telecine/gallery.png",
+      "originalPath": "/assets/projects/xbox-360/telecine/gallery.png",
+      "optimizedPath": "/assets/projects/xbox-360/telecine/gallery.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "xbox-one-detalhes-filmes",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/detalhes-filmes.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/detalhes-filmes.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/detalhes-filmes.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-especiais",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/especiais.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/especiais.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/especiais.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-home",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/home.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/home.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/home.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-lista-alfabetica",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/lista-alfabetica.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/lista-alfabetica.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/lista-alfabetica.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-lista",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/lista.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/lista.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/lista.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-series-detalhes",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/series-detalhes.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/series-detalhes.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/series-detalhes.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-temas",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/globosat-play/temas.jpg",
+      "originalPath": "/assets/projects/xbox-one/globosat-play/temas.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/globosat-play/temas.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-detalhes-filmes",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/skyonline/detalhes-filmes.jpg",
+      "originalPath": "/assets/projects/xbox-one/skyonline/detalhes-filmes.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/skyonline/detalhes-filmes.webp",
+      "width": 1920,
+      "height": 1088
+    },
+    {
+      "id": "xbox-one-detalhes-series",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/skyonline/detalhes-series.jpg",
+      "originalPath": "/assets/projects/xbox-one/skyonline/detalhes-series.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/skyonline/detalhes-series.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-home",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/skyonline/home.jpg",
+      "originalPath": "/assets/projects/xbox-one/skyonline/home.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/skyonline/home.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-lista-filmes",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/skyonline/lista-filmes.jpg",
+      "originalPath": "/assets/projects/xbox-one/skyonline/lista-filmes.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/skyonline/lista-filmes.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-lista",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/skyonline/lista.jpg",
+      "originalPath": "/assets/projects/xbox-one/skyonline/lista.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/skyonline/lista.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-detalhes-filmes",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/telecine-play/detalhes-filmes.jpg",
+      "originalPath": "/assets/projects/xbox-one/telecine-play/detalhes-filmes.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/telecine-play/detalhes-filmes.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-home",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/telecine-play/home.jpg",
+      "originalPath": "/assets/projects/xbox-one/telecine-play/home.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/telecine-play/home.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-lista-generos",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/telecine-play/lista-generos.jpg",
+      "originalPath": "/assets/projects/xbox-one/telecine-play/lista-generos.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/telecine-play/lista-generos.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-1",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/1.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/1.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/1.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-2",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/2.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/2.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/2.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-3",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/3.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/3.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/3.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-4",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/4.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/4.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/4.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-5",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/5.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/5.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/5.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-6",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/6.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/6.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/6.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-7",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/7.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/7.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/7.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-8",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/8.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/8.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/8.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "xbox-one-9",
+      "project": "xbox-one",
+      "sourcePath": "Xbox One/vivo-play/9.jpg",
+      "originalPath": "/assets/projects/xbox-one/vivo-play/9.jpg",
+      "optimizedPath": "/assets/projects/xbox-one/vivo-play/9.webp",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}
