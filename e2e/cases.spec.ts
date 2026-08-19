@@ -278,3 +278,63 @@ test('@T14 provides localized alternative text across the SKY Online gallery', a
     'Tela do SKY Online com classificação de conteúdo e navegação do catálogo.',
   )
 })
+
+test('@T15 publishes Microsoft visibility and the GPA opportunity in both locales', async ({
+  page,
+}) => {
+  await page.goto('/en/work/microsoft-gpa')
+  await expect(page.getByText(/Microsoft technology events in Brazil/)).toBeVisible()
+  await expect(page.getByText(/Microsoft-supported experience for GPA/)).toBeVisible()
+
+  await page.goto('/pt-br/work/microsoft-gpa')
+  await expect(page.getByText(/eventos de tecnologia da Microsoft no Brasil/)).toBeVisible()
+  await expect(page.getByText(/experiência para o GPA apoiada pela Microsoft/)).toBeVisible()
+})
+
+test('@T15 renders all ten Microsoft GPA screens in the approved business-flow order', async ({
+  page,
+}) => {
+  await page.goto('/en/work/microsoft-gpa')
+
+  const images = page.locator('.case-gallery img')
+  await expect(images).toHaveCount(10)
+  const sources = await images.evaluateAll((elements) =>
+    elements.map((element) => element.getAttribute('src')),
+  )
+  expect(sources).toEqual([
+    '/assets/projects/microsoft-gpa/01-inicio.webp',
+    '/assets/projects/microsoft-gpa/01-inicio-clima.webp',
+    '/assets/projects/microsoft-gpa/02-vendasonline.webp',
+    '/assets/projects/microsoft-gpa/03-ri-evolucao.webp',
+    '/assets/projects/microsoft-gpa/03-ri.webp',
+    '/assets/projects/microsoft-gpa/04-configuracoes.webp',
+    '/assets/projects/microsoft-gpa/05-planodeexpansao.webp',
+    '/assets/projects/microsoft-gpa/06-orcamentobasezero.webp',
+    '/assets/projects/microsoft-gpa/07-email.webp',
+    '/assets/projects/microsoft-gpa/08-clima.webp',
+  ])
+})
+
+test('@T15 keeps the Microsoft GPA period explicitly qualified', async ({ page }) => {
+  await page.goto('/en/work/microsoft-gpa')
+  await expect(page.locator('.case-study__metadata time')).toHaveText('circa 2010')
+
+  await page.goto('/pt-br/work/microsoft-gpa')
+  await expect(page.locator('.case-study__metadata time')).toHaveText('circa 2010')
+})
+
+test('@T15 avoids unsupported ownership and localizes every Microsoft GPA image', async ({
+  page,
+}) => {
+  await page.goto('/pt-br/work/microsoft-gpa')
+
+  const article = page.locator('.case-study')
+  await expect(article).toContainText('Combinei design de interface e visão de implementação')
+  await expect(article).not.toContainText('Liderei o projeto')
+  await expect(article).not.toContainText('Entreguei sozinho')
+  const alternativeTexts = await page.locator('.case-gallery img').evaluateAll((images) =>
+    images.map((image) => image.getAttribute('alt')),
+  )
+  expect(alternativeTexts).toHaveLength(10)
+  expect(alternativeTexts.every((alternativeText) => Boolean(alternativeText?.trim()))).toBe(true)
+})

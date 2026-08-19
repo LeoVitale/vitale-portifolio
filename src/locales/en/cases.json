@@ -75,8 +75,17 @@
     "microsoft-gpa": {
       "title": "Microsoft / Grupo Pão de Açúcar",
       "imageAlt": "Microsoft-supported GPA enterprise interface home screen.",
+      "homeWeatherAlt": "GPA enterprise home interface with integrated weather information.",
+      "salesAlt": "GPA online-sales information presented in the enterprise interface.",
+      "investorEvolutionAlt": "GPA investor-relations evolution view in the Silverlight interface.",
+      "investorAlt": "GPA investor-relations information screen.",
+      "settingsAlt": "Configuration screen for the GPA enterprise experience.",
+      "expansionAlt": "GPA expansion-planning workflow screen.",
+      "budgetAlt": "GPA zero-based-budget workflow screen.",
+      "emailAlt": "Email information screen within the GPA enterprise experience.",
+      "weatherAlt": "Weather information screen within the GPA enterprise experience.",
       "thesis": "Early Silverlight expertise converted into an enterprise interface opportunity.",
-      "context": "Visibility from Microsoft technology events led to collaboration on a Microsoft-supported experience for GPA.",
+      "context": "My Silverlight knowledge gained visibility through Microsoft technology events in Brazil. That visibility led to an invitation to collaborate with an agency on a Microsoft-supported experience for GPA, connecting expertise in an emerging interface technology with a concrete enterprise product opportunity.",
       "role": "I combined interface design with implementation thinking across business and information screens.",
       "impact": "The project established a recurring pattern: learning an emerging medium and applying it to product work.",
       "next": "That pattern continued through streaming, connected TV and React."

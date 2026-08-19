@@ -490,6 +490,7 @@ T16 → T17 → T18
 
 ### T15: Populate the Microsoft/GPA Case
 
+**Status**: Complete
 **What**: Add the complete bilingual Microsoft/GPA case with its ten-image gallery and supported Silverlight-era enterprise narrative.
 **Where**: `src/locales/en/cases.json`
 **Depends on**: T14
@@ -503,11 +504,11 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Both locales explain the Microsoft visibility and GPA opportunity without unsupported ownership claims.
-- [ ] Ten supplied images render in the approved business-flow order.
-- [ ] The period uses qualified precision.
-- [ ] At least 4 tagged E2E tests cover locales, asset sequence, period, and attribution.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] Both locales explain the Microsoft visibility and GPA opportunity without unsupported ownership claims.
+- [x] Ten supplied images render in the approved business-flow order.
+- [x] The period uses qualified precision.
+- [x] At least 4 tagged E2E tests cover locales, asset sequence, period, and attribution.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

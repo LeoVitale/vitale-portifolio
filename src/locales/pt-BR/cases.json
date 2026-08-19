@@ -75,8 +75,17 @@
     "microsoft-gpa": {
       "title": "Microsoft / Grupo Pão de Açúcar",
       "imageAlt": "Tela inicial da interface corporativa do GPA apoiada pela Microsoft.",
+      "homeWeatherAlt": "Interface corporativa inicial do GPA com informações de clima integradas.",
+      "salesAlt": "Informações de vendas online do GPA apresentadas na interface corporativa.",
+      "investorEvolutionAlt": "Visão de evolução de relações com investidores do GPA na interface Silverlight.",
+      "investorAlt": "Tela de informações de relações com investidores do GPA.",
+      "settingsAlt": "Tela de configurações da experiência corporativa do GPA.",
+      "expansionAlt": "Tela do fluxo de planejamento de expansão do GPA.",
+      "budgetAlt": "Tela do fluxo de orçamento base zero do GPA.",
+      "emailAlt": "Tela de informações de e-mail na experiência corporativa do GPA.",
+      "weatherAlt": "Tela de informações de clima na experiência corporativa do GPA.",
       "thesis": "O domínio inicial de Silverlight se converteu em uma oportunidade de interface corporativa.",
-      "context": "A visibilidade em eventos de tecnologia da Microsoft levou à colaboração em uma experiência para o GPA apoiada pela empresa.",
+      "context": "Meu conhecimento em Silverlight ganhou visibilidade em eventos de tecnologia da Microsoft no Brasil. Essa visibilidade levou a um convite para colaborar com uma agência em uma experiência para o GPA apoiada pela Microsoft, conectando domínio de uma tecnologia emergente a uma oportunidade concreta de produto corporativo.",
       "role": "Combinei design de interface e visão de implementação em telas de negócio e informação.",
       "impact": "O projeto estabeleceu um padrão recorrente: aprender uma mídia emergente e aplicá-la ao trabalho de produto.",
       "next": "Esse padrão continuou em streaming, TV conectada e React."

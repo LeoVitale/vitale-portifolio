@@ -264,13 +264,13 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-14 | P1: Timeline | Execute | Complete |
 | PORT-15 | P1: Timeline | Execute | Complete |
 | PORT-16 | P1: Timeline | Execute | Complete |
-| PORT-17 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-18 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-19 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-20 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-21 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-22 | P1: Priority Cases | Execute | In Progress (T14 complete) |
-| PORT-23 | P1: Editorial Integrity | Execute | In Progress (T14 complete) |
+| PORT-17 | P1: Priority Cases | Execute | Complete |
+| PORT-18 | P1: Priority Cases | Execute | Complete |
+| PORT-19 | P1: Priority Cases | Execute | Complete |
+| PORT-20 | P1: Priority Cases | Execute | Complete |
+| PORT-21 | P1: Priority Cases | Execute | Complete |
+| PORT-22 | P1: Priority Cases | Execute | Complete |
+| PORT-23 | P1: Editorial Integrity | Execute | Complete |
 | PORT-24 | P1: Editorial Integrity | Execute | Complete |
 | PORT-25 | P1: Editorial Integrity | Execute | Complete |
 | PORT-26 | P1: Editorial Integrity | Execute | Complete |
@@ -286,7 +286,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-36 | P1: Bilingual Experience | Execute | Complete |
 | PORT-37 | P1: Bilingual Experience | Execute | Complete |
 | PORT-38 | P1: Bilingual Experience | Execute | Complete |
-| PORT-39 | P1: Bilingual Experience | Execute | In Progress (T14 complete) |
+| PORT-39 | P1: Bilingual Experience | Execute | In Progress (T15 complete) |
 | PORT-40 | P1: Bilingual Experience | Tasks | In Tasks |
 | PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-42 | P1: Responsive Accessibility | Tasks | In Tasks |
@@ -294,7 +294,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-44 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-45 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-46 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-47 | P1: Responsive Accessibility | Execute | In Progress (T14 complete) |
+| PORT-47 | P1: Responsive Accessibility | Execute | In Progress (T15 complete) |
 | PORT-48 | P1: Responsive Accessibility | Execute | Complete |
 
 **Coverage:** 48 total, 48 mapped to tasks, 0 unmapped.

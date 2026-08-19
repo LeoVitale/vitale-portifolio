@@ -286,4 +286,60 @@ export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[
       altKey: 'projects.sky-online.labelsAlt',
     },
   ],
+  'microsoft-gpa': [
+    {
+      src: '/assets/projects/microsoft-gpa/01-inicio-clima.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.homeWeatherAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/02-vendasonline.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.salesAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/03-ri-evolucao.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.investorEvolutionAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/03-ri.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.investorAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/04-configuracoes.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.settingsAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/05-planodeexpansao.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.expansionAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/06-orcamentobasezero.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.budgetAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/07-email.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.emailAlt',
+    },
+    {
+      src: '/assets/projects/microsoft-gpa/08-clima.webp',
+      width: 1440,
+      height: 900,
+      altKey: 'projects.microsoft-gpa.weatherAlt',
+    },
+  ],
 }
