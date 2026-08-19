@@ -145,3 +145,55 @@ test('@T7 preserves localized significance on flat card surfaces', async ({ page
   })
   expect(style).toEqual({ background: 'rgb(26, 26, 26)', shadow: 'none' })
 })
+
+test('@T8 renders all eight career milestones in chronological order', async ({ page }) => {
+  await page.goto('/en')
+  const timeline = page.locator('#timeline')
+
+  await expect(timeline.locator('.timeline__label')).toHaveText([
+    'Web Design',
+    'Silverlight',
+    'Streaming',
+    'Xbox',
+    'React',
+    'Global Engineering',
+    'Architecture',
+    'AI',
+  ])
+  await expect(timeline.locator('time')).toHaveText([
+    '2001–2009',
+    '2009–2011',
+    '2011–2013',
+    '2013',
+    '2015–2018',
+    '2018–2021',
+    '2021–present',
+    'present',
+  ])
+})
+
+test('@T8 provides a localized description for every milestone', async ({ page }) => {
+  await page.goto('/pt-br')
+  const descriptions = page.locator('#timeline .timeline__description')
+
+  await expect(descriptions).toHaveCount(8)
+  await expect(descriptions.first()).toHaveText(
+    'Fundamentos visuais e de interação abriram o caminho para o trabalho com produtos.',
+  )
+  await expect(descriptions.last()).toHaveText(
+    'Fluxos controlados de IA assistem hoje a qualidade de código e as práticas de engenharia.',
+  )
+})
+
+for (const origin of ['/en', '/en/work', '/en/about', '/en/work/net-now']) {
+  test(`@T8 reaches the localized timeline from ${origin}`, async ({ page }) => {
+    await page.goto(origin)
+    await page
+      .getByRole('navigation', { name: 'Primary' })
+      .getByRole('link', { name: 'Timeline' })
+      .click()
+
+    await expect(page).toHaveURL(/\/en#timeline$/)
+    await expect(page.locator('#timeline')).toBeVisible()
+  })
+}

@@ -285,6 +285,7 @@ T16 → T17 → T18
 
 ### T8: Create the Career Timeline
 
+**Status**: Complete
 **What**: Implement the eight-milestone career timeline and the stable localized Timeline navigation target.
 **Where**: `src/components/home/CareerTimeline.tsx`
 **Depends on**: T7
@@ -298,11 +299,11 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] All eight required milestones render in chronological order.
-- [ ] Every milestone shows a supported period and concise localized description.
-- [ ] The global Timeline link reaches the section from Home, Work, About, and a case route.
-- [ ] At least 4 tagged E2E tests cover order, bilingual copy, and cross-route navigation.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] All eight required milestones render in chronological order.
+- [x] Every milestone shows a supported period and concise localized description.
+- [x] The global Timeline link reaches the section from Home, Work, About, and a case route.
+- [x] At least 4 tagged E2E tests cover order, bilingual copy, and cross-route navigation.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick

@@ -261,9 +261,9 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-11 | P1: Selected Work | Execute | Complete |
 | PORT-12 | P1: Selected Work | Execute | Complete |
 | PORT-13 | P1: Selected Work | Execute | Complete |
-| PORT-14 | P1: Timeline | Tasks | In Tasks |
-| PORT-15 | P1: Timeline | Tasks | In Tasks |
-| PORT-16 | P1: Timeline | Tasks | In Tasks |
+| PORT-14 | P1: Timeline | Execute | Complete |
+| PORT-15 | P1: Timeline | Execute | Complete |
+| PORT-16 | P1: Timeline | Execute | Complete |
 | PORT-17 | P1: Priority Cases | Tasks | In Tasks |
 | PORT-18 | P1: Priority Cases | Tasks | In Tasks |
 | PORT-19 | P1: Priority Cases | Tasks | In Tasks |
