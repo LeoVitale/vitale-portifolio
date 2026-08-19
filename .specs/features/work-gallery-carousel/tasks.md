@@ -9,7 +9,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 ---
 
 **Design**: skipped (existing `CaseGallery` on case pages; no new architecture)
-**Status**: Approved
+**Status**: Done
 
 ---
 
@@ -141,9 +141,9 @@ T1 → T2 → T3 → T4
 
 **Done when**:
 
-- [ ] Source-order, count, alt, lazy-loading, and failure assertions still run.
-- [ ] The visible carousel image still matches its source aspect ratio.
-- [ ] The full Playwright suite passes.
+- [x] Source-order, count, alt, lazy-loading, and failure assertions still run.
+- [x] The visible carousel image still matches its source aspect ratio.
+- [x] The full Playwright suite passes.
 
 **Tests**: e2e
 **Gate**: build

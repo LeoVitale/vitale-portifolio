@@ -68,10 +68,8 @@ test('@T11 preserves source aspect ratio without fake device framing', async ({ 
 
   const galleryItems = page.locator('.case-gallery__item')
   expect(await galleryItems.count()).toBeGreaterThanOrEqual(2)
-  await expect(galleryItems.nth(0)).toHaveClass(/case-gallery__item--wide/)
-  await expect(galleryItems.nth(1)).toHaveClass(/case-gallery__item--detail/)
 
-  const image = galleryItems.locator('img').first()
+  const image = page.locator('.case-carousel img').locator('visible=true')
   const dimensions = await image.evaluate((element) => {
     const imageElement = element as HTMLImageElement
     return {
