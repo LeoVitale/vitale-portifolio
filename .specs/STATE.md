@@ -10,5 +10,13 @@
 - **Date**: 2026-08-18
 - **Status**: active
 
+### AD-002
+- **Decision**: Use the adapted ClickHouse black/electric-yellow visual grammar recorded in `design-system/leonardo-vitale-portfolio/MASTER.md`.
+- **Reason**: Leonardo selected `/Users/vitale/Downloads/DESIGN-clickhouse.md` as the layout and visual-system reference for the portfolio.
+- **Trade-off**: The MVP is intentionally fixed to one dark theme and one accent; light mode, gradients, shadows, and secondary brand colors are excluded.
+- **Scope**: All portfolio pages, visual components, responsive layouts, interactions, and future visual extensions.
+- **Date**: 2026-08-18
+- **Status**: active
+
 ## Handoff
 

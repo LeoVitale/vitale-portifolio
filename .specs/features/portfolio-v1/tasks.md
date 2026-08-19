@@ -185,10 +185,10 @@ T16 → T17 → T18
 
 ### T5: Build the Semantic Editorial Shell
 
-**What**: Implement the fixed dark design tokens, semantic site layout, global navigation, language selector, skip link, footer, focus treatment, and responsive mobile navigation.
+**What**: Implement the adapted ClickHouse-inspired black/yellow tokens, Inter scale, semantic site layout, global navigation, language selector, skip link, footer, focus treatment, and responsive mobile navigation.
 **Where**: `src/components/layout/SiteLayout.tsx`
 **Depends on**: T4
-**Reuses**: Locale route helpers, i18next common namespace, and `briefing/DESIGN.md`.
+**Reuses**: Locale route helpers, i18next common namespace, `briefing/DESIGN.md`, `/Users/vitale/Downloads/DESIGN-clickhouse.md`, and `design-system/leonardo-vitale-portfolio/MASTER.md`.
 **Requirement**: PORT-05, PORT-06, PORT-08, PORT-36, PORT-38, PORT-41, PORT-43 to PORT-48
 
 **Tools**:
@@ -199,6 +199,9 @@ T16 → T17 → T18
 **Done when**:
 
 - [ ] Header, navigation, main, and footer landmarks render on every route.
+- [ ] Tokens implement the approved near-black canvas, electric-yellow single accent, flat surfaces, Inter typography, spacing, and radius scales.
+- [ ] Desktop content uses a centered 1280 px maximum and 12-column grid.
+- [ ] No gradients, shadows, glass effects, or ClickHouse-specific database motifs appear.
 - [ ] Work, Timeline, About, Resume, Contact, and both languages are keyboard reachable in DOM order.
 - [ ] Focus indicators meet the specified 3:1 contrast requirement.
 - [ ] The layout uses the fixed dark theme regardless of operating-system theme.
@@ -214,10 +217,10 @@ T16 → T17 → T18
 
 ### T6: Create the Home Positioning Section
 
-**What**: Implement the Home hero and career-signal strip with the approved Front-End Tech Lead positioning, key messages, primary actions, email, and phone.
+**What**: Implement the Home hero and career-signal strip with the approved 7/5 editorial layout, NET NOW visual evidence, Front-End Tech Lead positioning, key messages, primary actions, email, and phone.
 **Where**: `src/components/home/Hero.tsx`
 **Depends on**: T5
-**Reuses**: Home translation namespace, contact constants, and global action styles.
+**Reuses**: Home translation namespace, contact constants, global action styles, and the Home composition in the persisted design-system Master.
 **Requirement**: PORT-01, PORT-02, PORT-03, PORT-04
 
 **Tools**:
@@ -228,6 +231,8 @@ T16 → T17 → T18
 **Done when**:
 
 - [ ] The 1440 px first viewport contains headline, positioning, Work, Resume, and Contact actions.
+- [ ] At 1440 px the hero uses seven columns for narrative and five for supplied NET NOW imagery.
+- [ ] Display typography uses the approved Inter scale and negative tracking.
 - [ ] Public title is exactly “Front-End Tech Lead”.
 - [ ] Email and phone render as `mailto:` and `tel:` links.
 - [ ] Career signals include only supported facts and metrics.
@@ -242,10 +247,10 @@ T16 → T17 → T18
 
 ### T7: Create the Selected Work Mosaic
 
-**What**: Implement the five-item editorial mosaic with NET NOW as the desktop hero item, localized metadata, responsive stacked cards, and links to the four priority cases.
+**What**: Implement the five-item asymmetric 12-column editorial mosaic with NET NOW as the desktop hero item, localized metadata, responsive stacked cards, and links to the four priority cases.
 **Where**: `src/components/home/SelectedWork.tsx`
 **Depends on**: T6
-**Reuses**: Typed project records, project asset manifest, and localized route helpers.
+**Reuses**: Typed project records, project asset manifest, localized route helpers, and the selected-work composition in the persisted design-system Master.
 **Requirement**: PORT-09, PORT-10, PORT-11, PORT-12, PORT-13
 
 **Tools**:
@@ -259,6 +264,8 @@ T16 → T17 → T18
 - [ ] Every card shows project, period, role, and editorial significance.
 - [ ] Four priority cards reach the equivalent localized case routes.
 - [ ] NET NOW is the largest item at 1440 px.
+- [ ] Cards use flat dark surfaces and hairlines without shadows; yellow remains reserved for active/primary emphasis.
+- [ ] Required metadata remains visible without hover.
 - [ ] Cards stack without page overflow at 390 px.
 - [ ] At least 6 tagged E2E tests cover content, links, and both viewports.
 - [ ] Test count increases by at least 6 and does not decrease.
@@ -354,10 +361,10 @@ T16 → T17 → T18
 
 ### T11: Build the Shared Case Study Template
 
-**What**: Implement the shared case metadata, section structure, responsive gallery, intrinsic dimensions, localized alt text, lazy loading, image-failure handling, and next-chapter link.
+**What**: Implement the shared case metadata, alternating editorial section structure, responsive large-format gallery, intrinsic dimensions, localized alt text, lazy loading, image-failure handling, and yellow next-chapter band.
 **Where**: `src/pages/CaseStudyPage.tsx`
 **Depends on**: T10
-**Reuses**: Typed project records, asset manifest, route helpers, and case translation namespace.
+**Reuses**: Typed project records, asset manifest, route helpers, case translation namespace, and the Case Study composition in the persisted design-system Master.
 **Requirement**: PORT-17, PORT-18, PORT-19, PORT-20, PORT-21, PORT-22, PORT-43, PORT-47
 
 **Tools**:
@@ -370,6 +377,8 @@ T16 → T17 → T18
 - [ ] A project slug resolves to the common case structure.
 - [ ] Header shows title, supported period, role, three to five tags, and thesis.
 - [ ] Context, My Role, Visual Story, Impact/Outcome, and What Changed Next render semantically.
+- [ ] Screenshots alternate between generous full-width bands and restrained detail columns without fake device frames.
+- [ ] Impact uses typography instead of decorative charts, and the next chapter uses one deliberate yellow CTA band.
 - [ ] Images preserve dimensions, use WebP sources where available, and lazy-load below the first viewport.
 - [ ] A failed image keeps alt text and narrative readable.
 - [ ] Gallery controls are keyboard reachable when present.
@@ -494,10 +503,10 @@ T16 → T17 → T18
 
 ### T16: Create About, Resume, and Contact
 
-**What**: Implement the bilingual semantic About/Resume page with profile, accomplishments, experience, education, expertise, email, phone, English PDF download, and unavailable-PDF fallback.
+**What**: Implement the bilingual semantic About/Resume page as an editorial chronology with profile, accomplishments, experience, education, expertise, email, phone, English PDF download, and unavailable-PDF fallback.
 **Where**: `src/pages/AboutPage.tsx`
 **Depends on**: T15
-**Reuses**: Typed resume records, about translations, public PDF, and global contact constants.
+**Reuses**: Typed resume records, about translations, public PDF, global contact constants, and the About composition in the persisted design-system Master.
 **Requirement**: PORT-28, PORT-29, PORT-30, PORT-31, PORT-32, PORT-39, PORT-43
 
 **Tools**:
@@ -508,6 +517,8 @@ T16 → T17 → T18
 **Done when**:
 
 - [ ] Profile, accomplishments, experience, education, and expertise use semantic headings and lists.
+- [ ] Experience renders as a vertical chronology rather than a wall of uniform cards.
+- [ ] Resume download is the only primary yellow CTA on the page.
 - [ ] Both locale routes render complete equivalent content.
 - [ ] Email and phone use the approved destinations.
 - [ ] The English PDF download works from both locales.
@@ -565,11 +576,13 @@ T16 → T17 → T18
 **Done when**:
 
 - [ ] Every P1 route passes at 390 px without horizontal page scrolling.
-- [ ] Home and cases preserve their required hierarchy at 1440 px.
+- [ ] Home and cases use a centered 1280 px maximum, 12-column grid, and 96 px major-section rhythm at 1440 px.
 - [ ] Keyboard navigation reaches all required controls in DOM order.
-- [ ] Focus, contrast, `lang`, localized alt text, titles, descriptions, and canonical URLs meet the specification.
+- [ ] Focus is 2–4 px and at least 3:1; normal text is at least 4.5:1; large text and controls are at least 3:1.
+- [ ] `lang`, localized alt text, titles, descriptions, and canonical URLs meet the specification.
 - [ ] Reduced motion removes nonessential transforms and reveal animations.
 - [ ] Longer Portuguese labels do not clip navigation or controls.
+- [ ] No shadows, gradients, glass effects, terminal motifs, SQL windows, or generic developer clichés appear.
 - [ ] At least 12 tagged E2E checks cover all P1 route categories at both viewports and accessibility states.
 - [ ] Full build, lint, translation parity, and E2E gates pass with no test-count reduction.
 

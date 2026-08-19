@@ -27,6 +27,8 @@ Explicitly excluded. Documented to prevent scope creep.
 | Internal Xelix screenshots or unapproved metrics | They may expose confidential information. |
 | Xbox 360, Windows 8, CNA, and Video Commerce detail pages | These archive cases are P2 after the priority cases. |
 | Theme selector or automatic light theme | The MVP uses one fixed editorial dark theme. |
+| ClickHouse product-specific UI, SQL mockups, or database motifs | The reference supplies visual grammar, not product content to copy. |
+| Gradients, drop shadows, glass effects, and generic developer motifs | They conflict with the approved flat black/yellow editorial direction. |
 | Portuguese resume PDF | The supplied PDF is English; Portuguese resume content is provided as HTML. |
 | P3 Xbox brand filtering | It is optional and not needed to validate the portfolio narrative. |
 
@@ -44,7 +46,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | First locale visit | Use the browser language when supported, then fall back to `pt-BR` | Leonardo selected browser-based first-visit localization. | y |
 | Locale persistence | Store the visitor's explicit language choice and use locale-prefixed URLs | Leonardo selected remembered language behavior and the PRD requires shareable locale URLs. | y |
 | Resume download | Offer the supplied English PDF in both locales; render localized resume content in HTML | Only the English PDF exists and Leonardo approved using it in both locales. | y |
-| Visual theme | Use a fixed editorial dark theme | Leonardo selected a consistent exhibition-like dark presentation. | y |
+| Visual theme | Use the black/electric-yellow system adapted from `/Users/vitale/Downloads/DESIGN-clickhouse.md` | Leonardo selected this visual reference for the portfolio layout. | y |
 | Exact title wording in historical roles | Use the latest resume and briefing source precedence | This prevents the older resume from overriding current facts. | y |
 | Asset usage rights | Treat Leonardo's approval to copy and version the supplied assets as authorization for this portfolio | Leonardo explicitly selected the versioned public-assets option. | y |
 | Automated verification | Add only the minimum deterministic tests required to prove specification outcomes | The spec-driven execution contract requires executable gates; test infrastructure must stay proportional to the prototype. | n |
@@ -72,7 +74,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 
 **Acceptance Criteria**:
 
-1. **PORT-01** — WHEN a visitor opens the Home page at 1440 px THEN the system SHALL show the headline, positioning summary, and actions for Work, Resume, and Contact within the first viewport.
+1. **PORT-01** — WHEN a visitor opens the Home page at 1440 px THEN the system SHALL show a 7/5-column hero with headline, positioning, and actions for Work, Resume, and Contact on the left and supplied NET NOW imagery on the right within the first viewport.
 2. **PORT-02** — WHEN a visitor reviews the Home page for 30 seconds THEN the system SHALL communicate Leonardo's design and front-end background, technology evolution, NET NOW/Xbox/SKY chapters, and current leadership focus.
 3. **PORT-03** — WHILE the Home page is rendered the system SHALL identify Leonardo publicly as “Front-End Tech Lead”.
 4. **PORT-04** — WHILE the Home page is rendered the system SHALL expose the current resume email and phone as contact links.
@@ -109,7 +111,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 1. **PORT-09** — WHEN a visitor reaches the selected-work mosaic THEN the system SHALL show NET NOW, Xbox One, SKY Online, Microsoft/GPA, and Xelix.
 2. **PORT-10** — WHILE a selected-work card is visible the system SHALL show its project name, supported period, role, and one-sentence editorial significance.
 3. **PORT-11** — WHEN a visitor activates NET NOW, Xbox One, SKY Online, or Microsoft/GPA THEN the system SHALL open the corresponding localized detail page.
-4. **PORT-12** — WHILE the selected-work mosaic is rendered at 1440 px the system SHALL present NET NOW as its largest visual item.
+4. **PORT-12** — WHILE the selected-work mosaic is rendered at 1440 px the system SHALL use a 12-column asymmetric grid and present NET NOW as its largest visual item.
 5. **PORT-13** — WHEN the selected-work mosaic is rendered at 390 px THEN the system SHALL present readable stacked cards without horizontal page scrolling.
 
 **Independent Test**: Inspect the mosaic at 1440 px and 390 px, then open each priority case in both locales.
@@ -217,13 +219,13 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 **Acceptance Criteria**:
 
 1. **PORT-41** — WHEN the viewport width is 390 px THEN the system SHALL render every P1 page without horizontal page scrolling.
-2. **PORT-42** — WHEN the viewport width is 1440 px THEN the system SHALL preserve the editorial hierarchy defined for Home and case pages.
+2. **PORT-42** — WHEN the viewport width is 1440 px THEN the system SHALL use a centered content area no wider than 1280 px, a 12-column editorial grid, and 96 px rhythm between major sections.
 3. **PORT-43** — WHEN a visitor navigates with a keyboard THEN the system SHALL make global navigation, locale controls, case links, resume links, contact links, and gallery controls reachable in DOM order.
-4. **PORT-44** — WHILE an interactive element has keyboard focus the system SHALL show a visible focus indicator with at least 3:1 contrast against adjacent colors.
+4. **PORT-44** — WHILE an interactive element has keyboard focus the system SHALL show a 2–4 px visible focus indicator with at least 3:1 contrast against adjacent colors.
 5. **PORT-45** — WHEN `prefers-reduced-motion: reduce` is active THEN the system SHALL remove nonessential transforms and reveal animations.
-6. **PORT-46** — WHILE text and interactive controls are visible the system SHALL meet WCAG 2.2 AA contrast requirements.
+6. **PORT-46** — WHILE text and interactive controls are visible the system SHALL provide at least 4.5:1 contrast for normal text and 3:1 for large text and graphical controls.
 7. **PORT-47** — WHILE an informative image is rendered the system SHALL provide meaningful localized alternative text.
-8. **PORT-48** — WHILE the fixed dark theme is rendered the system SHALL keep content and controls legible without depending on the operating-system color scheme.
+8. **PORT-48** — WHILE the fixed dark theme is rendered the system SHALL use near-black `#0a0a0a` as the page canvas, electric yellow `#faff69` as the sole brand accent, flat surfaces without shadows or gradients, and legible content independent of the operating-system color scheme.
 
 **Independent Test**: Review every P1 page at 390 px and 1440 px, navigate by keyboard, enable reduced motion, and run contrast checks.
 
@@ -238,6 +240,7 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 - IF the English resume PDF is unavailable THEN the system SHALL preserve localized HTML resume content.
 - WHEN translated text is longer than its English equivalent THEN the system SHALL keep navigation and controls readable without clipping at 390 px.
 - IF reduced motion is enabled before page load THEN the system SHALL render content without waiting for a reveal animation.
+- WHILE the portfolio uses the ClickHouse-inspired visual grammar the system SHALL use historical portfolio screenshots instead of SQL, database, terminal, or fabricated product mockups.
 
 ---
 

@@ -41,9 +41,13 @@ The feature delivers the bilingual portfolio MVP in React, TypeScript, and Vite.
 
 ### Visual theme
 
+- Use `/Users/vitale/Downloads/DESIGN-clickhouse.md` as the visual-system reference.
+- Adapt its near-black canvas, electric-yellow accent, Inter typography, flat surfaces, 12-column grid, and strong editorial scale to the portfolio.
+- Replace ClickHouse-specific SQL and product mockups with supplied historical portfolio screenshots.
 - Use one fixed editorial dark theme.
 - Do not adapt the theme to the operating-system color scheme.
 - Do not add a theme switcher.
+- Do not add gradients, drop shadows, glass effects, terminal motifs, or generic developer clichés.
 - Preserve accessible contrast and visible keyboard focus.
 
 ### Agent's Discretion
@@ -68,6 +72,8 @@ None. The user selected and resolved every proposed gray area.
 - `briefing/ASSETS.md` maps the expected historical image archive.
 - `briefing/SPEC.md` and `briefing/CURSOR.md` define the React/TypeScript/Vite constraints.
 - The current resume in `briefing/Leonardo_Vitale_-_Front_End_Engineer_NEW.md` is the primary source for public title history, contact details, experience, and supported metrics.
+- `/Users/vitale/Downloads/DESIGN-clickhouse.md` defines the black/yellow visual grammar, adapted for portfolio content.
+- `design-system/leonardo-vitale-portfolio/MASTER.md` is the persisted implementation source of truth for layout, tokens, typography, components, interaction, and accessibility.
 
 ---
 

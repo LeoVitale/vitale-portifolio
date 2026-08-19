@@ -137,10 +137,13 @@ As rotas podem ser ajustadas ao roteamento existente, desde que os destinos e a 
 ### Linguagem visual
 
 - Exposição digital curada, não template de portfólio de desenvolvedor.
-- Fundo neutro escuro ou off-black, texto off-white e acento discreto.
-- Tipografia grotesca contemporânea, escala forte entre título e metadados.
+- Adaptar a gramática visual de `/Users/vitale/Downloads/DESIGN-clickhouse.md` ao conteúdo do portfólio.
+- Usar canvas quase preto `#0a0a0a`, texto branco/cinza e amarelo elétrico `#faff69` como único acento de marca.
+- Usar Inter, com peso 700 e tracking negativo nos displays, 600 em labels/botões e 400 no corpo.
+- Usar grid editorial de 12 colunas, largura máxima de 1280 px e ritmo de 96 px entre seções no desktop.
 - Screenshots históricos grandes e sem mockups de dispositivo desnecessários.
 - Mosaico assimétrico em desktop e narrativa vertical em mobile.
+- Usar superfícies planas, hairlines e contraste; não usar sombras, gradientes, glassmorphism ou motivos de terminal/SQL.
 - Motion discreto para orientação; sem parallax excessivo, scroll hijacking, loaders longos ou efeitos decorativos pesados.
 
 ## 10. Fontes e integridade de conteúdo

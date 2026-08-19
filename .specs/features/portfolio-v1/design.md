@@ -75,6 +75,8 @@ Direct production access to BrowserRouter paths requires the static host to rewr
 | Source editorial content | `briefing/CONTENT.md` | Use as the approved English copy source |
 | Visual asset map | `briefing/ASSETS.md` | Use for asset naming, grouping, sequence, and hero selection |
 | Current resume | `briefing/Leonardo_Vitale_-_Front_End_Engineer_NEW.md` | Use for resume facts, contact, role history, and supported metrics |
+| Visual reference | `/Users/vitale/Downloads/DESIGN-clickhouse.md` | Adapt its black/yellow palette, Inter scale, flat surfaces, 12-column grid, and section rhythm |
+| Persisted design system | `design-system/leonardo-vitale-portfolio/MASTER.md` | Treat as the implementation source of truth for visual and interaction decisions |
 
 The template `App.tsx`, `App.css`, React/Vite logos, counter, and generic Vite sections provide no product behavior and will be replaced.
 
@@ -394,18 +396,35 @@ CSS Grid creates the desktop exhibition wall. A single-column layout replaces th
 
 The theme does not use `prefers-color-scheme`. `prefers-reduced-motion` removes nonessential transforms, transitions, and reveal behavior.
 
+### ClickHouse-Inspired Portfolio Adaptation
+
+The layout uses the supplied ClickHouse analysis as visual grammar, not as a product template:
+
+- Canvas: `#0a0a0a`; surfaces: `#121212`, `#1a1a1a`, and `#242424`.
+- Brand accent: `#faff69`, reserved for primary CTAs, approved stat values, active indicators, and deliberate full-width CTA bands.
+- Typography: Inter at 700 for display, 600 for labels/buttons, and 400 for body. Desktop hero is 72 px with negative tracking; mobile hero is 40 px.
+- Desktop layout: centered 1280 px maximum, 12 columns, 96 px major-section rhythm.
+- Shapes: 8 px button radius, 12 px card radius, pills only for compact tags.
+- Elevation: no box shadows, gradients, glass effects, or decorative blur. Depth comes from dark surfaces, hairlines, image contrast, and yellow bands.
+- Home hero: 7/5 split with narrative on the left and supplied NET NOW visual evidence on the right.
+- Work mosaic: asymmetric grid with NET NOW as the dominant item.
+- Cases: large original-ratio screenshots, no fake devices, alternating full-width image bands and restrained detail columns.
+- About: editorial chronology rather than a wall of uniform cards.
+
+ClickHouse-specific SQL windows, database motifs, pricing components, and product mockups are prohibited. Historical portfolio screenshots are the visual evidence.
+
 ---
 
 ## Verification Architecture
 
-The repository currently has no tests. The recommended minimum deterministic stack is:
+The repository currently has no tests. Leonardo selected Playwright E2E as the automated test strategy:
 
-- Vitest for locale resolution, path mapping, translation parity, content invariants, and metadata utilities.
-- Playwright browser tests for locale routing, page rendering, keyboard paths, viewports, reduced motion, direct routes, and asset/PDF failure behavior.
+- Playwright browser tests cover locale routing, page rendering, keyboard paths, viewports, reduced motion, direct routes, and asset/PDF failure behavior.
+- Translation parity and factual-record invariants run as deterministic build-time validation rather than unit tests.
 - Oxlint and TypeScript/Vite build as structural gates.
 - Manual browser review for the 30-second comprehension test and final visual hierarchy.
 
-Tests map to specification outcomes rather than implementation details. Exact test types and commands require user confirmation during the Tasks phase, as required by the workflow.
+Tests map to specification outcomes rather than implementation details.
 
 ---
 
@@ -439,6 +458,8 @@ Tests map to specification outcomes rather than implementation details. Exact te
 | Resume and editorial sources contain claim conflicts | `briefing/*.pdf`, `briefing/CONTENT.md` | Incorrect dates, titles, or ownership can be published | Use the source precedence in the spec and encode reviewed facts once in typed data |
 | Portuguese copy does not yet exist as a complete artifact | `briefing/CONTENT.md:5` | Literal or incomplete translation can weaken credibility | Translate by namespace, preserve factual fields, and run parity plus human editorial review |
 | Fixed dark theme can hide contrast failures | `src/styles/tokens.css` | Text or focus state can fail accessibility | Define token pairs against WCAG 2.2 AA and verify focus at 3:1 |
+| Automatic UI/UX recommendation conflicts with the supplied ClickHouse reference | `design-system/leonardo-vitale-portfolio/MASTER.md` | A light/blue system would violate the requested direction | The user-supplied reference overrides the generated palette; persisted Master now records the adapted black/yellow contract |
+| ClickHouse inspiration can become imitation | `/Users/vitale/Downloads/DESIGN-clickhouse.md` | Database motifs would weaken portfolio authenticity | Reuse only palette, type, spacing, grid, surface, and CTA principles; use historical portfolio screenshots as content |
 
 ---
 
@@ -452,7 +473,8 @@ Tests map to specification outcomes rather than implementation details. Exact te
 | Initial locale | Stored explicit choice, then browser language, then `pt-BR` | Implements the approved visitor behavior |
 | Asset delivery | Tracked originals plus generated WebP derivatives and dimension manifest | Preserves sources while serving optimized gallery media |
 | Layout | Semantic React composition and CSS Grid/Flexbox | Keeps JavaScript out of layout and supports responsive transformation |
+| Visual system | Adapted ClickHouse black/yellow editorial grammar | User-supplied reference provides a precise dark technical direction while portfolio assets preserve independent identity |
 | Metadata | Small document metadata utility | Avoids another runtime dependency for a static prototype |
-| Test recommendation | Vitest plus Playwright | Covers pure locale/content contracts and real route/viewport behavior |
+| Test strategy | Playwright E2E plus build-time content validation | Matches the user's approved E2E-only choice while keeping translation parity deterministic |
 
 The routing and i18n selection is recorded as project-level decision `AD-001` in `.specs/STATE.md`.
