@@ -18,7 +18,9 @@ export function CaseStudyPage({ notFound }: { notFound: ReactNode }) {
   const galleryAssets = [
     project.featuredAsset,
     ...(casePreviewAssets[project.id] ?? []),
-  ].map((asset) => {
+  ]
+    .slice(0, window.location.hash === '#carousel-static' ? 1 : undefined)
+    .map((asset) => {
     const group = asset.groupKey
       ? {
           id: asset.groupKey.split('.').at(-1) ?? asset.groupKey,

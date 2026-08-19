@@ -41,7 +41,7 @@ Phases are ordered and run sequentially - each phase completes before the next b
 ### Phase 1: Carousel
 
 ```
-T1 → T2 → T3 → T4
+T1 → T2 → T3 → T4 → T5
 ```
 
 ---
@@ -150,10 +150,33 @@ T1 → T2 → T3 → T4
 
 ---
 
+### T5: Prove a one-image gallery has no carousel chrome
+
+**What**: Add a one-image Visual Story fixture and an `@CAR` test that fails if previous, next, or `n of m` appear.
+**Where**: `e2e/carousel.spec.ts`
+**Depends on**: T4
+**Reuses**: NET NOW first asset and `CaseGallery` singleton branch.
+**Requirement**: CAR-02
+
+**Tools**:
+
+- MCP: `user-playwright`
+- Skill: `tlc-spec-driven`
+
+**Done when**:
+
+- [x] A one-image Visual Story renders a static figure with no previous, next, or position controls.
+- [x] Removing the singleton branch fails the tagged `@CAR` suite.
+
+**Tests**: e2e
+**Gate**: quick
+
+---
+
 ## Phase Execution Map
 
 ```
-Phase 1:  T1 ------→ T2 ------→ T3 ------→ T4
+Phase 1:  T1 ------→ T2 ------→ T3 ------→ T4 ------→ T5
 ```
 
 ---
@@ -177,6 +200,7 @@ Phase 1:  T1 ------→ T2 ------→ T3 ------→ T4
 | T2 | T1 | T1 → T2 | Match |
 | T3 | T2 | T2 → T3 | Match |
 | T4 | T3 | T3 → T4 | Match |
+| T5 | T4 | T4 → T5 | Match |
 
 ---
 
@@ -188,3 +212,4 @@ Phase 1:  T1 ------→ T2 ------→ T3 ------→ T4
 | T2: CaseGallery | Case gallery behavior | e2e | e2e | OK |
 | T3: CSS | Case gallery behavior | e2e | e2e | OK |
 | T4: cases.spec | Case gallery behavior | e2e | e2e | OK |
+| T5: CAR-02 fixture | Case gallery behavior | e2e | e2e | OK |

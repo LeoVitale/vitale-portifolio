@@ -17,6 +17,16 @@ function visibleCarouselImage(page: import('@playwright/test').Page) {
   return netNowCarousel(page).locator('img').locator('visible=true')
 }
 
+test('@CAR omits carousel chrome when Visual Story has exactly one image', async ({ page }) => {
+  await page.goto('/en/work/net-now#carousel-static')
+
+  await expect(page.locator('.case-gallery img')).toHaveCount(1)
+  await expect(page.locator('.case-carousel')).toHaveCount(0)
+  await expect(page.getByRole('button', { name: 'Previous image' })).toHaveCount(0)
+  await expect(page.getByRole('button', { name: 'Next image' })).toHaveCount(0)
+  await expect(page.getByText('1 of 1')).toHaveCount(0)
+})
+
 test('@CAR shows exactly one NET NOW image at a time with localized controls', async ({
   page,
 }) => {

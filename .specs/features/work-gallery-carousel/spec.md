@@ -105,7 +105,7 @@ Each requirement gets a unique ID for tracking across design, tasks, and validat
 | Requirement ID | Story | Phase | Status |
 | --- | --- | --- | --- |
 | CAR-01 | P1: Inspect gallery | Execute | Verified |
-| CAR-02 | P1: Inspect gallery | Execute | Implementing |
+| CAR-02 | P1: Inspect gallery | Execute | Verified |
 | CAR-03 | P1: Inspect gallery | Execute | Verified |
 | CAR-04 | P1: Inspect gallery | Execute | Verified |
 | CAR-05 | P1: Inspect gallery | Execute | Verified |
