@@ -116,10 +116,10 @@ T1 → T2 → T3 → T4
 
 **Done when**:
 
-- [ ] Carousel controls are at least 44 × 44 px and show the existing 2–4 px yellow focus treatment.
-- [ ] `prefers-reduced-motion: reduce` updates the visible image without transform or opacity animation.
-- [ ] The NET NOW case at 390 px has no horizontal page scroll.
-- [ ] Tagged `@CAR` E2E tests cover reduced motion and 390 px overflow.
+- [x] Carousel controls are at least 44 × 44 px and show the existing 2–4 px yellow focus treatment.
+- [x] `prefers-reduced-motion: reduce` updates the visible image without transform or opacity animation.
+- [x] The NET NOW case at 390 px has no horizontal page scroll.
+- [x] Tagged `@CAR` E2E tests cover reduced motion and 390 px overflow.
 
 **Tests**: e2e
 **Gate**: quick

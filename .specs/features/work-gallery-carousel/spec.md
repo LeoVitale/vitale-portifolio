@@ -114,9 +114,9 @@ Each requirement gets a unique ID for tracking across design, tasks, and validat
 | CAR-08 | P1: Inspect gallery | Execute | Verified |
 | CAR-09 | P1: Control without pointer | Execute | Verified |
 | CAR-10 | P1: Control without pointer | Execute | Verified |
-| CAR-11 | P1: Control without pointer | Tasks | Pending |
-| CAR-12 | P1: Control without pointer | Execute | Implementing |
-| CAR-13 | P1: Control without pointer | Tasks | Pending |
+| CAR-11 | P1: Control without pointer | Execute | Verified |
+| CAR-12 | P1: Control without pointer | Execute | Verified |
+| CAR-13 | P1: Control without pointer | Execute | Verified |
 
 **ID format:** `CAR-NN`
 

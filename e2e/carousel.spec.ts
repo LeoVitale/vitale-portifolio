@@ -132,6 +132,50 @@ test('@CAR changes slides with arrow keys when the carousel is focused', async (
   await expect(visibleCarouselImage(page)).toHaveAttribute('src', netNowSources[0])
 })
 
+test('@CAR updates the slide instantly when reduced motion is requested', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.goto('/en/work/net-now')
+
+  const carousel = netNowCarousel(page)
+  await carousel.getByRole('button', { name: 'Next image' }).click()
+  await expect(carousel.getByText('2 of 6')).toBeVisible()
+
+  const image = visibleCarouselImage(page)
+  await expect(image).toHaveAttribute('src', netNowSources[1])
+  await expect(image).toHaveCSS('transform', 'none')
+  expect(
+    await image.evaluate((element) =>
+      getComputedStyle(element)
+        .transitionDuration.split(',')
+        .every((duration) => Number.parseFloat(duration) <= 0.001),
+    ),
+  ).toBe(true)
+})
+
+test('@CAR keeps 44px controls, visible focus, and no 390px page overflow', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/en/work/net-now')
+
+  const next = netNowCarousel(page).getByRole('button', { name: 'Next image' })
+  const box = await next.boundingBox()
+  expect(box).toBeTruthy()
+  expect(box?.width).toBeGreaterThanOrEqual(44)
+  expect(box?.height).toBeGreaterThanOrEqual(44)
+
+  await next.focus()
+  const focusStyle = await next.evaluate((element) => {
+    const style = getComputedStyle(element)
+    return { color: style.outlineColor, width: style.outlineWidth }
+  })
+  expect(focusStyle.width).toBe('3px')
+  expect(focusStyle.color).toBe('rgb(250, 255, 105)')
+
+  const hasHorizontalOverflow = await page.evaluate(
+    () => document.documentElement.scrollWidth > document.documentElement.clientWidth,
+  )
+  expect(hasHorizontalOverflow).toBe(false)
+})
+
 test('@CAR changes slides on a horizontal swipe', async ({ page }) => {
   await page.goto('/en/work/net-now')
 
