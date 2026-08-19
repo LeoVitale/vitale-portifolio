@@ -59,10 +59,17 @@
     "sky-online": {
       "title": "SKY Online",
       "imageAlt": "SKY Online web home interface showing the complete VOD screen system.",
+      "classificationAlt": "SKY Online screen with content classification and catalogue navigation.",
+      "classificationVariantAlt": "SKY Online home classification variant in the complete screen system.",
+      "movieDetailsAlt": "SKY Online movie-detail screen with synopsis and related content.",
+      "seriesDetailsAlt": "SKY Online series-detail screen with episodes and related content.",
+      "movieListAlt": "SKY Online movie-list screen within the VOD catalogue.",
+      "genresAlt": "SKY Online genre-navigation screen for the VOD catalogue.",
+      "labelsAlt": "SKY Online interface label and colour reference.",
       "thesis": "A complete web prototype that progressed into a real product initiative.",
-      "context": "The prototype defined home, lists, genres, classification and content-detail states for a complete VOD experience.",
+      "context": "The SKY Online web prototype established a complete interface direction for the service. The screen system covered home, lists, genres, classification and content-detail experiences, showing the breadth of a product proposal rather than a single visual concept.",
       "role": "I designed the complete prototype screen set and owned its visual and interaction direction.",
-      "impact": "The concept moved forward beyond the proposal stage; exact production dates remain qualified.",
+      "impact": "The prototype moved forward into a production initiative; exact production dates remain qualified.",
       "next": "The full-screen-system work strengthened the path toward product and UX leadership."
     },
     "microsoft-gpa": {

@@ -219,3 +219,62 @@ test('@T13 avoids unsupported Xbox One launch and sole-ownership claims', async 
   await expect(article).not.toContainText('I launched')
   await expect(article).not.toContainText('I delivered all four applications')
 })
+
+test('@T14 publishes SKY Online as a complete screen system in both locales', async ({ page }) => {
+  await page.goto('/en/work/sky-online')
+  await expect(page.getByText(/complete interface direction/)).toBeVisible()
+  await expect(page.getByText(/home, lists, genres, classification and content-detail/)).toBeVisible()
+
+  await page.goto('/pt-br/work/sky-online')
+  await expect(page.getByText(/direção completa de interface/)).toBeVisible()
+  await expect(page.getByText(/início, listas, gêneros, classificação e detalhes/)).toBeVisible()
+})
+
+test('@T14 renders eight SKY Online images through normalized portable paths', async ({ page }) => {
+  await page.goto('/en/work/sky-online')
+
+  const images = page.locator('.case-gallery img')
+  await expect(images).toHaveCount(8)
+  const sources = await images.evaluateAll((elements) =>
+    elements.map((element) => element.getAttribute('src')),
+  )
+  expect(sources).toEqual([
+    '/assets/projects/sky-online/home.webp',
+    '/assets/projects/sky-online/home-classificacao.webp',
+    '/assets/projects/sky-online/home-classificacao-faca9f44.webp',
+    '/assets/projects/sky-online/details-aprovada.webp',
+    '/assets/projects/sky-online/details-series-aprovada.webp',
+    '/assets/projects/sky-online/filmes-lista-aprovada.webp',
+    '/assets/projects/sky-online/generos-aprovada.webp',
+    '/assets/projects/sky-online/labels-color.webp',
+  ])
+  expect(
+    sources.every(
+      (source) =>
+        source !== null && Array.from(source).every((character) => character.charCodeAt(0) <= 127),
+    ),
+  ).toBe(true)
+})
+
+test('@T14 keeps SKY Online period and prototype-to-product status qualified', async ({ page }) => {
+  await page.goto('/en/work/sky-online')
+
+  await expect(page.locator('.case-study__metadata time')).toHaveText('2013–2017 era')
+  await expect(page.locator('.case-study')).toContainText(
+    'The prototype moved forward into a production initiative',
+  )
+  await expect(page.locator('.case-study')).toContainText('exact production dates remain qualified')
+})
+
+test('@T14 provides localized alternative text across the SKY Online gallery', async ({ page }) => {
+  await page.goto('/pt-br/work/sky-online')
+
+  const alternativeTexts = await page.locator('.case-gallery img').evaluateAll((images) =>
+    images.map((image) => image.getAttribute('alt')),
+  )
+  expect(alternativeTexts).toHaveLength(8)
+  expect(alternativeTexts.every((alternativeText) => Boolean(alternativeText?.trim()))).toBe(true)
+  expect(alternativeTexts).toContain(
+    'Tela do SKY Online com classificação de conteúdo e navegação do catálogo.',
+  )
+})

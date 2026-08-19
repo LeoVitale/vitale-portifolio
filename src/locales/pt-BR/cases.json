@@ -59,10 +59,17 @@
     "sky-online": {
       "title": "SKY Online",
       "imageAlt": "Interface inicial web do SKY Online mostrando o sistema completo de telas de VOD.",
+      "classificationAlt": "Tela do SKY Online com classificação de conteúdo e navegação do catálogo.",
+      "classificationVariantAlt": "Variação da tela inicial de classificação do SKY Online no sistema completo.",
+      "movieDetailsAlt": "Tela de detalhes de filme do SKY Online com sinopse e conteúdos relacionados.",
+      "seriesDetailsAlt": "Tela de detalhes de série do SKY Online com episódios e conteúdos relacionados.",
+      "movieListAlt": "Tela de lista de filmes do SKY Online no catálogo de VOD.",
+      "genresAlt": "Tela de navegação por gêneros do SKY Online no catálogo de VOD.",
+      "labelsAlt": "Referência de rótulos e cores da interface do SKY Online.",
       "thesis": "Um protótipo web completo que avançou para uma iniciativa real de produto.",
-      "context": "O protótipo definiu telas iniciais, listas, gêneros, classificação e detalhes para uma experiência VOD completa.",
+      "context": "O protótipo web do SKY Online estabeleceu uma direção completa de interface para o serviço. O sistema cobriu início, listas, gêneros, classificação e detalhes de conteúdo, mostrando a amplitude de uma proposta de produto em vez de um único conceito visual.",
       "role": "Desenhei o conjunto completo de telas do protótipo e fui responsável por sua direção visual e de interação.",
-      "impact": "O conceito avançou além da proposta; as datas exatas de produção permanecem qualificadas.",
+      "impact": "O protótipo avançou para uma iniciativa de produção; as datas exatas de produção permanecem qualificadas.",
       "next": "O trabalho de sistema completo fortaleceu o caminho para liderança em produto e UX."
     },
     "microsoft-gpa": {

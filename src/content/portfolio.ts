@@ -242,4 +242,48 @@ export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[
       groupKey: 'projects.xbox-one.groups.vivo-play',
     })),
   ],
+  'sky-online': [
+    {
+      src: '/assets/projects/sky-online/home-classificacao.webp',
+      width: 1500,
+      height: 2000,
+      altKey: 'projects.sky-online.classificationAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/home-classificacao-faca9f44.webp',
+      width: 1500,
+      height: 2000,
+      altKey: 'projects.sky-online.classificationVariantAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/details-aprovada.webp',
+      width: 1500,
+      height: 2000,
+      altKey: 'projects.sky-online.movieDetailsAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/details-series-aprovada.webp',
+      width: 1500,
+      height: 2130,
+      altKey: 'projects.sky-online.seriesDetailsAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/filmes-lista-aprovada.webp',
+      width: 1500,
+      height: 2000,
+      altKey: 'projects.sky-online.movieListAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/generos-aprovada.webp',
+      width: 1500,
+      height: 2000,
+      altKey: 'projects.sky-online.genresAlt',
+    },
+    {
+      src: '/assets/projects/sky-online/labels-color.webp',
+      width: 1500,
+      height: 800,
+      altKey: 'projects.sky-online.labelsAlt',
+    },
+  ],
 }

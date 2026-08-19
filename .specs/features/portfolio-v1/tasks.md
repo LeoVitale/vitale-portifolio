@@ -462,6 +462,7 @@ T16 → T17 → T18
 
 ### T14: Populate the SKY Online Case
 
+**Status**: Complete
 **What**: Add the complete bilingual SKY Online Web case with its eight-image system gallery and qualified prototype-to-product narrative.
 **Where**: `src/locales/en/cases.json`
 **Depends on**: T13
@@ -475,11 +476,11 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] Both locales show the complete-screen-system emphasis.
-- [ ] Eight supplied images render using normalized portable paths.
-- [ ] Date precision and prototype-to-product wording remain qualified.
-- [ ] At least 4 tagged E2E tests cover locales, gallery breadth, dates, and status wording.
-- [ ] Test count increases by at least 4 and does not decrease.
+- [x] Both locales show the complete-screen-system emphasis.
+- [x] Eight supplied images render using normalized portable paths.
+- [x] Date precision and prototype-to-product wording remain qualified.
+- [x] At least 4 tagged E2E tests cover locales, gallery breadth, dates, and status wording.
+- [x] Test count increases by at least 4 and does not decrease.
 
 **Tests**: e2e
 **Gate**: quick
