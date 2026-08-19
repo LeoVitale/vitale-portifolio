@@ -4,6 +4,13 @@ export type Locale = (typeof locales)[number]
 export type ProjectId = 'net-now' | 'xbox-one' | 'sky-online' | 'microsoft-gpa' | 'xelix'
 export type ProjectStatus = 'shipped' | 'prototype' | 'leadership'
 
+export interface ProjectAsset {
+  src: string
+  width: number
+  height: number
+  altKey: string
+}
+
 export interface Project {
   id: ProjectId
   slug: string | null
@@ -11,12 +18,7 @@ export interface Project {
   role: string
   tags: readonly string[]
   status: ProjectStatus
-  featuredAsset?: {
-    src: string
-    width: number
-    height: number
-    altKey: string
-  }
+  featuredAsset?: ProjectAsset
   translationKey: `projects.${ProjectId}`
 }
 

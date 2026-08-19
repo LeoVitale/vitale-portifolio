@@ -264,12 +264,12 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-14 | P1: Timeline | Execute | Complete |
 | PORT-15 | P1: Timeline | Execute | Complete |
 | PORT-16 | P1: Timeline | Execute | Complete |
-| PORT-17 | P1: Priority Cases | Tasks | In Tasks |
-| PORT-18 | P1: Priority Cases | Tasks | In Tasks |
-| PORT-19 | P1: Priority Cases | Tasks | In Tasks |
-| PORT-20 | P1: Priority Cases | Tasks | In Tasks |
-| PORT-21 | P1: Priority Cases | Tasks | In Tasks |
-| PORT-22 | P1: Priority Cases | Tasks | In Tasks |
+| PORT-17 | P1: Priority Cases | Execute | In Progress (T11 complete) |
+| PORT-18 | P1: Priority Cases | Execute | In Progress (T11 complete) |
+| PORT-19 | P1: Priority Cases | Execute | In Progress (T11 complete) |
+| PORT-20 | P1: Priority Cases | Execute | In Progress (T11 complete) |
+| PORT-21 | P1: Priority Cases | Execute | In Progress (T11 complete) |
+| PORT-22 | P1: Priority Cases | Execute | In Progress (T11 complete) |
 | PORT-23 | P1: Editorial Integrity | Tasks | In Tasks |
 | PORT-24 | P1: Editorial Integrity | Execute | Complete |
 | PORT-25 | P1: Editorial Integrity | Execute | Complete |
@@ -290,11 +290,11 @@ Every ambiguity is resolved or recorded here. Nothing is left silently unclear.
 | PORT-40 | P1: Bilingual Experience | Tasks | In Tasks |
 | PORT-41 | P1: Responsive Accessibility | Tasks | In Tasks |
 | PORT-42 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-43 | P1: Responsive Accessibility | Tasks | In Tasks |
+| PORT-43 | P1: Responsive Accessibility | Execute | In Progress (T11 complete) |
 | PORT-44 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-45 | P1: Responsive Accessibility | Execute | Complete |
 | PORT-46 | P1: Responsive Accessibility | Tasks | In Tasks |
-| PORT-47 | P1: Responsive Accessibility | Tasks | In Tasks |
+| PORT-47 | P1: Responsive Accessibility | Execute | In Progress (T11 complete) |
 | PORT-48 | P1: Responsive Accessibility | Execute | Complete |
 
 **Coverage:** 48 total, 48 mapped to tasks, 0 unmapped.

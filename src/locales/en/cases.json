@@ -3,6 +3,9 @@
     "titleSuffix": "Case Study — Leonardo Vitale",
     "description": "A supported account of Leonardo Vitale's role, process and product evidence."
   },
+  "eyebrow": "Selected case study",
+  "tagsLabel": "Technologies and disciplines",
+  "backToWork": "Explore selected work",
   "sections": {
     "context": "Context",
     "role": "My Role",
@@ -13,6 +16,8 @@
   "projects": {
     "net-now": {
       "title": "NET NOW",
+      "imageAlt": "NET NOW live-player interface with video controls and programming information.",
+      "previewAlt": "NET NOW home interface showing expanded programme details over the catalogue.",
       "thesis": "The project where UX leadership, player design and React engineering converged.",
       "context": "NET NOW became the defining transition from interface leadership into full-time front-end engineering.",
       "role": "I led front-end and UX work, designed the player experience and participated in discovery and client approvals.",
@@ -21,6 +26,7 @@
     },
     "xbox-one": {
       "title": "Xbox One Entertainment Apps",
+      "imageAlt": "GloboSat Play home interface designed for Xbox One.",
       "thesis": "Four Brazilian VOD brands designed for one console interaction system.",
       "context": "At Agile Content, the work covered GloboSat Play, SKY Online, Telecine Play and Vivo Play around the Xbox One generation.",
       "role": "I designed console-first catalog, navigation and content-detail experiences across the four brands.",
@@ -29,6 +35,7 @@
     },
     "sky-online": {
       "title": "SKY Online",
+      "imageAlt": "SKY Online web home interface showing the complete VOD screen system.",
       "thesis": "A complete web prototype that progressed into a real product initiative.",
       "context": "The prototype defined home, lists, genres, classification and content-detail states for a complete VOD experience.",
       "role": "I designed the complete prototype screen set and owned its visual and interaction direction.",
@@ -37,6 +44,7 @@
     },
     "microsoft-gpa": {
       "title": "Microsoft / Grupo Pão de Açúcar",
+      "imageAlt": "Microsoft-supported GPA enterprise interface home screen.",
       "thesis": "Early Silverlight expertise converted into an enterprise interface opportunity.",
       "context": "Visibility from Microsoft technology events led to collaboration on a Microsoft-supported experience for GPA.",
       "role": "I combined interface design with implementation thinking across business and information screens.",

@@ -371,6 +371,7 @@ T16 → T17 → T18
 
 ### T11: Build the Shared Case Study Template
 
+**Status**: Complete
 **What**: Implement the shared case metadata, alternating editorial section structure, responsive large-format gallery, intrinsic dimensions, localized alt text, lazy loading, image-failure handling, and yellow next-chapter band.
 **Where**: `src/pages/CaseStudyPage.tsx`
 **Depends on**: T10
@@ -384,16 +385,16 @@ T16 → T17 → T18
 
 **Done when**:
 
-- [ ] A project slug resolves to the common case structure.
-- [ ] Header shows title, supported period, role, three to five tags, and thesis.
-- [ ] Context, My Role, Visual Story, Impact/Outcome, and What Changed Next render semantically.
-- [ ] Screenshots alternate between generous full-width bands and restrained detail columns without fake device frames.
-- [ ] Impact uses typography instead of decorative charts, and the next chapter uses one deliberate yellow CTA band.
-- [ ] Images preserve dimensions, use WebP sources where available, and lazy-load below the first viewport.
-- [ ] A failed image keeps alt text and narrative readable.
-- [ ] Gallery controls are keyboard reachable when present.
-- [ ] At least 6 tagged E2E tests cover shared structure and failure behavior.
-- [ ] Test count increases by at least 6 and does not decrease.
+- [x] A project slug resolves to the common case structure.
+- [x] Header shows title, supported period, role, three to five tags, and thesis.
+- [x] Context, My Role, Visual Story, Impact/Outcome, and What Changed Next render semantically.
+- [x] Screenshots alternate between generous full-width bands and restrained detail columns without fake device frames.
+- [x] Impact uses typography instead of decorative charts, and the next chapter uses one deliberate yellow CTA band.
+- [x] Images preserve dimensions, use WebP sources where available, and lazy-load below the first viewport.
+- [x] A failed image keeps alt text and narrative readable.
+- [x] Gallery controls are keyboard reachable when present.
+- [x] At least 6 tagged E2E tests cover shared structure and failure behavior.
+- [x] Test count increases by at least 6 and does not decrease.
 
 **Tests**: e2e
 **Gate**: full

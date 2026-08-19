@@ -8,7 +8,6 @@ import {
   Routes,
   useLocation,
   useNavigate,
-  useParams,
 } from 'react-router-dom'
 import { SiteLayout } from '../components/layout/SiteLayout'
 import { localizedPath } from '../content/routes'
@@ -21,6 +20,7 @@ import {
   switchLocale,
   writeStoredLocale,
 } from '../i18n/locale'
+import { CaseStudyPage } from '../pages/CaseStudyPage'
 import { HomePage } from '../pages/HomePage'
 import { WorkPage } from '../pages/WorkPage'
 
@@ -50,13 +50,6 @@ function LocaleBoundary({ locale }: { locale: Locale }) {
 function AboutPlaceholder() {
   const { t } = useTranslation('about')
   return <h1>{t('title')}</h1>
-}
-
-function CasePlaceholder() {
-  const { projectSlug } = useParams()
-  const { t } = useTranslation('cases')
-  if (!projectSlug || !prioritySlugs.has(projectSlug)) return <NotFoundPage />
-  return <h1>{t(`projects.${projectSlug}.title`)}</h1>
 }
 
 function NotFoundPage() {
@@ -110,7 +103,7 @@ function localizedRoutes(segment: string, locale: Locale): ReactElement {
     <Route element={<LocaleBoundary locale={locale} />} path={segment}>
       <Route element={<HomePage />} index />
       <Route element={<WorkPage />} path="work" />
-      <Route element={<CasePlaceholder />} path="work/:projectSlug" />
+      <Route element={<CaseStudyPage notFound={<NotFoundPage />} />} path="work/:projectSlug" />
       <Route element={<AboutPlaceholder />} path="about" />
       <Route element={<NotFoundPage />} path="*" />
     </Route>

@@ -1,4 +1,4 @@
-import type { CareerMilestone, Project } from './types'
+import type { CareerMilestone, Project, ProjectAsset, ProjectId } from './types'
 
 export const contact = {
   email: 'leonardo.vitale@outlook.com',
@@ -97,3 +97,14 @@ export const careerMilestones: readonly CareerMilestone[] = [
 export const projectBySlug = new Map(
   projects.filter((project) => project.slug).map((project) => [project.slug, project]),
 )
+
+export const casePreviewAssets: Partial<Record<ProjectId, readonly ProjectAsset[]>> = {
+  'net-now': [
+    {
+      src: '/assets/projects/net-now/home-web-mouse-over.webp',
+      width: 1920,
+      height: 2953,
+      altKey: 'projects.net-now.previewAlt',
+    },
+  ],
+}

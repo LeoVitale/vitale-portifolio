@@ -3,6 +3,9 @@
     "titleSuffix": "Estudo de caso — Leonardo Vitale",
     "description": "Um relato fundamentado sobre o papel, o processo e as evidências de produto de Leonardo Vitale."
   },
+  "eyebrow": "Estudo de caso selecionado",
+  "tagsLabel": "Tecnologias e disciplinas",
+  "backToWork": "Explorar trabalhos selecionados",
   "sections": {
     "context": "Contexto",
     "role": "Meu papel",
@@ -13,6 +16,8 @@
   "projects": {
     "net-now": {
       "title": "NET NOW",
+      "imageAlt": "Interface do player ao vivo do NET NOW com controles de vídeo e informações da programação.",
+      "previewAlt": "Interface inicial do NET NOW mostrando detalhes expandidos de um programa sobre o catálogo.",
       "thesis": "O projeto em que liderança em UX, design do player e engenharia React convergiram.",
       "context": "NET NOW marcou a transição decisiva da liderança de interfaces para a engenharia front-end em tempo integral.",
       "role": "Liderei o trabalho de front-end e UX, desenhei a experiência do player e participei da descoberta e das aprovações com o cliente.",
@@ -21,6 +26,7 @@
     },
     "xbox-one": {
       "title": "Aplicativos de entretenimento para Xbox One",
+      "imageAlt": "Interface inicial do GloboSat Play desenhada para Xbox One.",
       "thesis": "Quatro marcas brasileiras de VOD desenhadas para um sistema de interação em console.",
       "context": "Na Agile Content, o trabalho cobriu GloboSat Play, SKY Online, Telecine Play e Vivo Play na geração do Xbox One.",
       "role": "Desenhei experiências de catálogo, navegação e detalhes de conteúdo para console nas quatro marcas.",
@@ -29,6 +35,7 @@
     },
     "sky-online": {
       "title": "SKY Online",
+      "imageAlt": "Interface inicial web do SKY Online mostrando o sistema completo de telas de VOD.",
       "thesis": "Um protótipo web completo que avançou para uma iniciativa real de produto.",
       "context": "O protótipo definiu telas iniciais, listas, gêneros, classificação e detalhes para uma experiência VOD completa.",
       "role": "Desenhei o conjunto completo de telas do protótipo e fui responsável por sua direção visual e de interação.",
@@ -37,6 +44,7 @@
     },
     "microsoft-gpa": {
       "title": "Microsoft / Grupo Pão de Açúcar",
+      "imageAlt": "Tela inicial da interface corporativa do GPA apoiada pela Microsoft.",
       "thesis": "O domínio inicial de Silverlight se converteu em uma oportunidade de interface corporativa.",
       "context": "A visibilidade em eventos de tecnologia da Microsoft levou à colaboração em uma experiência para o GPA apoiada pela empresa.",
       "role": "Combinei design de interface e visão de implementação em telas de negócio e informação.",
