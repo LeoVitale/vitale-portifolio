@@ -3,7 +3,7 @@
   "promote_threshold": 2,
   "window_days": 45,
   "quarantine_threshold": 2,
-  "next_id": 4,
+  "next_id": 7,
   "lessons": [
     {
       "id": "L-001",
@@ -58,6 +58,60 @@
       ],
       "created": "2026-08-19T03:21:24Z",
       "last_seen": "2026-08-19T03:21:24Z"
+    },
+    {
+      "id": "L-004",
+      "key": "ac_gap::map every when then to a file line assertion an implementation only branch is not coverage",
+      "text": "Map every WHEN/THEN to a file:line assertion; an implementation-only branch is not coverage.",
+      "signal": "ac_gap",
+      "scope": "e2e",
+      "status": "candidate",
+      "features": [
+        "work-gallery-carousel"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "CAR-02 (e2e)"
+      ],
+      "created": "2026-08-19T03:51:34Z",
+      "last_seen": "2026-08-19T03:51:34Z"
+    },
+    {
+      "id": "L-005",
+      "key": "spec_precision_gap::if an ac depends on a product fixture that is not published add a harness or component fixture instead of leaving the criterion untested",
+      "text": "If an AC depends on a product fixture that is not published, add a harness or component fixture instead of leaving the criterion untested.",
+      "signal": "spec_precision_gap",
+      "scope": "e2e",
+      "status": "candidate",
+      "features": [
+        "work-gallery-carousel"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "CAR-02 (e2e)"
+      ],
+      "created": "2026-08-19T03:51:34Z",
+      "last_seen": "2026-08-19T03:51:34Z"
+    },
+    {
+      "id": "L-006",
+      "key": "surviving_mutant::a singleton early return that omits chrome must have a test that fails when that return is deleted",
+      "text": "A singleton early-return that omits chrome must have a test that fails when that return is deleted.",
+      "signal": "surviving_mutant",
+      "scope": "src/components/work",
+      "status": "candidate",
+      "features": [
+        "work-gallery-carousel"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "mutant-3 CaseGallery.tsx:55-57 (src/components/work)"
+      ],
+      "created": "2026-08-19T03:51:34Z",
+      "last_seen": "2026-08-19T03:51:34Z"
     }
   ]
 }

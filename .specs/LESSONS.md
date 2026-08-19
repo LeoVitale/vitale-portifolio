@@ -32,6 +32,24 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - evidence: PORT-02 (spec-content)
 - last seen: 2026-08-19T03:21:24Z
 
+### L-004 - Map every WHEN/THEN to a file:line assertion; an implementation-only branch is not coverage.
+- signal: `ac_gap` · recurrence: 1 feature(s) · scope: `e2e` · harmful: 0
+- features: work-gallery-carousel
+- evidence: CAR-02 (e2e)
+- last seen: 2026-08-19T03:51:34Z
+
+### L-005 - If an AC depends on a product fixture that is not published, add a harness or component fixture instead of leaving the criterion untested.
+- signal: `spec_precision_gap` · recurrence: 1 feature(s) · scope: `e2e` · harmful: 0
+- features: work-gallery-carousel
+- evidence: CAR-02 (e2e)
+- last seen: 2026-08-19T03:51:34Z
+
+### L-006 - A singleton early-return that omits chrome must have a test that fails when that return is deleted.
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `src/components/work` · harmful: 0
+- features: work-gallery-carousel
+- evidence: mutant-3 CaseGallery.tsx:55-57 (src/components/work)
+- last seen: 2026-08-19T03:51:34Z
+
 ## Quarantined (failed when applied - ignore)
 
 A confirmed lesson that recurred alongside failure. Kept for the maintainer to review.
